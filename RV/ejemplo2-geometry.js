@@ -13,7 +13,7 @@ forma.faces.push(new THREE.Face3(1,2,4));
 forma.faces.push(new THREE.Face3(2,3,4));
 
 forma.computeBoundingSphere();
-forma.computeFaceNornals();
+forma.computeFaceNormals();
 
 var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(forma, material);
