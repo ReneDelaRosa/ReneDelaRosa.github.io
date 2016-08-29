@@ -5,13 +5,17 @@ var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 
-camara.position.z=5;
+camara.position.z=500;
 
 
-var forma=new THREE.BoxGeometry(1,1,1);
-var material=new THREE.MeshNormalMaterial();
-var cubo=new THREE.Mesh(forma, material);
-cubo.rotateX(-Math.PI/4);
-cubo.rotateY(Math.PI/4);
-escena.add(cubo);
+var forma1=new THREE.CylinderGeometry();
+var forma2=new THREE.SphereGeometry();
+var material1=new THREE.MeshBasicMaterial( { color: 0x84550A } );
+var material2=new THREE.MeshBasicMaterial( { color: 0x04AA04});
+var tronco=new THREE.Mesh(forma1, material1);
+var copa=new THREE.Mesh(forma2,material2)
+
+tronco.rotateX(-Math.PI/4);
+tronco.rotateY(Math.PI/4);
+escena.add(tronco);
 renderizador.render(escena,camara);
