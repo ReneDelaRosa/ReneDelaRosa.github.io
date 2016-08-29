@@ -5,7 +5,7 @@ var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 
-camara.position.z=5;
+camara.position.z=11;
 
 
 var forma1=new THREE.CylinderGeometry();
