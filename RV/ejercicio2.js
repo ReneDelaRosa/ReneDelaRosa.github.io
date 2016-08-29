@@ -9,12 +9,12 @@ camara.position.z=500;
 
 
 var forma1=new THREE.CylinderGeometry(20,20,100,30);
-var forma2=new THREE.SphereGeometry(15,32,32);
+var forma2=new THREE.SphereGeometry(50,32,32);
 var material1=new THREE.MeshBasicMaterial( { color: 0x84550A } );
 var material2=new THREE.MeshBasicMaterial( { color: 0x04AA04});
 var tronco=new THREE.Mesh(forma1, material1);
 var copa=new THREE.Mesh(forma2,material2);
-copa.position.y=80;
+copa.position.y=60;
 escena.add(tronco);
 escena.add(copa);
 renderizador.render(escena,camara);
