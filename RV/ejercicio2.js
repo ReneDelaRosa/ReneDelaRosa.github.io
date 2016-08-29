@@ -14,7 +14,7 @@ var material1=new THREE.MeshBasicMaterial( { color: 0x84550A } );
 var material2=new THREE.MeshBasicMaterial( { color: 0x04AA04});
 var tronco=new THREE.Mesh(forma1, material1);
 var copa=new THREE.Mesh(forma2,material2);
-copa.position.y=30;
+copa.position.y=80;
 escena.add(tronco);
 escena.add(copa);
 renderizador.render(escena,camara);
