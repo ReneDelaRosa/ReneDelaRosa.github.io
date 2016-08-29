@@ -15,7 +15,6 @@ var material2=new THREE.MeshBasicMaterial( { color: 0x04AA04});
 var tronco=new THREE.Mesh(forma1, material1);
 var copa=new THREE.Mesh(forma2,material2)
 
-tronco.rotateX(-Math.PI/4);
-tronco.rotateY(Math.PI/4);
+
 escena.add(tronco);
 renderizador.render(escena,camara);
