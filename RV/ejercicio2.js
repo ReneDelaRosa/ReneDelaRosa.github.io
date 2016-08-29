@@ -9,7 +9,7 @@ camara.position.z=500;
 
 
 var forma1=new THREE.CylinderGeometry(20,20,100,30);
-var forma2=new THREE.SphereGeometry(200,32,32);
+var forma2=new THREE.SphereGeometry(15,32,32);
 var material1=new THREE.MeshBasicMaterial( { color: 0x84550A } );
 var material2=new THREE.MeshBasicMaterial( { color: 0x04AA04});
 var tronco=new THREE.Mesh(forma1, material1);
