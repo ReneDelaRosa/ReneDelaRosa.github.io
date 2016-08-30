@@ -7,17 +7,22 @@ forma.vertices.push(new THREE.Vector3(-1,1,-1));
 forma.vertices.push(new THREE.Vector3(1,1,-1));
 forma.vertices.push(new THREE.Vector3(1,1,1));
 forma.vertices.push(new THREE.Vector3(-1,1,1));
-
+//cara trasera
 forma.faces.push(new THREE.Face3(1,0,3));
 forma.faces.push(new THREE.Face3(3,2,1));
+//cara lateral izq
 forma.faces.push(new THREE.Face3(2,3,4));
 forma.faces.push(new THREE.Face3(4,7,2));
+//cara frontal
 forma.faces.push(new THREE.Face3(4,5,6));
 forma.faces.push(new THREE.Face3(6,7,4));
+//cara lateral derecha
 forma.faces.push(new THREE.Face3(5,0,1));
 forma.faces.push(new THREE.Face3(1,6,5));
-forma.faces.push(new THREE.Face3(4,3,5));
-forma.faces.push(new THREE.Face3(3,0,5));
+//cara inferior
+forma.faces.push(new THREE.Face3(4,3,0));
+forma.faces.push(new THREE.Face3(0,5,4));
+//cara superior
 forma.faces.push(new THREE.Face3(2,7,6));
 forma.faces.push(new THREE.Face3(6,1,2));//Marcada
 
