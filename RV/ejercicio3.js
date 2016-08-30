@@ -18,7 +18,7 @@ forma.faces.push(new THREE.Face3(5,0,1));
 forma.faces.push(new THREE.Face3(5,1,6));
 forma.faces.push(new THREE.Face3(4,3,5));
 forma.faces.push(new THREE.Face3(5,3,0));
-forma.faces.push(new THREE.Face3(2,7,6));
+forma.faces.push(new THREE.Face3(7,2,6));
 forma.faces.push(new THREE.Face3(6,2,1));//Marcada
 
 forma.computeBoundingSphere();
