@@ -20,8 +20,8 @@ forma.faces.push(new THREE.Face3(6,7,4));
 forma.faces.push(new THREE.Face3(5,0,1));
 forma.faces.push(new THREE.Face3(1,6,5));
 //cara inferior
-forma.faces.push(new THREE.Face3(4,3,0));
-forma.faces.push(new THREE.Face3(0,5,4));
+forma.faces.push(new THREE.Face3(4,5,0));
+forma.faces.push(new THREE.Face3(0,3,4));
 //cara superior
 forma.faces.push(new THREE.Face3(2,7,6));
 forma.faces.push(new THREE.Face3(6,1,2));//Marcada
