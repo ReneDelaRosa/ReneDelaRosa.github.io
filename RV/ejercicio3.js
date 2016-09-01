@@ -23,8 +23,8 @@ forma.faces.push(new THREE.Face3(1,6,5));
 forma.faces.push(new THREE.Face3(4,5,0));
 forma.faces.push(new THREE.Face3(0,3,4));
 //cara superior
-forma.faces.push(new THREE.Face3(2,1,6));
-forma.faces.push(new THREE.Face3(6,7,2));//Marcada
+forma.faces.push(new THREE.Face3(6,1,2));
+forma.faces.push(new THREE.Face3(2,7,6));//Marcada
 
 forma.computeBoundingSphere();
 forma.computeFaceNormals();
