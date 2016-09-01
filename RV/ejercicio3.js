@@ -14,8 +14,8 @@ forma.faces.push(new THREE.Face3(2,3,0));
 forma.faces.push(new THREE.Face3(2,3,4));
 forma.faces.push(new THREE.Face3(4,7,2));
 //cara frontal
-forma.faces.push(new THREE.Face3(4,7,6));
-forma.faces.push(new THREE.Face3(6,5,4));
+forma.faces.push(new THREE.Face3(4,5,6));
+forma.faces.push(new THREE.Face3(6,7,4));
 //cara lateral derecha
 forma.faces.push(new THREE.Face3(5,0,1));
 forma.faces.push(new THREE.Face3(1,6,5));
