@@ -1,18 +1,18 @@
 var forma=new THREE.Geometry();
-forma.vertices.push(new THREE.Vector3(1,-1,-1));
-forma.vertices.push(new THREE.Vector3(1,-1,1));
+forma.vertices.push(new THREE.Vector3(-1,1,-1));
+forma.vertices.push(new THREE.Vector3(-1,1,1));
 forma.vertices.push(new THREE.Vector3(-1,-1,1));
 forma.vertices.push(new THREE.Vector3(-1,-1,-1));
-forma.vertices.push(new THREE.Vector3(-1,1,-1));
+forma.vertices.push(new THREE.Vector3(1,-1,-1));
 forma.vertices.push(new THREE.Vector3(1,1,-1));
 forma.vertices.push(new THREE.Vector3(1,1,1));
-forma.vertices.push(new THREE.Vector3(-1,1,1));
+forma.vertices.push(new THREE.Vector3(1,-1,1));
 //cara trasera
 forma.faces.push(new THREE.Face3(0,1,2));
 forma.faces.push(new THREE.Face3(2,3,0));
 //cara lateral izq
-forma.faces.push(new THREE.Face3(2,3,4));
-forma.faces.push(new THREE.Face3(4,7,2));
+forma.faces.push(new THREE.Face3(7,2,3));
+forma.faces.push(new THREE.Face3(3,4,7));
 //cara frontal
 forma.faces.push(new THREE.Face3(4,5,6));
 forma.faces.push(new THREE.Face3(6,7,4));
@@ -20,8 +20,8 @@ forma.faces.push(new THREE.Face3(6,7,4));
 forma.faces.push(new THREE.Face3(5,0,1));
 forma.faces.push(new THREE.Face3(1,6,5));
 //cara inferior
-forma.faces.push(new THREE.Face3(4,5,0));
-forma.faces.push(new THREE.Face3(0,3,4));
+forma.faces.push(new THREE.Face3(4,3,0));
+forma.faces.push(new THREE.Face3(0,5,4));
 //cara superior
 forma.faces.push(new THREE.Face3(6,1,2));
 forma.faces.push(new THREE.Face3(2,7,6));//Marcada
@@ -31,8 +31,8 @@ forma.computeFaceNormals();
 
 var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(forma,material);
-//malla.rotateX(Math.PI/4);
-//malla.rotateY(Math.PI/4);
+malla.rotateX(Math.PI/4);
+malla.rotateY(Math.PI/4);
 
 var escena= new THREE.Scene();
 escena.add(malla);
