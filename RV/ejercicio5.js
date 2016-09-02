@@ -35,7 +35,7 @@ escena.add(malla1);
 escena.add(malla2);
 
 malla2.rotateX(Math.PI/4);
-malla2.rotateY(Math.PI/4);
+malla2.rotateY(Math.PI/6);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=15;
