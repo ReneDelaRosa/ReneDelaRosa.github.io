@@ -27,7 +27,7 @@ var puntasup= new THREE.LatheGeometry(puntosup);
 var malla1=new THREE.Mesh(puntasup,material);
 
 var escena=new THREE.Scene();
-escena.add(malla);
+//escena.add(malla);
 escena.add(malla1);
 
 var camara=new THREE.PerspectiveCamera();
