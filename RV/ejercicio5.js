@@ -25,7 +25,7 @@ var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(revotorre,material);
 
 var puntasup= new THREE.LatheGeometry(puntosup,18,0,2*Math.PI/9);
-var puntasup1= new THREE.LatheGeometry(puntosup,18,3*Math.PI/9,5*Math.PI/9);
+var puntasup1= new THREE.LatheGeometry(puntosup,18,(3/9)*Math.PI,(5/9)*Math.PI);
 var malla1=new THREE.Mesh(puntasup,material);
 var malla2=new THREE.Mesh(puntasup1,material);
 
@@ -34,9 +34,9 @@ escena.add(malla);
 escena.add(malla1);
 escena.add(malla2);
 
-malla.rotateX(Math.PI/3);
-malla1.rotateX(Math.PI/3);
-malla2.rotateX(Math.PI/3);
+malla.rotateX(Math.PI/2);
+malla1.rotateX(Math.PI/2);
+malla2.rotateX(Math.PI/2);
 //malla2.rotateY(Math.PI);
 
 var camara=new THREE.PerspectiveCamera();
