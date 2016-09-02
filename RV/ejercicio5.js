@@ -13,10 +13,10 @@ var puntos=[
 ];
 //Puntos de la parte superior
 var puntosup=[
-  new THREE.Vector2(1.75,6.5),
+  new THREE.Vector2(1.75,6.55),
   new THREE.Vector2(1.75,7.25),
   new THREE.Vector2(1.25,7.25),
-  new THREE.Vector2(1.25,6.5)
+  new THREE.Vector2(1.25,6.55)
 ];
 
 var revotorre= new THREE.LatheGeometry(puntos,18);
