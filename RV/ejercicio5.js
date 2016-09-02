@@ -1,6 +1,6 @@
 //Puntos de la torre
 var puntos=[                  
-  new THREE.Vector2(0.1,0),
+  new THREE.Vector2(0,0),
   new THREE.Vector2(2,0.0),
   new THREE.Vector2(2,0.5),
   new THREE.Vector2(1.75,0.5),
@@ -9,7 +9,7 @@ var puntos=[
   new THREE.Vector2(1.2,5.5),
   new THREE.Vector2(1.75,6.3),
   new THREE.Vector2(1.75,6.6),
-  new THREE.Vector2(0.1,6.6)
+  new THREE.Vector2(0,6.6)
 ];
 //Puntos de la parte superior
 var puntosup=[
@@ -35,6 +35,8 @@ escena.add(malla1);
 escena.add(malla2);
 
 malla.rotateX(Math.PI/4);
+malla1.rotateX(Math.PI/4);
+malla2.rotateX(Math.PI/4);
 //malla2.rotateY(Math.PI);
 
 var camara=new THREE.PerspectiveCamera();
