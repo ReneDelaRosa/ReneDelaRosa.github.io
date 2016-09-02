@@ -1,4 +1,4 @@
-var puntos[
+var puntos=[
   new THREE.Vector2(0.1,0),
   new THREE.Vector2(2,0.0),
   new THREE.Vector2(2,0.5),
