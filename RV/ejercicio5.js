@@ -1,7 +1,16 @@
-var puntos=[];
-for (var i=0;i<50;i++){
-  puntos.push(new THREE.Vector2(Math.sin(i*0.2)*15+50,(i-5)*2));
-    }
+
+
+var puntos[];
+  puntos[0]=new THREE.Vector2(0.1,0);
+  puntos[1]=new THREE.Vector2(2,0.0);
+  puntos[2]=new THREE.Vector2(2,0.5);
+  puntos[3]=new THREE.Vector2(1.75,0.5);
+  puntos[4]=new THREE.Vector2(1.75,1);
+  puntos[5]=new THREE.Vector2(1.2,1.8);
+  puntos[6]=new THREE.Vector2(1.2,5.5);
+  puntos[7]=new THREE.Vector2(1.75,6.3);
+  puntos[8]=new THREE.Vector2(1.75,6.6);
+  puntos[9]=new THREE.Vector2(0.1,6.6);
 
 var revotorre= new THREE.LatheGeometry(puntos);
 var material=new THREE.MeshNormalMaterial();
