@@ -10,7 +10,7 @@ var puntos=[
   new THREE.Vector2(1.75,6.6),
   new THREE.Vector2(0.1,6.6)
 ];
-var revotorre= new THREE.LatheGeometry(puntos);
+var revotorre= new THREE.LatheGeometry(puntos,32);
 var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(revotorre,material);
 
