@@ -24,11 +24,14 @@ var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(revotorre,material);
 
 var puntasup= new THREE.LatheGeometry(puntosup,18,0,2*Math.PI/9);
+var puntasup1= new THREE.LatheGeometry(puntosup,18,3*Math.PI/9,5*Math.PI/9);
 var malla1=new THREE.Mesh(puntasup,material);
+var malla2=new THREE.Mesh(puntasup1,material);
 
 var escena=new THREE.Scene();
 escena.add(malla);
 escena.add(malla1);
+escena.add(malla2);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=15;
