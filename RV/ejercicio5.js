@@ -23,7 +23,7 @@ var revotorre= new THREE.LatheGeometry(puntos,32);
 var material=new THREE.MeshNormalMaterial();
 var malla=new THREE.Mesh(revotorre,material);
 
-var puntasup= new THREE.LatheGeometry(puntosup,10,0,PI);
+var puntasup= new THREE.LatheGeometry(puntosup);
 var malla1=new THREE.Mesh(puntasup,material);
 
 var escena=new THREE.Scene();
