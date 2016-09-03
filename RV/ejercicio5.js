@@ -31,7 +31,7 @@ var torreMalla=new THREE.Mesh(torre,material);
 var escena=new THREE.Scene();
 escena.add(torreMalla);
 
-torreMalla.rotateX(Math.PI/3);
+torreMalla.rotateX(Math.PI/4);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=15;
