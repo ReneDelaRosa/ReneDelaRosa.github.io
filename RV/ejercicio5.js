@@ -37,22 +37,25 @@ var revotorre= new THREE.LatheGeometry(puntos,32);
 //Creacion de las mallas
 var malla=new THREE.Mesh(revotorre);
 var malla1=new THREE.Mesh(cilindro);
-
+var malla2=new THREE.Mesh(estrella);
 //Creacion de la figura final
 var torre=new THREE.Geometry();
+var torre2=new THREE.Geometry();
 //Union de las mallas
 torre.merge(malla.geometry, malla.matrix);
 torre.merge(malla1.geometry, malla1.matrix);
 //Asignación del material a la malla final
 var material=new THREE.MeshNormalMaterial();
-var torreMalla=new THREE.Mesh(torre,material);
-
-var malla2=new THREE.Mesh(estrella,material);
-
+var torreMalla=new THREE.Mesh(torre);
+//Union de las mallas2
+torre2.merge(torreMalla.geometry, torreMalla.matrix);
+torre2.merge(malla2.geometry, malla2.matrix);
+var torrefinal=new THREE.Mesh(torre2, material);
 var escena=new THREE.Scene();
 //escena.add(torreMalla);
-escena.add(torreMalla);
-escena.add(malla2);
+//escena.add(torreMalla);
+//escena.add(malla2);
+escena.add(torrefinal)
 
 //malla2.rotateX(-Math.PI/2);
 //torreMalla.rotateX(Math.PI/4);
