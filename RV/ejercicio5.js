@@ -13,6 +13,7 @@ var puntos=[
 ];
 //Cilindro medio
 var cilindro = new THREE.CylinderGeometry(.75,.75,7.25,32);
+cilindro.translate(0,7.25/2,0);
 
 var revotorre= new THREE.LatheGeometry(puntos,32);
 var material=new THREE.MeshNormalMaterial();
