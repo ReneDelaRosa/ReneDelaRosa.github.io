@@ -11,33 +11,20 @@ var puntos=[
   new THREE.Vector2(1.75,6.6),
   new THREE.Vector2(0,6.6)
 ];
-//Puntos de la parte superior
-var puntosup=[
-  new THREE.Vector2(1.75,6.55),
-  new THREE.Vector2(1.75,7.25),
-  new THREE.Vector2(1.25,7.25),
-  new THREE.Vector2(1.25,6.55),
-  new THREE.Vector2(1.75,6.55)
-];
+//Cilindro medio
+var cilindro = new THREE.CylinderGeometry(.75,.75,7.25, 32 );
 
-var revotorre= new THREE.LatheGeometry(puntos,18);
+var revotorre= new THREE.LatheGeometry(puntos,32);
 var material=new THREE.MeshNormalMaterial();
-var malla=new THREE.Mesh(revotorre,material);
 
-var puntasup= new THREE.LatheGeometry(puntosup,18,0,(1/4)*Math.PI);
-var puntasup1= new THREE.LatheGeometry(puntosup,18,Math.PI*(3/9),.222);
-var malla1=new THREE.Mesh(puntasup,material);
-var malla2=new THREE.Mesh(puntasup1,material);
+var malla=new THREE.Mesh(revotorre,material);
+var malla=new THREE.Mesh(cilindro,material);
 
 var escena=new THREE.Scene();
-//escena.add(malla);
-escena.add(malla1);
-//escena.add(malla2);
+escena.add(malla);
+escena.add(malla1)
 
 //malla.rotateX(Math.PI/3);
-malla1.rotateY(Math.PI/4);
-//malla2.rotateX(Math.PI/3);
-//malla2.rotateY(Math.PI);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=15;
