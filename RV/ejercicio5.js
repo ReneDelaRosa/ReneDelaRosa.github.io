@@ -35,7 +35,7 @@ escena.add(malla1);
 //escena.add(malla2);
 
 //malla.rotateX(Math.PI/3);
-//malla1.rotateX(Math.PI/3);
+malla1.rotateY(Math.PI/4);
 //malla2.rotateX(Math.PI/3);
 //malla2.rotateY(Math.PI);
 
