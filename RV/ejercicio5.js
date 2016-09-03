@@ -47,7 +47,7 @@ var torreMalla=new THREE.Mesh(torre,material);
 
 var escena=new THREE.Scene();
 //escena.add(torreMalla);
-escena.add(estrella);
+escena.add(malla2);
 
 torreMalla.rotateX(Math.PI/4);
 
