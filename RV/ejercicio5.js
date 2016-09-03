@@ -30,13 +30,13 @@ var malla1=new THREE.Mesh(puntasup,material);
 var malla2=new THREE.Mesh(puntasup1,material);
 
 var escena=new THREE.Scene();
-escena.add(malla);
+//escena.add(malla);
 escena.add(malla1);
 //escena.add(malla2);
 
-malla.rotateX(Math.PI/3);
-malla1.rotateX(Math.PI/3);
-malla2.rotateX(Math.PI/3);
+//malla.rotateX(Math.PI/3);
+//malla1.rotateX(Math.PI/3);
+//malla2.rotateX(Math.PI/3);
 //malla2.rotateY(Math.PI);
 
 var camara=new THREE.PerspectiveCamera();
