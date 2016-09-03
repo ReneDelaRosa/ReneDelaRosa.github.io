@@ -52,12 +52,10 @@ torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(malla2.geometry, malla2.matrix);
 var torrefinal=new THREE.Mesh(torre2, material);
 var escena=new THREE.Scene();
-//escena.add(torreMalla);
-//escena.add(torreMalla);
-//escena.add(malla2);
+
 escena.add(torrefinal)
 
-torrefinal.rotateX(Math.PI/8);
+torrefinal.rotateX(Math.PI/6);
 //torreMalla.rotateX(Math.PI/4);
 
 var camara=new THREE.PerspectiveCamera();
