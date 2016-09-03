@@ -14,16 +14,22 @@ var puntos=[
 //Cilindro medio
 var cilindro = new THREE.CylinderGeometry(.75,.75,7.25,32);
 cilindro.translate(0,7.25/2,0);
-
+//Revolucion
 var revotorre= new THREE.LatheGeometry(puntos,32);
+//Creacion de las mallas
+var malla=new THREE.Mesh(revotorre);
+var malla1=new THREE.Mesh(cilindro);
+//Creacion de la figura final
+var torre=new THREE.Geometry();
+//Union de las mallas
+torre.merge(malla.geometry, malla.matrix);
+torre.merge(malla1.geometry, malla1.matrix);
+//Asignación del material a la malla final
 var material=new THREE.MeshNormalMaterial();
-
-var malla=new THREE.Mesh(revotorre,material);
-var malla1=new THREE.Mesh(cilindro,material);
+var torreMalla=new THREE.Mesh(torre,material);
 
 var escena=new THREE.Scene();
-escena.add(malla);
-escena.add(malla1)
+escena.add(torreMalla);
 
 //malla.rotateX(Math.PI/3);
 
