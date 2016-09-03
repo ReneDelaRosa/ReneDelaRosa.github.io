@@ -29,9 +29,9 @@ figura.lineTo(1.01,0);
 figura.lineTo(1.52,0.88);
 figura.lineTo(0.51,0.88);
 figura.lineTo(0,1.75);
-var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.5,bevelEnabled: false});
+var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.4,bevelEnabled: false});
 estrella.rotateX(-Math.PI/2);
-estrella.translate(0,7.25,0)
+estrella.translate(0,6.3,0)
 //Revolucion
 var revotorre= new THREE.LatheGeometry(puntos,32);
 //Creacion de las mallas
