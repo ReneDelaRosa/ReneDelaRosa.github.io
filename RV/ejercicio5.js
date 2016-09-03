@@ -57,7 +57,7 @@ var escena=new THREE.Scene();
 //escena.add(malla2);
 escena.add(torrefinal)
 
-//malla2.rotateX(-Math.PI/2);
+torrefinal.rotateX(Math.PI/8);
 //torreMalla.rotateX(Math.PI/4);
 
 var camara=new THREE.PerspectiveCamera();
