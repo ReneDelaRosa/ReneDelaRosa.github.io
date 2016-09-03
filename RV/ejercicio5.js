@@ -29,7 +29,7 @@ figura.lineTo(1.01,0);
 figura.lineTo(1.52,0.88);
 figura.lineTo(0.51,0.88);
 figura.lineTo(0,1.75);
-var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.1});
+var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.01,bevelEnabled: false});
 //var estrella=new THREE.ShapeGeometry(figura);
 //Revolucion
 //var revotorre= new THREE.LatheGeometry(puntos,32);
