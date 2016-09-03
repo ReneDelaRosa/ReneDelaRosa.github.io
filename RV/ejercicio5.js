@@ -32,26 +32,26 @@ figura.lineTo(0,1.75);
 var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.5,bevelEnabled: false});
 estrella.rotateX(-Math.PI/2);
 estrella.translate(0,7.25,0)
-//var estrella=new THREE.ShapeGeometry(figura);
 //Revolucion
-//var revotorre= new THREE.LatheGeometry(puntos,32);
+var revotorre= new THREE.LatheGeometry(puntos,32);
 //Creacion de las mallas
-//var malla=new THREE.Mesh(revotorre);
-//var malla1=new THREE.Mesh(cilindro);
+var malla=new THREE.Mesh(revotorre);
+var malla1=new THREE.Mesh(cilindro);
 
 //Creacion de la figura final
-//var torre=new THREE.Geometry();
+var torre=new THREE.Geometry();
 //Union de las mallas
-//torre.merge(malla.geometry, malla.matrix);
-//torre.merge(malla1.geometry, malla1.matrix);
+torre.merge(malla.geometry, malla.matrix);
+torre.merge(malla1.geometry, malla1.matrix);
 //Asignación del material a la malla final
 var material=new THREE.MeshNormalMaterial();
-//var torreMalla=new THREE.Mesh(torre,material);
+var torreMalla=new THREE.Mesh(torre,material);
 
 var malla2=new THREE.Mesh(estrella,material);
 
 var escena=new THREE.Scene();
 //escena.add(torreMalla);
+escena.add(torreMalla);
 escena.add(malla2);
 
 //malla2.rotateX(-Math.PI/2);
