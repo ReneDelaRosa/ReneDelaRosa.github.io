@@ -18,7 +18,7 @@ var revotorre= new THREE.LatheGeometry(puntos,32);
 var material=new THREE.MeshNormalMaterial();
 
 var malla=new THREE.Mesh(revotorre,material);
-var malla=new THREE.Mesh(cilindro,material);
+var malla1=new THREE.Mesh(cilindro,material);
 
 var escena=new THREE.Scene();
 escena.add(malla);
