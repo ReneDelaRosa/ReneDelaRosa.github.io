@@ -12,7 +12,7 @@ var material=new THREE.MeshNormalMaterial();
                       //for (var y=0;y<9;y++){
   for (var x=0;x<8;x++){
   cubos.push(new THREE.BoxGeometry(10,10,10));
-  cubos[el0][x].translate(x0+10,0,-5)
+  (cubos[el0][x]).translate(x0+10,0,-5)
   mallas[el0][x]=new THREE.Mesh(cubos[x],material);
   }
   el0=el0+1
