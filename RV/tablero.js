@@ -17,7 +17,7 @@ var material=new THREE.MeshNormalMaterial();
   }
   el0=el0+1
   x0=-35
-  }
+
   
 var escena=new THREE.Scene();
 escena.add(mallas);
