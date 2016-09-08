@@ -1,7 +1,7 @@
 var cubos = new Array(8);
 var mallas= new Array(8);
 //Arreglos 2D
-for (var a = 0; a < 8; i++) {
+for (var a = 0; a < 8; a++) {
   cubos[a] = new Array(8);
   mallas[a]=new Array(8);
 }
