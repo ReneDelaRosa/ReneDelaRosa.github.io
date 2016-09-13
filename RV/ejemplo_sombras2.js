@@ -2,7 +2,7 @@ var iluminacion= new THREE.PointLight(0xFFFFFF);
 var iluminacion2= new THREE.PointLight(0xFFFFFF);//
 iluminacion.position.y=20;
 iluminacion2.position.y=.5;
-iluminacion2.position.<=10;
+iluminacion2.position.z=10;
 
 var forma= new THREE.SphereGeometry(1);
 var material=new THREE.MeshLambertMaterial({color: "#00cc00"});
