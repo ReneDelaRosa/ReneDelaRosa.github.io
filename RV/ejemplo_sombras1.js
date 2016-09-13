@@ -20,4 +20,4 @@ camara.position.y=5;
 var lienzo= document.getElementById("luzSinSombras");
 var renderizador= new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
 renderizador.setSize(600,600);
-renderizador(escena,camara);
+renderizador.render(escena,camara);
