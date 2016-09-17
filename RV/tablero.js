@@ -31,7 +31,6 @@ for(var l=0;l<10;l++){
   if(m==1){
   malla2.position.y=90;
   }
-  malla2.position.y=0; 
   malla2.position.x=(l*10);
   malla2.matrixAutoUpdate = false;
   malla2.updateMatrix();
