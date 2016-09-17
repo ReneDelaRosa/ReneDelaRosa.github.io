@@ -79,10 +79,10 @@ escena.add(torre3);
 escena.add(torre4);
 
 var camara=new THREE.OrthographicCamera();
-camara.left= window.innerWidth/-4;
-camara.right= window.innerWidth/4;
-camara.top= window.innerHeight/4;
-camara.bottom= window.innerHeight/-4;
+camara.left= window.innerWidth/-8;
+camara.right= window.innerWidth/8;
+camara.top= window.innerHeight/8;
+camara.bottom= window.innerHeight/-8;
 camara.near= 150;
 camara.far= 300;
 camara.updateProjectionMatrix();
