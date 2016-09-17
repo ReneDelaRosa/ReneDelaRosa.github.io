@@ -27,7 +27,7 @@ var g2= new THREE.Group();
 
 for(var l=0;l<10;l++){
   for(var m=0;m<2;m++){
-  var malla2= new THREE.Mesh(cubo,mc);
+  var malla2= new THREE.Mesh(bloque,mc);
   if(m==1){
     malla2.position.y=90;
   }
