@@ -1,30 +1,37 @@
-var cubos = new Array(8);
-var mallas= new Array(8);
-//Arreglos 2D
-for (var a = 0; a < 8; a++) {
-  cubos[a] = new Array(8);
-  mallas[a]=new Array(8);
-}
-var x0=-35;
-var y0=-35;
-var el0=0;
-var material=new THREE.MeshNormalMaterial();
-                      //for (var y=0;y<9;y++){
-  for (var x=0;x<8;x++){
-  cubos.push(new THREE.BoxGeometry(10,10,10));
-  (cubos[el0][x]).translate(x0+10,0,-5)
-  mallas[el0][x]=new THREE.Mesh(cubos[x],material);
-  }
-  el0=el0+1
-  x0=-35
+//Definición de la geometría
+var bloque=new THREE.BoxGeometry(10,10,10);
+//Materiales
+var mw=new THREE.MeshBasicMaterial({color: 0xffffff});
+var mb=new THREE.MeshBasicMaterial({color: 0x686868});
+var mc=new THREE.MeshBasicMaterial({color: 0x714523});
+//Creación del grupo 
+var g1=new THREE.Group();
+var k=0;
+for (var i=0;i<8;i++){
+  for(var j=0;i<8;i++){
+    if(k%2==0){
+    var malla=new THREE.Mesh(cubo,mb);
+    }
+    else{
+    var malla= new THREE.Mesh(cubo,mw);  
+    }
+    malla.position.x=(j+1)*10);//Filas
+    malla.position.y=(i+1)*10;//Columnas
+    malla.matrixAutoUpdate=false;
+    malla.updateMatrix();
+    g1.add(malla);
+  k++;}
+k++;}
 
-  
+
 var escena=new THREE.Scene();
-escena.add(mallas);
+escena.add(gp);
 renderizador.render(escena,camara);
 
 var camara=new THREE.PerspectiveCamera();
-camara.position.z=250;
+camara.position.z=200;
+camara.position.x=40;
+camara.position.y=40;
 
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth*.95,window.innerHeight*.95);
