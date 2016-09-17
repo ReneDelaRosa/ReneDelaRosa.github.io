@@ -49,13 +49,14 @@ for (var n=1;n<9;n++){//Filas
   malla3.position.y=(n)*10
   malla3.matrixAutoUpdate = false;
   malla3.updateMatrix();
-  grupo3.add(malla3);
+  g3.add(malla3);
   }
 }
 
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
+escena.add(g3);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=200;
