@@ -54,8 +54,8 @@ for (var n=1;n<9;n++){//Filas
 }
 
 var torre1= torrew.clone();
-torre1.position.x=5;
-torre1.position.y=5;
+torre1.position.x=10;
+torre1.position.y=10;
 torre1.position.z=10;
 
 var escena=new THREE.Scene();
