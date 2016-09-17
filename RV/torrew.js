@@ -50,4 +50,4 @@ var torreMalla=new THREE.Mesh(torre);
 //Union de las mallas2
 torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(malla2.geometry, malla2.matrix);
-var torrefinal=new THREE.Mesh(torre2, material);
+var torrew=new THREE.Mesh(torre2, material);
