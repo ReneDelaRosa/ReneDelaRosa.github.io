@@ -29,15 +29,15 @@ for(var l=0;l<10;l++){
   for(var m=0;m<2;m++){
   var malla2= new THREE.Mesh(bloque,mc);
   if(m==1){
-    malla2.position.y=90;
+  malla2.position.y=90;
   }
-  else{
   malla2.position.y=0; 
   malla2.position.x=(l*10);
   malla2.matrixAutoUpdate = false;
   malla2.updateMatrix();
   g2.add(malla2);
-}}}
+  }
+}
 
 
 var escena=new THREE.Scene();
