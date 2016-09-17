@@ -65,7 +65,7 @@ var torre3= torreb.clone();
 torre1.position.x=10;
 torre1.position.y=80;
 torre1.position.z=10;
-var torre3= torreb.clone();
+var torre4= torreb.clone();
 torre1.position.x=80;
 torre1.position.y=80;
 torre1.position.z=10;
@@ -75,6 +75,8 @@ escena.add(g2);
 escena.add(g3);
 escena.add(torre1);
 escena.add(torre2);
+escena.add(torre3);
+escena.add(torre4);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=200;
