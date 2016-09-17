@@ -25,7 +25,6 @@ k++;}
 
 
 var escena=new THREE.Scene();
-escena.rotateY(-Math.PI/2);
 escena.add(g1);
 
 var camara=new THREE.PerspectiveCamera();
