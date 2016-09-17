@@ -10,10 +10,10 @@ var k=0;
 for (var i=0;i<8;i++){
   for(var j=0;i<8;i++){
     if(k%2==0){
-    var malla=new THREE.Mesh(cubo,mb);
+    var malla=new THREE.Mesh(bloque,mb);
     }
     else{
-    var malla= new THREE.Mesh(cubo,mw);  
+    var malla= new THREE.Mesh(bloque,mw);  
     }
     malla.position.x=(j+1)*10;//Filas
     malla.position.y=(i+1)*10;//Columnas
