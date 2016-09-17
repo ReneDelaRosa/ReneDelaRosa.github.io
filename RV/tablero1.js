@@ -86,7 +86,7 @@ camara.bottom= window.innerHeight/-2;
 camara.near= 150;
 camara.far= 300;
 camara.updateProjectionMatrix();
-camara.position.z=200;
+camara.position.z=100;
 camara.position.x=40;
 camara.position.y=40;
 escena.rotateX(-Math.PI/4)
