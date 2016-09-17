@@ -89,7 +89,7 @@ camara.updateProjectionMatrix();
 camara.position.z=200;
 camara.position.x=40;
 camara.position.y=40;
-escena.rotateX(-Math.PI/4)
+escena.rotateX(-Math.PI/3)
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
