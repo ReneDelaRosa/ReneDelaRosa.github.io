@@ -25,7 +25,7 @@ k++;}
 
 
 var escena=new THREE.Scene();
-escena.add(gp);
+escena.add(g1);
 renderizador.render(escena,camara);
 
 var camara=new THREE.PerspectiveCamera();
