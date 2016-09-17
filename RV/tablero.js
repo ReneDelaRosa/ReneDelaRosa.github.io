@@ -10,26 +10,27 @@ var k=0;
 for (var i=0;i<8;i++){
   for(var j=0;j<8;j++){
     if(k%2==0){
-    var malla=new THREE.Mesh(bloque,mb);
+      var malla=new THREE.Mesh(bloque,mb);
     }
     else{
-    var malla= new THREE.Mesh(bloque,mw);  
+      var malla= new THREE.Mesh(bloque,mw);  
     }
-    malla.position.x=(j+1)*10;//Filas
-    malla.position.y=(i+1)*10;//Columnas
+    malla.position.x=(j+1)*10;//Columnas
+    malla.position.y=(i+1)*10;//Filas
     malla.matrixAutoUpdate=false;
     malla.updateMatrix();
     g1.add(malla);
-  k++;}
-k++;}
-//Creación del grupo del borde
+    k++;
+  }
+k++;
+}
+//Creación del grupo del borde (Alto)
 var g2= new THREE.Group();
-
-for(var l=0;l<10;l++){
-  for(var m=0;m<2;m++){
+for(var l=0;l<10;l++){//columnas
+  for(var m=0;m<2;m++){//filas
   var malla2= new THREE.Mesh(bloque,mc);
   if(m==1){
-  malla2.position.y=90;
+    malla2.position.y=90;
   }
   malla2.position.x=(l*10);
   malla2.matrixAutoUpdate = false;
@@ -37,7 +38,20 @@ for(var l=0;l<10;l++){
   g2.add(malla2);
   }
 }
-
+//Creación del grupo del borde lateral (Ancho)
+var g3=new THREE.Group();
+for (var n=1;n<9;n++){//Filas
+  for (var o=0;o<2;o++){//Columnas
+  var malla3=new THREE.Mesh(bloque,mc);
+  if (o==1){
+    malla3.position.x=90;
+  }
+  malla3.position.y=(n)*10
+  malla3.matrixAutoUpdate = false;
+  malla3.updateMatrix();
+  grupo3.add(malla3);
+  }
+}
 
 var escena=new THREE.Scene();
 escena.add(g1);
