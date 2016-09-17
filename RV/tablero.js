@@ -15,7 +15,7 @@ for (var i=0;i<8;i++){
     else{
     var malla= new THREE.Mesh(cubo,mw);  
     }
-    malla.position.x=(j+1)*10);//Filas
+    malla.position.x=(j+1)*10;//Filas
     malla.position.y=(i+1)*10;//Columnas
     malla.matrixAutoUpdate=false;
     malla.updateMatrix();
