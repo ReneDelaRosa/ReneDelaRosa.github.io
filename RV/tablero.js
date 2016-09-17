@@ -8,7 +8,7 @@ var mc=new THREE.MeshBasicMaterial({color: 0x714523});
 var g1=new THREE.Group();
 var k=0;
 for (var i=0;i<8;i++){
-  for(var j=0;i<8;i++){
+  for(var j=0;j<8;j++){
     if(k%2==0){
     var malla=new THREE.Mesh(bloque,mb);
     }
