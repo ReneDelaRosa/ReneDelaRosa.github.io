@@ -78,8 +78,15 @@ escena.add(torre2);
 escena.add(torre3);
 escena.add(torre4);
 
-var camara=new THREE.PerspectiveCamera();
-camara.position.z=200;
+var camara=new THREE.OrtographicCamera();
+camara.left= window.innerWidth/-2;
+camara.right= window.innerWidth/2;
+camara.top= window.innerHeight/2;
+camara.bottom= window.innerHeight/-2;
+camara.near= 150;
+camara.far= 300;
+camara.updateProjectionMatrix();
+camara.position.z=100;
 camara.position.x=40;
 camara.position.y=40;
 escena.rotateX(-Math.PI/4)
