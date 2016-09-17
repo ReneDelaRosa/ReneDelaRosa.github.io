@@ -57,12 +57,24 @@ var torre1= torrew.clone();
 torre1.position.x=10;
 torre1.position.y=10;
 torre1.position.z=10;
-
+var torre2= torrew.clone();
+torre1.position.x=80;
+torre1.position.y=10;
+torre1.position.z=10;
+var torre3= torreb.clone();
+torre1.position.x=10;
+torre1.position.y=80;
+torre1.position.z=10;
+var torre3= torreb.clone();
+torre1.position.x=80;
+torre1.position.y=80;
+torre1.position.z=10;
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
 escena.add(g3);
 escena.add(torre1);
+escena.add(torre2);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=200;
