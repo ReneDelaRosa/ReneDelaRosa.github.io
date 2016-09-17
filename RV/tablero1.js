@@ -79,17 +79,17 @@ escena.add(torre3);
 escena.add(torre4);
 
 var camara=new THREE.OrthographicCamera();
-camara.left= window.innerWidth/-10;
-camara.right= window.innerWidth/10;
-camara.top= window.innerHeight/10;
-camara.bottom= window.innerHeight/-10;
+camara.left= window.innerWidth/-8;
+camara.right= window.innerWidth/8;
+camara.top= window.innerHeight/8;
+camara.bottom= window.innerHeight/-8;
 camara.near= 50;
 camara.far= 250;
 camara.updateProjectionMatrix();
 camara.position.z=200;
 camara.position.x=40;
 camara.position.y=40;
-escena.rotateX(-Math.PI/3)
+escena.rotateX(-Math.PI/4)
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
