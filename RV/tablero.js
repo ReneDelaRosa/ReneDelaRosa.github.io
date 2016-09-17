@@ -53,10 +53,16 @@ for (var n=1;n<9;n++){//Filas
   }
 }
 
+var torre1= torrew.clone();
+torre1.position.x=5;
+torre1.position.y=5;
+torre1.position.z=10;
+
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
-escena.add(g3);//
+escena.add(g3);
+escena.add(torre1);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=200;
