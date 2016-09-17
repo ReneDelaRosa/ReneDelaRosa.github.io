@@ -56,7 +56,7 @@ for (var n=1;n<9;n++){//Filas
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
-escena.add(g3);
+escena.add(g3);//
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=200;
