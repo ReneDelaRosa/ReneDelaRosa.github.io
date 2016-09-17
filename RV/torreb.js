@@ -52,3 +52,4 @@ torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(malla2.geometry, malla2.matrix);
 torre2.rotateX(Math.PI/2)
 var torreb=new THREE.Mesh(torre2, material);
+torreb.scale.set(2,2,2)
