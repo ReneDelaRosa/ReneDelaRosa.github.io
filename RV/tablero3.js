@@ -112,4 +112,6 @@ torre2.castShadow=true;
 torre3.castShadow=true;
 torre4.castShadow=true;
 luzPuntual.castShadow=true;
+luzPuntual1.castShadow=true;
+luzPuntual2.castShadow=true;
 renderizador.render(escena,camara);
