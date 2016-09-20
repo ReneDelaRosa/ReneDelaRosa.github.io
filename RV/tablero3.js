@@ -82,6 +82,7 @@ var torre4= torreb.clone();
 torre4.position.x=80;
 torre4.position.y=80;
 torre4.position.z=5;
+
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
@@ -91,16 +92,15 @@ escena.add(torre2);
 escena.add(torre3);
 escena.add(torre4);
 escena.add(luzPuntual);
-//escena.add(luzPuntual1);
-//escena.add(luzPuntual2);
+escena.add(luzPuntual1);
+escena.add(luzPuntual2);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=130;
 camara.position.x=45;
 camara.position.y=45;
-escena.rotateX(-Math.PI/4)
+//escena.rotateX(-Math.PI/4)
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
-
 renderizador.render(escena,camara);
