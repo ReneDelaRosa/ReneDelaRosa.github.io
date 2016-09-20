@@ -52,6 +52,14 @@ for (var n=1;n<9;n++){//Filas
   g3.add(malla3);
   }
 }
+//Creación de luces en la escena
+var luzPuntual=new THREE.PointLight(0xFFFF00);//AMARILLO
+var luzPuntual1=new THREE.PointLight(0xFF00FF);//ROSA
+var luzPuntual2=new THREE.PointLight(0x00FFFF);//CYAN
+luzPuntual.position.x=70;
+luzPuntual.position.y=90;
+luzPuntual.position.z=60;
+
 
 var torre1= torrew.clone();
 torre1.position.x=10;
