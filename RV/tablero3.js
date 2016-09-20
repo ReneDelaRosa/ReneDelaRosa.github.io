@@ -1,9 +1,14 @@
-//Definición de la geometría
+//Definición de la geometría del tablero
 var bloque=new THREE.BoxGeometry(10,10,10);
-//Materiales
+//Materiales del tablero
 var mw=new THREE.MeshLambertMaterial({color: 0xffffff});//new THREE.MeshBasicMaterial({color: 0xffffff});
 var mb=new THREE.MeshLambertMaterial({color: 0x686868});//new THREE.MeshBasicMaterial({color: 0x686868});
 var mc=new THREE.MeshLambertMaterial({color: 0x714523});//new THREE.MeshBasicMaterial({color: 0x714523});
+//Materiales de las torres
+var tbmaterial1=new THREE.MeshLambertMaterial({color: 0x171714});//Torre negra con opacidad del 100%
+var tbmaterial2=new THREE.MeshLambertMaterial({color: 0x171714});//Torre negra con opacidad del 75%
+var twmaterial1=new THREE.MeshLambertMaterial({color: 0xEEEED8});//Torre blanca con opacidad del 50%
+var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8});//Torre blanca con opacidad del 25%
 //Creación del grupo del tablero
 var g1=new THREE.Group();
 var k=0;
@@ -55,6 +60,68 @@ for (var n=1;n<9;n++){//Filas
   g3.add(malla3);
   }
 }
+//Torre
+//Puntos de la torre
+var puntos=[                  
+  new THREE.Vector2(0,0),
+  new THREE.Vector2(2,0.0),
+  new THREE.Vector2(2,0.5),
+  new THREE.Vector2(1.75,0.5),
+  new THREE.Vector2(1.75,1),
+  new THREE.Vector2(1.2,1.8),
+  new THREE.Vector2(1.2,5.5),
+  new THREE.Vector2(1.75,6.3),
+  new THREE.Vector2(1.75,6.6),
+  new THREE.Vector2(0,6.6)
+];
+//Cilindro medio
+var cilindro = new THREE.CylinderGeometry(.75,.75,7.25,32);
+cilindro.translate(0,7.25/2,0);
+//Adorno superior
+var figura=new THREE.Shape();
+figura.moveTo(0,1.75);
+figura.lineTo(-0.51,0.88);
+figura.lineTo(-1.52,0.88);
+figura.lineTo(-1.01,0);
+figura.lineTo(-1.52,-0.88);
+figura.lineTo(-0.51,-0.88);
+figura.lineTo(0,-1.75);
+figura.lineTo(0.51,-0.88);
+figura.lineTo(1.52,-0.88);
+figura.lineTo(1.01,0);
+figura.lineTo(1.52,0.88);
+figura.lineTo(0.51,0.88);
+figura.lineTo(0,1.75);
+var estrella=new THREE.ExtrudeGeometry(figura,{amount:0.4,bevelEnabled: false});
+estrella.rotateX(-Math.PI/2);
+estrella.translate(0,6.6,0)
+//Revolucion
+var revotorre= new THREE.LatheGeometry(puntos,32);
+//Creacion de las mallas
+var tmalla=new THREE.Mesh(revotorre);
+var tmalla1=new THREE.Mesh(cilindro);
+var tmalla2=new THREE.Mesh(estrella);
+//Creacion de la figura final
+var torre=new THREE.Geometry();
+var torre2=new THREE.Geometry();
+//Union de las mallas
+torre.merge(tmalla.geometry, tmalla.matrix);
+torre.merge(tmalla1.geometry, tmalla1.matrix);
+var torreMalla=new THREE.Mesh(torre);
+//Union de las mallas2
+torre2.merge(torreMalla.geometry, torreMalla.matrix);
+torre2.merge(tmalla2.geometry, tmalla2.matrix);
+torre2.rotateX(Math.PI/2)
+var torre1=new THREE.Mesh(torre2, tbmaterial1);
+var torre2=new THREE.Mesh(torre2, tbmaterial2);
+var torre3=new THREE.Mesh(torre2, twmaterial1);
+var torre4=new THREE.Mesh(torre2, twmaterial2);
+torre1.scale.set(1.5,1.5,1.5)
+torre1.scale.set(1.5,1.5,1.5)
+
+
+
+
 //Creación de luces en la escena
 var luzPuntual=new THREE.PointLight(0xFFFF00);//AMARILLO
 var luzPuntual1=new THREE.PointLight(0xFF00FF);//ROSA
