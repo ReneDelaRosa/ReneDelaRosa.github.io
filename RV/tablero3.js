@@ -5,10 +5,10 @@ var mw=new THREE.MeshLambertMaterial({color: 0xffffff});//new THREE.MeshBasicMat
 var mb=new THREE.MeshLambertMaterial({color: 0x686868});//new THREE.MeshBasicMaterial({color: 0x686868});
 var mc=new THREE.MeshLambertMaterial({color: 0x714523});//new THREE.MeshBasicMaterial({color: 0x714523});
 //Materiales de las torres
-var tbmaterial1=new THREE.MeshLambertMaterial({color: 0x171714});//Torre negra con opacidad del 100%
-var tbmaterial2=new THREE.MeshLambertMaterial({color: 0x171714});//Torre negra con opacidad del 75%
-var twmaterial1=new THREE.MeshLambertMaterial({color: 0xEEEED8});//Torre blanca con opacidad del 50%
-var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8});//Torre blanca con opacidad del 25%
+var tbmaterial1=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 1});//Torre negra con opacidad del 100%
+var tbmaterial2=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 0.75});//Torre negra con opacidad del 75%
+var twmaterial1=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 0.5});//Torre blanca con opacidad del 50%
+var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 0.2});//Torre blanca con opacidad del 25%
 //Creación del grupo del tablero
 var g1=new THREE.Group();
 var k=0;
@@ -112,15 +112,32 @@ var torreMalla=new THREE.Mesh(torre);
 torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(tmalla2.geometry, tmalla2.matrix);
 torre2.rotateX(Math.PI/2)
-var torre1=new THREE.Mesh(torre2, tbmaterial1);
-var torre2=new THREE.Mesh(torre2, tbmaterial2);
-var torre3=new THREE.Mesh(torre2, twmaterial1);
-var torre4=new THREE.Mesh(torre2, twmaterial2);
+var torre1=new THREE.Mesh(torre2, twmaterial1);
+var torre2=new THREE.Mesh(torre2, twmaterial2);
+var torre3=new THREE.Mesh(torre2, tbmaterial1);
+var torre4=new THREE.Mesh(torre2, tbmaterial2);
+//Posición de las torres
+torre1.position.x=10;
+torre1.position.y=10;
+torre1.position.z=5;
+
+torre2.position.x=80;
+torre2.position.y=10;
+torre2.position.z=5;
+
+torre3.position.x=10;
+torre3.position.y=80;
+torre3.position.z=5;
+
+torre4.position.x=80;
+torre4.position.y=80;
+torre4.position.z=5;
+
+//Escalamiento de las torres
 torre1.scale.set(1.5,1.5,1.5)
-torre1.scale.set(1.5,1.5,1.5)
-
-
-
+torre2.scale.set(1.5,1.5,1.5)
+torre3.scale.set(1.5,1.5,1.5)
+torre4.scale.set(1.5,1.5,1.5)
 
 //Creación de luces en la escena
 var luzPuntual=new THREE.PointLight(0xFFFF00);//AMARILLO
@@ -135,23 +152,6 @@ luzPuntual1.position.z=70;
 luzPuntual2.position.x=100;
 luzPuntual2.position.y=10;
 luzPuntual2.position.z=70;
-
-var torre1= torrew.clone();
-torre1.position.x=10;
-torre1.position.y=10;
-torre1.position.z=5;
-var torre2= torrew.clone();
-torre2.position.x=80;
-torre2.position.y=10;
-torre2.position.z=5;
-var torre3= torreb.clone();
-torre3.position.x=10;
-torre3.position.y=80;
-torre3.position.z=5;
-var torre4= torreb.clone();
-torre4.position.x=80;
-torre4.position.y=80;
-torre4.position.z=5;
 
 var escena=new THREE.Scene();
 escena.add(g1);
