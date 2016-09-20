@@ -19,6 +19,7 @@ for (var i=0;i<8;i++){
     malla.position.y=(i+1)*10;//Filas
     malla.matrixAutoUpdate=false;
     malla.updateMatrix();
+    malla.receiveShadow=true;
     g1.add(malla);
     k++;
   }
@@ -35,6 +36,7 @@ for(var l=0;l<10;l++){//columnas
   malla2.position.x=(l*10);
   malla2.matrixAutoUpdate = false;
   malla2.updateMatrix();
+  malla2.receiveShadow=true;
   g2.add(malla2);
   }
 }
@@ -49,6 +51,7 @@ for (var n=1;n<9;n++){//Filas
   malla3.position.y=(n)*10
   malla3.matrixAutoUpdate = false;
   malla3.updateMatrix();
+  malla3.receiveShadow=true;
   g3.add(malla3);
   }
 }
@@ -105,8 +108,5 @@ renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 renderizador.shadowMapEnabled=true;
 torre1.castShadow=true;
-malla.receiveShadow=true;
-malla2.receiveShadow=true;
-malla3.receiveShadow=true;
 luzPuntual.castShadow=true;
 renderizador.render(escena,camara);
