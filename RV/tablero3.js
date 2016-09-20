@@ -112,37 +112,38 @@ var torreMalla=new THREE.Mesh(torre);
 torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(tmalla2.geometry, tmalla2.matrix);
 torre2.rotateX(Math.PI/2)
-var torre1=new THREE.Mesh(torre2, twmaterial1);
-var torre2=new THREE.Mesh(torre2, twmaterial2);
-var torre3=new THREE.Mesh(torre2, tbmaterial1);
-var torre4=new THREE.Mesh(torre2, tbmaterial2);
+var ftorre1=new THREE.Mesh(torre2, twmaterial1);
+var ftorre2=new THREE.Mesh(torre2, twmaterial2);
+var ftorre3=new THREE.Mesh(torre2, tbmaterial1);
+var ftorre4=new THREE.Mesh(torre2, tbmaterial2);
 //Posición de las torres
-torre1.position.x=10;
-torre1.position.y=10;
-torre1.position.z=5;
+ftorre1.position.x=10;
+ftorre1.position.y=10;
+ftorre1.position.z=5;
 
-torre2.position.x=80;
-torre2.position.y=10;
-torre2.position.z=5;
+ftorre2.position.x=80;
+ftorre2.position.y=10;
+ftorre2.position.z=5;
 
-torre3.position.x=10;
-torre3.position.y=80;
-torre3.position.z=5;
+ftorre3.position.x=10;
+ftorre3.position.y=80;
+ftorre3.position.z=5;
 
-torre4.position.x=80;
-torre4.position.y=80;
-torre4.position.z=5;
+ftorre4.position.x=80;
+ftorre4.position.y=80;
+ftorre4.position.z=5;
 
 //Escalamiento de las torres
-torre1.scale.set(1.5,1.5,1.5)
-torre2.scale.set(1.5,1.5,1.5)
-torre3.scale.set(1.5,1.5,1.5)
-torre4.scale.set(1.5,1.5,1.5)
+ftorre1.scale.set(1.5,1.5,1.5)
+ftorre2.scale.set(1.5,1.5,1.5)
+ftorre3.scale.set(1.5,1.5,1.5)
+ftorre4.scale.set(1.5,1.5,1.5)
 
 //Creación de luces en la escena
 var luzPuntual=new THREE.PointLight(0xFFFF00);//AMARILLO
 var luzPuntual1=new THREE.PointLight(0xFF00FF);//ROSA
 var luzPuntual2=new THREE.PointLight(0x00FFFF);//CYAN
+//Posición de la iluminación
 luzPuntual.position.x=10;
 luzPuntual.position.y=90;
 luzPuntual.position.z=70;
@@ -157,10 +158,10 @@ var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
 escena.add(g3);
-escena.add(torre1);
-escena.add(torre2);
-escena.add(torre3);
-escena.add(torre4);
+escena.add(ftorre1);
+escena.add(ftorre2);
+escena.add(ftorre3);
+escena.add(ftorre4);
 escena.add(luzPuntual);
 escena.add(luzPuntual1);
 escena.add(luzPuntual2);
@@ -174,10 +175,10 @@ var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 renderizador.shadowMapEnabled=true;
-torre1.castShadow=true;
-torre2.castShadow=true;
-torre3.castShadow=true;
-torre4.castShadow=true;
+ftorre1.castShadow=true;
+ftorre2.castShadow=true;
+ftorre3.castShadow=true;
+ftorre4.castShadow=true;
 luzPuntual.castShadow=true;
 luzPuntual1.castShadow=true;
 luzPuntual2.castShadow=true;
