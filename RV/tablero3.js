@@ -102,4 +102,15 @@ escena.rotateX(-Math.PI/4)
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
+renderizador.shadowMapEnabled=true;
+torre1.castShadow=true;
+torre2.castShadow=true;
+torre3.castShadow=true;
+torre4.castShadow=true;
+g1.receiveShadow=true;
+g2.receiveShadow=true;
+g3.receiveShadow=true;
+luzPuntual.castShadow=true;
+luzPuntual1.castShadow=true;
+luzPuntual2.castShadow=true;
 renderizador.render(escena,camara);
