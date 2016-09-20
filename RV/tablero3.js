@@ -153,7 +153,7 @@ luzPuntual1.position.z=70;
 luzPuntual2.position.x=100;
 luzPuntual2.position.y=10;
 luzPuntual2.position.z=70;
-
+//Creación de la escena
 var escena=new THREE.Scene();
 escena.add(g1);
 escena.add(g2);
@@ -165,12 +165,13 @@ escena.add(ftorre4);
 escena.add(luzPuntual);
 escena.add(luzPuntual1);
 escena.add(luzPuntual2);
-
+//Creación de la cámara
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=130;
 camara.position.x=45;
 camara.position.y=45;
 escena.rotateX(-Math.PI/6)
+//Renderizador y activación de sombras en la escena
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
