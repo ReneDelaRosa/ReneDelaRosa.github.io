@@ -65,8 +65,8 @@ luzPuntual.position.z=70;
 luzPuntual1.position.x=80;
 luzPuntual1.position.y=90;
 luzPuntual1.position.z=70;
-luzPuntual2.position.x=80;
-luzPuntual2.position.y=0;
+luzPuntual2.position.x=90;
+luzPuntual2.position.y=10;
 luzPuntual2.position.z=70;
 
 var torre1= torrew.clone();
