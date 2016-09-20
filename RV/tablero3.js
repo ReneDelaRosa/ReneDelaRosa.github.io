@@ -8,7 +8,7 @@ var mc=new THREE.MeshLambertMaterial({color: 0x714523});//new THREE.MeshBasicMat
 var tbmaterial1=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 1});//Torre negra con opacidad del 100%
 var tbmaterial2=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 0.75});//Torre negra con opacidad del 75%
 var twmaterial1=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 0.5});//Torre blanca con opacidad del 50%
-var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 0.2});//Torre blanca con opacidad del 25%
+var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 1});//Torre blanca con opacidad del 25%
 //Creación del grupo del tablero
 var g1=new THREE.Group();
 var k=0;
