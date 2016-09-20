@@ -85,6 +85,7 @@ escena.add(torre1);
 escena.add(torre2);
 escena.add(torre3);
 escena.add(torre4);
+escena.add(luzPuntual);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=130;
