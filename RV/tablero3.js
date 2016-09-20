@@ -8,7 +8,7 @@ var mc=new THREE.MeshLambertMaterial({color: 0x714523});//new THREE.MeshBasicMat
 var tbmaterial1=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 1});//Torre negra con opacidad del 100%
 var tbmaterial2=new THREE.MeshLambertMaterial({color: 0x171714, transparent: true, opacity: 0.75});//Torre negra con opacidad del 75%
 var twmaterial1=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 0.5});//Torre blanca con opacidad del 50%
-var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: 1});//Torre blanca con opacidad del 25%
+var twmaterial2=new THREE.MeshLambertMaterial({color: 0xEEEED8, transparent: true, opacity: .25});//Torre blanca con opacidad del 25%
 //Creación del grupo del tablero
 var g1=new THREE.Group();
 var k=0;
@@ -112,8 +112,8 @@ var torreMalla=new THREE.Mesh(torre);
 torre2.merge(torreMalla.geometry, torreMalla.matrix);
 torre2.merge(tmalla2.geometry, tmalla2.matrix);
 torre2.rotateX(Math.PI/2)
-var ftorre1=new THREE.Mesh(torre2, twmaterial1);
-var ftorre2=new THREE.Mesh(torre2, twmaterial2);
+var ftorre1=new THREE.Mesh(torre2, twmaterial2);
+var ftorre2=new THREE.Mesh(torre2, twmaterial1);
 var ftorre3=new THREE.Mesh(torre2, tbmaterial1);
 var ftorre4=new THREE.Mesh(torre2, tbmaterial2);
 //Posición de las torres
