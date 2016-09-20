@@ -59,13 +59,13 @@ for (var n=1;n<9;n++){//Filas
 var luzPuntual=new THREE.PointLight(0xFFFF00);//AMARILLO
 var luzPuntual1=new THREE.PointLight(0xFF00FF);//ROSA
 var luzPuntual2=new THREE.PointLight(0x00FFFF);//CYAN
-luzPuntual.position.x=0;
+luzPuntual.position.x=10;
 luzPuntual.position.y=90;
 luzPuntual.position.z=70;
-luzPuntual1.position.x=90;
+luzPuntual1.position.x=80;
 luzPuntual1.position.y=90;
 luzPuntual1.position.z=70;
-luzPuntual2.position.x=90;
+luzPuntual2.position.x=80;
 luzPuntual2.position.y=0;
 luzPuntual2.position.z=70;
 
