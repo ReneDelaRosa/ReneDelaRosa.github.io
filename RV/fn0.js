@@ -4,7 +4,8 @@ function init(p){
   escena=new THREE.Scene();
   escena.add(malla);
   camara=new THREE.PerspectiveCamera();
-  camara.position.z=p*5;//Poscamara
+  camara.position.z=5;//Poscamara
+  camara.position.y=1;//Poscamara
   malla.rotateX(Math.PI/6);
   renderizador=new THREE.WebGLRenderer();
   renderizador.setSize(900,700);
