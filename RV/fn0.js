@@ -7,7 +7,7 @@ function init(p){
   camara.position.z=5;//Poscamara
   camara.position.y=1;//Poscamara
   renderizador=new THREE.WebGLRenderer();
-  renderizador.setSize(900,700);
+  renderizador.setSize(700,700);
   document.body.appendChild(renderizador.domElement);
 }
 
