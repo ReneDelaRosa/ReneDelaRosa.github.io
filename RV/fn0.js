@@ -31,7 +31,7 @@ var loop=function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
   malla.rotateY(0.01);
-  malla.rotateX(0.01);
+  malla.rotateX(0.1);
   if (Math.abs(malla.position.x)>5)
     step=-step;
   malla.position.x+=step;
