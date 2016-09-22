@@ -11,7 +11,7 @@ function init(p){
 }
 
 var main=function(p){
-  P(1)
+  p(1)
 renderizador.render(escena,camara);
 }
 
