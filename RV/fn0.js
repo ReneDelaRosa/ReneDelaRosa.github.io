@@ -33,10 +33,10 @@ var loop=function(){
   renderizador.render(escena,camara);
   malla.rotateY(0.1);
   malla.rotateX(0.1);
-  if (malla.position.x>=5)
-    malla.position.x=malla.position.x-step
-  if (malla.position.x<=-5)
+  if (malla.position.x>0 && malla.position.x<=5)
     malla.position.x=malla.position.x+step
+  if (malla.position.x<0 && malla.position.x>=-5)
+    malla.position.x=malla.position.x-step
 }
 
 var escena,camara,renderizador,malla;
