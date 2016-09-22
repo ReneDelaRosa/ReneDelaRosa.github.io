@@ -10,12 +10,29 @@ function init(p){
   document.body.appendChild(renderizador.domElement);
 }
 
-var main=function(p){
-  p(1)
-renderizador.render(escena,camara);
-}
+//var main=function(p){
+//renderizador.render(escena,camara);
+//}
 
-var escena,camara,renderizador;
+//var escena,camara,renderizador;
 //init(1);
 //main(2);
-main(init);
+
+//var main=function(p){
+  //p(1)
+//renderizador.render(escena,camara);
+//}
+
+//var escena,camara,renderizador;
+//main(init);
+
+var loop=function(){
+  requestAnimationFrame(loop);
+  renderizador.render(escena,camara);
+  malla.rotateY(0.01);
+}
+
+var escena,camara,renderizador,malla;
+init(1)
+loop();
+
