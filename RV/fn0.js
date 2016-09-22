@@ -26,12 +26,17 @@ function init(p){
 
 //var escena,camara,renderizador;
 //main(init);
-
+step=0.01;
 var loop=function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
   malla.rotateY(0.01);
+  malla.rotateX(0.01);
+  if (Math.abs(malla.position.x)>5)
+    step=-step;
+  malla.position.x+=step;
 }
+
 
 var escena,camara,renderizador,malla;
 init(1)
