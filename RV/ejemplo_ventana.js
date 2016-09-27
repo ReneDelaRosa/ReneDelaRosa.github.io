@@ -10,7 +10,7 @@ VENTANA.setup=function(){
   var capturarp=false;
   window.addEventListener(tipo_evento,VENTANA.listener, capturarp);
   VENTANA.escena=new THREE.Scene();
-  VENTANA.camara=new THREE.PerspectiveCamera(75,window,innerWidth/window.innerHeight,0.1,1000);
+  VENTANA.camara=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
   VENTANA.camara.position.z=5;
   var lienzo=document.getElementById("ejemplo_ventana");
   VENTANA.renderizador=new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
