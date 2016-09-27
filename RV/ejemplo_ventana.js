@@ -19,7 +19,7 @@ VENTANA.setup=function(){
 }
 
 VENTANA.loop=function(){
-  requestAnimationFrame(VENTANA loop);
+  requestAnimationFrame(VENTANA.loop);
   VENTANA.malla.rotateX(0.01);
   VENTANA.malla.rotateY(0.01);
   VENTANA.renderizador.render(VENTANA.scena,VENTANA.camara);
