@@ -24,7 +24,7 @@ PROTOTIPO.setup=function(){
   arbol1.position.x=-5;
   arbol2.position.x=5;
   
-  PROTOTIPO.camra=new THREE.PerspectiveCamera();
+  PROTOTIPO.camara=new THREE.PerspectiveCamera();
   PROTOTIPO.camara.position.z=20;
   
   var lienzo=document.getElementById("ejemplo-prototipo");
