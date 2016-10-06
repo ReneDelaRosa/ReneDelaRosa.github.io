@@ -18,3 +18,5 @@ setupDone=true;
 .
 
 }
+
+THREE.Mesh.call(this,Geom,Material)
