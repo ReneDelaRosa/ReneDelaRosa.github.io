@@ -87,20 +87,19 @@ TEXTURA.retrollamadacnegra=function(textura){
     for (var i=0;i<8;i++){
     for(var j=0;j<8;j++){
      if(k%2==0){
-     var malla=new THREE.Mesh(bloque,material);
+     TEXTURA.malla=new THREE.Mesh(bloque,material);
     }
-    malla.position.x=(j+1)*10;//Columnas
-    malla.position.y=(i+1)*10;//Filas
-    malla.matrixAutoUpdate=false;
-    malla.updateMatrix();
-    malla.receiveShadow=true;
-    g1.add(malla);
+    TEXTURA.malla.position.x=(j+1)*10;//Columnas
+    TEXTURA.malla.position.y=(i+1)*10;//Filas
+    TEXTURA.malla.matrixAutoUpdate=false;
+    TEXTURA.malla.updateMatrix();
+    TEXTURA.malla.receiveShadow=true;
+    g1.add(TEXTURA.malla);
     k++;
   }
 k++;
 }
-  TEXTURA.malla3=new THREE.Mesh();
-  TEXTURA.escena.add(TEXTURA.malla3);
+  TEXTURA.escena.add(TEXTURA.malla);
 }
   //Madera
 TEXTURA.retrollamadamadera=function(textura){
