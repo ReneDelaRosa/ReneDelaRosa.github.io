@@ -186,8 +186,6 @@ TEXTURA.escena.add(TEXTURA.malla5);
 }
 
 TEXTURA.setup=function(){
-  if((textura1==true)&&(textura2==true)&&(textura3==true)&&(textura4==true)&&(textura5==true)&&(setupdone==false)){
-  setupdone=true;
   //Creación de la escena
   TEXTURA.escena=new Three.Scene();
   //Cargadores de las texturas
@@ -216,7 +214,14 @@ TEXTURA.setup=function(){
 
 TEXTURA.loop=function(){
   requestAnimationFrame(TEXTURA.loop);
+  if((textura1==true)&&(textura2==true)&&(textura3==true)&&(textura4==true)&&(textura5==true){
+    if(setupdone==false){
+     TEXTURA.setup();
+     setupdone=true;
+    }
+      
   TEXTURA.renderizador.render(TEXTURA.escena,TEXTURA.camara);
+  } 
 }
-TEXTURA.setup();
+
 TEXTURA.loop();
