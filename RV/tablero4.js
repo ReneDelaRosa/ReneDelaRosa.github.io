@@ -214,7 +214,7 @@ TEXTURA.setup=function(){
 
 TEXTURA.loop=function(){
   requestAnimationFrame(TEXTURA.loop);
-  if((textura1==true)&&(textura2==true)&&(textura3==true)&&(textura4==true)&&(textura5==true){
+  if((textura1==true)&&(textura2==true)&&(textura3==true)&&(textura4==true)&&(textura5==true)){
     if(setupdone==false){
      TEXTURA.setup();
      setupdone=true;
