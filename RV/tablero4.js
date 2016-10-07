@@ -84,8 +84,8 @@ TEXTURA.escena.add(TEXTURA.ftorre2);
 //Marmol negro
 TEXTURA.retrollamadamnegro=function(textura){
    var material=new THREE.MeshBasicMaterial({map:textura});
-   TEXTURA.ftorre3=new THREE.Mesh(torre3,material);
-   TEXTURA.ftorre4=new THREE.Mesh(torre4,material);
+   TEXTURA.ftorre3=new THREE.Mesh(torre2,material);
+   TEXTURA.ftorre4=new THREE.Mesh(torre2,material);
    TEXTURA.ftorre3.position.x=10;
    TEXTURA.ftorre3.position.y=80;
    TEXTURA.ftorre3.position.z=5;
