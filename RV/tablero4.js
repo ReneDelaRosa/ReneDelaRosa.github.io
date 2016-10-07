@@ -209,8 +209,8 @@ TEXTURA.setup=function(){
   //Creación del lienzo y renderizador
   var lienzo= document.getElementById("Tablero-ajedrez");
   TEXTURA.renderizador=new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
-  }
 }
+
 
 TEXTURA.loop=function(){
   requestAnimationFrame(TEXTURA.loop);
@@ -219,7 +219,6 @@ TEXTURA.loop=function(){
      TEXTURA.setup();
      setupdone=true;
     }
-      
   TEXTURA.renderizador.render(TEXTURA.escena,TEXTURA.camara);
   } 
 }
