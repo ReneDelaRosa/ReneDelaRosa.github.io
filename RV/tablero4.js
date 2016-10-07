@@ -1,6 +1,7 @@
 //https://luishdzupiita.github.io/rv/tablerotextura.js
 //Torre
 //Puntos de la torre
+setupdone=false;
 var puntos=[                  
   new THREE.Vector2(0,0),
   new THREE.Vector2(2,0.0),
@@ -71,6 +72,7 @@ TEXTURA.retrollamadamblanco=function(textura){
   ftorre2.position.z=5;
   ftorre1.scale.set(1.5,1.5,1.5)
   ftorre2.scale.set(1.5,1.5,1.5)
+  var textura1=true;
 TEXTURA.escena.add(TEXTURA.ftorre1);
 TEXTURA.escena.add(TEXTURA.ftorre2); 
 }
@@ -87,6 +89,7 @@ TEXTURA.retrollamadamnegro=function(textura){
    ftorre4.position.z=5;
    ftorre3.scale.set(1.5,1.5,1.5)
    ftorre4.scale.set(1.5,1.5,1.5)
+   var textura2=true;
 TEXTURA.escena.add(TEXTURA.ftorre3);
 TEXTURA.escena.add(TEXTURA.ftorre4); 
 }
@@ -111,6 +114,7 @@ TEXTURA.retrollamadacblanca=function(textura){
     }
    k++;
    }
+   var textura3=true;
 TEXTURA.escena.add(TEXTURA.malla2);
 }
 //Ceramica negra
@@ -135,6 +139,7 @@ TEXTURA.retrollamadacnegra=function(textura){
   }
 k++;
 }
+   var textura4=true;
 TEXTURA.escena.add(TEXTURA.malla3);
 }
 //Madera
@@ -170,11 +175,14 @@ TEXTURA.retrollamadamadera=function(textura){
     g4.add(malla5);
     }
   }
+  var textura5=true;
 TEXTURA.escena.add(TEXTURA.malla4);
 TEXTURA.escena.add(TEXTURA.malla5);
 }
 
 TEXTURA.setup=function(){
+  if((textura1==true)&&(textura2==true)&&(textura3==true)&&(textura4==true)&&(textura5==true)&&(setupdone==false)){
+  setupdone=true;
   //Creación de la escena
   TEXTURA.escena=new Three.Scene();
   //Cargadores de las texturas
@@ -199,20 +207,6 @@ TEXTURA.setup=function(){
   var lienzo= document.getElementById("Tablero-ajedrez");
   TEXTURA.renderizador=new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
   }
-
-cargador1.load(imagen1,retro1)
-cargador4.load(imagen4,retro4)
-
-function setup(){
-  if ((textura!==undefined)&&(textura2!==undefined)&&(textura3!==undefined)&&(textura4!==undefined)&&!setupDone){
-  setupDone=true;
-  }
-  Geometry
-  Material
-  Formas
-  Escena
-  Renderizador
-  Camara
 }
 
 TEXTURA.loop=function(){
