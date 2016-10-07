@@ -108,13 +108,13 @@ TEXTURA.retrollamadacblanca=function(textura){
       for(var j=0;j<8;j++){
         if(k%2!=0){
         TEXTURA.malla2=new THREE.Mesh(bloque,material);
-        }
         TEXTURA.malla2.position.x=(j+1)*10;//Columnas
         TEXTURA.malla2.position.y=(i+1)*10;//Filas
         TEXTURA.malla2.matrixAutoUpdate=false;
         TEXTURA.malla2.updateMatrix();
         TEXTURA.malla2.receiveShadow=true;
         g1.add(TEXTURA.malla2);
+        }
         k++;
     }
    k++;
@@ -133,13 +133,13 @@ TEXTURA.retrollamadacnegra=function(textura){
     for(var j=0;j<8;j++){
      if(k%2==0){
      TEXTURA.malla3=new THREE.Mesh(bloque,material);
-    }
     TEXTURA.malla3.position.x=(j+1)*10;//Columnas
     TEXTURA.malla3.position.y=(i+1)*10;//Filas
     TEXTURA.malla3.matrixAutoUpdate=false;
     TEXTURA.malla3.updateMatrix();
     TEXTURA.malla3.receiveShadow=true;
     g2.add(TEXTURA.malla3);
+    }
     k++;
   }
 k++;
