@@ -187,7 +187,7 @@ TEXTURA.escena.add(TEXTURA.malla5);
 
 TEXTURA.setup=function(){
   //Creación de la escena
-  TEXTURA.escena=new Three.Scene();
+  TEXTURA.escena=new THREE.Scene();
   //Cargadores de las texturas
   var cargador=new THREE.TextureLoader();
   var cargador1=new THREE.TextureLoader();
