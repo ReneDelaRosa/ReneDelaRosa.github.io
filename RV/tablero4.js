@@ -57,7 +57,7 @@ torre2.rotateX(Math.PI/2)
 var bloque=new THREE.BoxGeometry(10,10,10);  
 
 //Declaración del objeto
-var TEXTURA=new object();
+var TEXTURA=new Object();
 //Declaración de las retrollamadas
 //Marmol blanco
 TEXTURA.retrollamadamblanco=function(textura){
