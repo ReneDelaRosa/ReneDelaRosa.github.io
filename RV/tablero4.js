@@ -209,7 +209,7 @@ TEXTURA.setup=function(){
   //Creación del lienzo y renderizador
   var lienzo= document.getElementById("Tablero-ajedrez");
   TEXTURA.renderizador=new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
-  TEXTURA.renderizador.setSize(window.innerWidth,window.innerHeight);
+  TEXTURA.renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95)
 }
 
 
