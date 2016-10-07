@@ -120,7 +120,7 @@ TEXTURA.retrollamadacblanca=function(textura){
    k++;
    }
    textura3=true;
-TEXTURA.escena.add(TEXTURA.g1);
+TEXTURA.escena.add(g1);
 }
 //Ceramica negra
 TEXTURA.retrollamadacnegra=function(textura){
@@ -145,7 +145,7 @@ TEXTURA.retrollamadacnegra=function(textura){
 k++;
 }
    textura4=true;
-TEXTURA.escena.add(TEXTURA.g2);
+TEXTURA.escena.add(g2);
 }
 //Madera
 TEXTURA.retrollamadamadera=function(textura){
@@ -181,8 +181,8 @@ TEXTURA.retrollamadamadera=function(textura){
     }
   }
   textura5=true;
-TEXTURA.escena.add(TEXTURA.g3);
-TEXTURA.escena.add(TEXTURA.g4);
+TEXTURA.escena.add(g3);
+TEXTURA.escena.add(g4);
 }
 
 TEXTURA.setup=function(){
