@@ -69,14 +69,14 @@ TEXTURA.retrollamadamblanco=function(textura){
   var material=new THREE.MeshBasicMaterial({map:textura});
   TEXTURA.ftorre1=new THREE.Mesh(torre2,material);
   TEXTURA.ftorre2=new THREE.Mesh(torre2,material);
-  ftorre1.position.x=10;
-  ftorre1.position.y=10;
-  ftorre1.position.z=5;
-  ftorre2.position.x=80;
-  ftorre2.position.y=10;
-  ftorre2.position.z=5;
-  ftorre1.scale.set(1.5,1.5,1.5)
-  ftorre2.scale.set(1.5,1.5,1.5)
+  TEXTURA.ftorre1.position.x=10;
+  TEXTURA.ftorre1.position.y=10;
+  TEXTURA.ftorre1.position.z=5;
+  TEXTURA.ftorre2.position.x=80;
+  TEXTURA.ftorre2.position.y=10;
+  TEXTURA.ftorre2.position.z=5;
+  TEXTURA.ftorre1.scale.set(1.5,1.5,1.5)
+  TEXTURA.ftorre2.scale.set(1.5,1.5,1.5)
   textura1=true;
 TEXTURA.escena.add(TEXTURA.ftorre1);
 TEXTURA.escena.add(TEXTURA.ftorre2); 
@@ -86,14 +86,14 @@ TEXTURA.retrollamadamnegro=function(textura){
    var material=new THREE.MeshBasicMaterial({map:textura});
    TEXTURA.ftorre3=new THREE.Mesh(torre3,material);
    TEXTURA.ftorre4=new THREE.Mesh(torre4,material);
-   ftorre3.position.x=10;
-   ftorre3.position.y=80;
-   ftorre3.position.z=5;
-   ftorre4.position.x=80;
-   ftorre4.position.y=80;
-   ftorre4.position.z=5;
-   ftorre3.scale.set(1.5,1.5,1.5)
-   ftorre4.scale.set(1.5,1.5,1.5)
+   TEXTURA.ftorre3.position.x=10;
+   TEXTURA.ftorre3.position.y=80;
+   TEXTURA.ftorre3.position.z=5;
+   TEXTURA.ftorre4.position.x=80;
+   TEXTURA.ftorre4.position.y=80;
+   TEXTURA.ftorre4.position.z=5;
+   TEXTURA.ftorre3.scale.set(1.5,1.5,1.5)
+   TEXTURA.ftorre4.scale.set(1.5,1.5,1.5)
    textura2=true;
 TEXTURA.escena.add(TEXTURA.ftorre3);
 TEXTURA.escena.add(TEXTURA.ftorre4); 
