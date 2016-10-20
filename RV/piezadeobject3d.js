@@ -8,7 +8,7 @@ THREE.Object3D.call(this);
   this.piernaDer.position.z=7;
   this.piernaDer.position.y=-2.5;
   this.add(this.piernaIzq,this.piernaDer,cuerpo);
-  cuerpo.position.z=2.5;
+  cuerpo.position.y=2.5;
 }
 
 var pieza;
