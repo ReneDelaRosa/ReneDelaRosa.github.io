@@ -20,8 +20,7 @@ function setup(){
   escena.add(pieza);
   camara=new THREE.PerspectiveCamera();
   camara.position.z=20;
-  var lienzo= document.getElementById("pierna_derizq");
-  renderizador=new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
+  renderizador=new THREE.WebGLRenderer();
   renderizador.setSize(window.InnerHeight=.95,window.InnerHeight=.95);
   document.body.appendChild(renderizador.domElement);
 }
