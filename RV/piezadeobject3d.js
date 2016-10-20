@@ -7,10 +7,8 @@ THREE.Object3D.call(this);
   this.piernaIzq.position.y=-2.5;
   this.piernaDer.position.z=2;
   this.piernaDer.position.y=-2.5;
+  this.add(piernaIzq,piernaDer,cuerpo);
   cuerpo.position.z=2.5;
-  escena.add(piernaIzq);
-  escena.add(piernaDer);
-  escena.add(cuerpo);
 }
 
 var pieza
@@ -19,16 +17,19 @@ Pieza.prototype=new THREE.Object3D
 function setup(){
   escena=new THREE.Scene();
   pieza=new Pieza();
-  camara=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
+  escena.add(pieza);
+  camara=new THREE.PerspectiveCamera();
+  camara.position.z=20;
   var lienzo= document.getElementById("pierna_derizq");
   renderizador=new THREE.WebGLRenderer({canvas:lienzo,antialias:true});
-  renderizador.setSize(600,600);
+  renderizador.setSize(window.InnerHeight=.95,window.InnerHeight=.95);
+  document.body.appendChild(renderizador.domElement);
 }
 
 function loop(){
-  requestAnimationFrame(loop);
   pieza.rotateY=0.1;
   TEXTURA.renderizador.render(escena,camara);
+  requestAnimationFrame(loop);
 }
 
 setup();
