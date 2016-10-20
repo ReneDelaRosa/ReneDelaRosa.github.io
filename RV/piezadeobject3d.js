@@ -28,7 +28,7 @@ function setup(){
 
 function loop(){
   pieza.rotateY=0.1;
-  TEXTURA.renderizador.render(escena,camara);
+  renderizador.render(escena,camara);
   requestAnimationFrame(loop);
 }
 
