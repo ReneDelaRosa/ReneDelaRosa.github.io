@@ -1,5 +1,5 @@
 function Pieza(){
-THREE.object3D.call(this);
+THREE.Object3D.call(this);
   this.piernaIzq=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
   this.piernaDer=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
   var cuerpo=new THREE.Mesh(new THREE.BoxGeometry(5,10,5));
