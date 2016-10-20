@@ -11,8 +11,8 @@ THREE.Object3D.call(this);
   cuerpo.position.z=2.5;
 }
 
-var pieza
-Pieza.prototype=new THREE.Object3D
+var pieza;
+Pieza.prototype=new THREE.Object3D;
 
 function setup(){
   escena=new THREE.Scene();
