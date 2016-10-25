@@ -21,14 +21,14 @@ Environment.prototype=new THREE.Scene();
 
 //La interfaz entre el entorno y los agentes estará dada por los siguientes métodos:
 //this.children es el arreglo donde se colocan los objetos dentro de la escena
-Environment.protoype.sense=function(){
+Environment.prototype.sense=function(){
   for(var i=0;i<this.children.length;i++){
   if (this.children[i].sense!==undefined)
     this.children[i].sense(this);
   }
 }
 
-Environment.protoype.plan=function(){
+Environment.prototype.plan=function(){
   for (var i=0;i<this.children.length;i++){
   if(this.children[i].plan!==undefined)
     this.children[i].plan(this)
