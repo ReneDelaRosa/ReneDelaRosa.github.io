@@ -45,7 +45,7 @@ Environment.prototype.act=function(){
 //Pelota
 function Pelota(r, x=0, y=0){
   Agent.call(this,x,y);
-  this.add(new THREE.Mesh(new THREE.SphereGeometry(r),new THREE.MeshNormalMaterial())}
+  this.add(new THREE.Mesh(new THREE.SphereGeometry(r),new THREE.MeshNormalMaterial()))}
   this.step=0.1;
   this.colision=0;
   this.radius=r;
