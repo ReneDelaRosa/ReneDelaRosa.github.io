@@ -111,7 +111,7 @@ function loop(){
   requestAnimationFrame(loop);
   entorno.sense();
   entorno.plan();
-  enrorno.act();
+  entorno.act();
   renderer.render(entorno, camara);
 }
   
