@@ -115,3 +115,5 @@ function loop(){
   renderer.render(entorno, camara);
 }
   
+setup();
+loop();
