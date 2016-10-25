@@ -115,4 +115,6 @@ function loop(){
   enrorno.act();
   renderer.render(entorno, camara);
 }
-  
+ 
+setup();
+loop();
