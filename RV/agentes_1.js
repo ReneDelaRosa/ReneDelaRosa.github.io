@@ -99,7 +99,8 @@ function setup(){
   entorno.add(new Pared(1,-7,1));
   entorno.add(new Pared(1,7,-1));
   entorno.add(new Pared(1,-7,-1));
-  entorno.add(new Pelota(0.5));
+  entorno.add(new Pelota(0.9));
+  entorno.add(new Pelota(0.5,2,0));
   entorno.add(camara);
   
   renderer=new THREE.WebGLRenderer();
@@ -111,9 +112,7 @@ function loop(){
   requestAnimationFrame(loop);
   entorno.sense();
   entorno.plan();
-  entorno.act();
+  enrorno.act();
   renderer.render(entorno, camara);
 }
   
-setup();
-loop();
