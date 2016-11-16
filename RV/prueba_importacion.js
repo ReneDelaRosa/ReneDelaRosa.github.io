@@ -1,15 +1,10 @@
 var escena=new THREE.Scene();
 
-var loader = new THREE.JSONLoader(); 
-var createMesh = function( geometry )
-{
-    var zmesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial() );
-    zmesh.position.set( 0, 0, 0 );
-    zmesh.scale.set( 1, 1, 1 );
-    zmesh.overdraw = true;
-    escena.add(zmesh);
-};
-loader.load("./Cuboconcilindro.js", createMesh);
+var loader = new THREE.JSONLoader();
+loader.load( 'output.json', function ( geometry, materials ) {
+    var mesh = new THREE.Mesh( geometry, new THREE.MeshNorlalMaterial() );
+    escena.add( mesh );
+});
 var forma=new THREE.SphereGeometry(1);
 var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
 var malla=new THREE.Mesh(forma,material);
