@@ -9,7 +9,7 @@ var createMesh = function( geometry )
     zmesh.overdraw = true;
     escena.add(zmesh);
 };
-loader.load( "mesh.json", createMesh );
+loader.load( "Cuboconcilindro.js", createMesh );
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=100;
