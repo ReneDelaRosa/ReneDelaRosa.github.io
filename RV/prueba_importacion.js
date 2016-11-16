@@ -1,9 +1,9 @@
 var escena=new THREE.Scene();
 
 var loader = new THREE.JSONLoader();
-loader.load( 'output.json', function ( geometry, materials ) {
+loader.load('./Cuboconcilindro.js', function ( geometry, materials ) {
     var mesh = new THREE.Mesh( geometry, new THREE.MeshNorlalMaterial() );
-    escena.add( mesh );
+    escena.add(mesh);
 });
 var forma=new THREE.SphereGeometry(1);
 var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
