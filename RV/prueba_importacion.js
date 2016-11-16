@@ -5,6 +5,7 @@ loader.load('./Cuboconcilindro.js', function ( geometry, materials ) {
     var mesh = new THREE.Mesh( geometry, new THREE.MeshNormalMaterial() );
     escena.add(mesh);
 });
+
 var forma=new THREE.SphereGeometry(1);
 var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
 var malla=new THREE.Mesh(forma,material);
