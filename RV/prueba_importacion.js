@@ -2,7 +2,7 @@ var escena=new THREE.Scene();
 
 var loader = new THREE.JSONLoader();
 loader.load('./Cuboconcilindro.js', function ( geometry, materials ) {
-    var mesh = new THREE.Mesh( geometry, new THREE.MeshNorlalMaterial() );
+    var mesh = new THREE.Mesh( geometry, new THREE.MeshNormalMaterial() );
     escena.add(mesh);
 });
 var forma=new THREE.SphereGeometry(1);
