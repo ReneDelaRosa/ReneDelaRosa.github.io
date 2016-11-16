@@ -10,9 +10,12 @@ var createMesh = function( geometry )
     escena.add(zmesh);
 };
 loader.load("./Cuboconcilindro.js", createMesh);
-
+var forma=new THREE.SphereGeometry(1);
+var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
+var malla=new THREE.Mesh(forma,material)
+escena.add(malla);
 var camara=new THREE.PerspectiveCamera();
-camara.position.z=20;
+camara.position.z=100;
 
 var renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
