@@ -11,7 +11,7 @@ iluminacion4.position.y=-20;
 var loader = new THREE.JSONLoader();
 var createMesh = function( geometry )
 {
-    var zmesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial() );
+    var zmesh = new THREE.Mesh( geometry,new THREE.MeshBasicMaterial({color: 0x00ff00}));
     zmesh.position.set( 0, 0, 0 );
     zmesh.scale.set( 3, 3, 3 );
     zmesh.overdraw = true;
@@ -30,7 +30,7 @@ escena.add(iluminacion3);
 escena.add(iluminacion4);
 var camara=new THREE.PerspectiveCamera();
 
-camara.position.z=400;
+camara.position.z=1000;
 
 var renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
