@@ -1,5 +1,6 @@
 var escena=new THREE.Scene();
-
+var iluminacion= new THREE.PointLight(0xFFFFFF);
+iluminacion.position.z=20;
 var loader = new THREE.JSONLoader();
  
 var createMesh = function( geometry )
@@ -8,7 +9,7 @@ var createMesh = function( geometry )
     zmesh.position.set( 0, 0, 0 );
     zmesh.scale.set( 3, 3, 3 );
     zmesh.overdraw = true;
-    scene.add( zmesh );
+    escena.add( zmesh );
 };
  
 loader.load( "prueba1.js", createMesh );
@@ -18,6 +19,7 @@ var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
 var malla=new THREE.Mesh(forma,material);
 forma.translate(0,5,0);
 escena.add(malla);
+escena.add(iluminacion);
 var camara=new THREE.PerspectiveCamera();
 
 camara.position.z=15;
