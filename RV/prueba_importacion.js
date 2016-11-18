@@ -4,10 +4,10 @@ loader=new THREE.JSONLoader();
 logo=function(object){
 	cubocil=new THREE.Mesh(object,new THREE.MeshNormalMaterial());
 	cubocil.position.set(0,0,0);
-	cubocil.scale.set(3,3,3);
+	cubocil.scale.set(1,1,1);
 	escena.add(cubocil);
 	}
-loader.load("./Cuboconcilindro.js",logo)
+loader.load("./prueba1.js",logo)
 
 var forma=new THREE.SphereGeometry(1);
 var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
