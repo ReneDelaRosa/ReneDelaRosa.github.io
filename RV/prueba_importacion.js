@@ -24,7 +24,8 @@ var camara=new THREE.PerspectiveCamera();
 
 camara.position.z=15;
 
-var renderizador= new THREE.WebGLRenderer();
+var renderizador= new THREE.WebGLRenderer({alpha: true});
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 renderizador.render(escena,camara);
+
