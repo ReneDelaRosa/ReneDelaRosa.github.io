@@ -1,21 +1,22 @@
 var escena=new THREE.Scene();
 var iluminacion= new THREE.PointLight(0xFFFFFF);
 iluminacion.position.z=20;
-var loader = new THREE.JSONLoader();
- 
-var createMesh = function( geometry )
-{
-    var zmesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial() );
-    zmesh.position.set( 0, 0, 0 );
-    zmesh.scale.set( 3, 3, 3 );
-    zmesh.overdraw = true;
-    escena.add( zmesh );
-};
- 
-loader.load( "prueba1.js", createMesh );
 
-var forma=new THREE.SphereGeometry(1);
+// instantiate a loader
+var loader = new THREE.JSONLoader();
+// load a resource
+loader.load(
+	// resource URL
+	'./prueba1.js',
+	// Function when resource is loaded
+	function ( geometry, materials ) {
+		var material = new THREE.MultiMaterial( materials );
+		var object = new THREE.Mesh( geometry, material );
+		escena.add( object );
+	}
+);
 var material=new THREE.MeshBasicMaterial({color: 0x00ff00});
+var forma=new THREE.SphereGeometry(1);
 var malla=new THREE.Mesh(forma,material);
 forma.translate(0,5,0);
 escena.add(malla);
