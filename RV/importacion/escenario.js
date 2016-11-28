@@ -36,4 +36,5 @@ function animate() {
 requestAnimationFrame(animate);
 renderizador.render(escena,camara);
 }
+init();
 animate();
