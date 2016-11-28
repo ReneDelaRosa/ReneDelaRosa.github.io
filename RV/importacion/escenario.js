@@ -13,8 +13,8 @@ var escena=new THREE.Scene();
 		});
 
 var camara=new THREE.PerspectiveCamera();
-camara.position.z=15;
-camara.position.y=2.5;
+camara.position.z=30;
+camara.position.y=0;
 
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
