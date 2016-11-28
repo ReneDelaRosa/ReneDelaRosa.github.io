@@ -1,15 +1,15 @@
 var escena=new THREE.Scene();
 
-//var mtlLoader=new THREE.MTLLoader();
-	//mtlLoader.load("Pieza1.mtl",function(materials){
-		//materials.preload();
+var mtlLoader=new THREE.MTLLoader();
+	mtlLoader.load("Pieza1.mtl",function(materials){
+	materials.preload();
 		
-    var objLoader=new THREE.OBJLoader();
-		//objLoader.setMaterials(materials);
+    	var objLoader=new THREE.OBJLoader();
+		objLoader.setMaterials(materials);
 		objLoader.load("Pieza1.obj",  function(mesh){
 			escena.add(mesh);
 			mesh.position.set(0,0,0);
-		//});
+		});
 		});
 
 var camara=new THREE.PerspectiveCamera();
