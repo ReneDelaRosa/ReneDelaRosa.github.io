@@ -22,7 +22,7 @@ loader.load( "Pieza1.js", createMesh );
 
 
 camara.position.z=50;
-camara.position.y=30;
+camara.position.y=0;
 	
 luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
 	escena.add(luzambiente);
