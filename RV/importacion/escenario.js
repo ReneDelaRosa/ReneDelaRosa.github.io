@@ -23,6 +23,6 @@ document.body.appendChild(renderizador.domElement);
 
 function animate() {
 requestAnimationFrame(animate);
-renderizador.render(escena,camera);
+renderizador.render(escena,camara);
 }
 animate();
