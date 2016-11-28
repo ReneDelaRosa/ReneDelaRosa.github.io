@@ -17,7 +17,7 @@ var createMesh = function( geometry )
     zmesh.scale.set( 1,1, 1 );
     zmesh.overdraw = true;
     zmesh.rotation.y=-Math.PI/4;
-    zmesh.rotation.x=-Math.PI/4;
+    zmesh.rotation.x=Math.PI/4;
     escena.add( zmesh );
 };
 loader.load( "Pieza1.js", createMesh );
