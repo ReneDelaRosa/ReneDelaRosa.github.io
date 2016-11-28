@@ -1,5 +1,9 @@
-var escena=new THREE.Scene();
+var escena, camara, luzambiente, renderizador
 
+function init(){
+escena=new THREE.Scene();
+camara=new THREE.PerspectiveCamera();
+	
 var mtlLoader=new THREE.MTLLoader();
 	mtlLoader.load("Pieza1.mtl",function(materials){
 	materials.preload();
@@ -10,17 +14,18 @@ var mtlLoader=new THREE.MTLLoader();
 			escena.add(mesh);
 			mesh.position.set(0,0,0);
 		});
-		});
+	});
 
-var camara=new THREE.PerspectiveCamera();
 camara.position.z=30;
 camara.position.y=0;
+	
+luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
+	escena.add(luzambiente);
 
-var renderizador=new THREE.WebGLRenderer();
+renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
-//renderizador.render(escena,camara);
-
+}
 function animate() {
 requestAnimationFrame(animate);
 renderizador.render(escena,camara);
