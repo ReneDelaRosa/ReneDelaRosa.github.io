@@ -4,6 +4,12 @@ function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
 	
+	
+var forma=new THREE.BoxGeometry(1,1,1);
+var material=new THREE.MeshNormalMaterial();
+var cubo=new THREE.Mesh(forma, material);
+escena.add(cubo);
+	
 var mtlLoader=new THREE.MTLLoader();
 	mtlLoader.load("Pieza1.mtl",function(materials){
 	materials.preload();
