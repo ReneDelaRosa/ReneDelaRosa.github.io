@@ -19,4 +19,10 @@ camara.position.y=0;
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
-renderizador.render(escena,camara);
+//renderizador.render(escena,camara);
+
+function animate() {
+requestAnimationFrame(animate);
+renderizador.render(escena,camera);
+}
+animate();
