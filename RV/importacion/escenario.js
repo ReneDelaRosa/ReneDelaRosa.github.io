@@ -4,23 +4,22 @@ function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
 	
-	
-var forma=new THREE.BoxGeometry(1,1,1);
-var material=new THREE.MeshNormalMaterial();
-var cubo=new THREE.Mesh(forma, material);
-escena.add(cubo);
-	
-var mtlLoader=new THREE.MTLLoader();
-	mtlLoader.load("Pieza1.mtl",function(materials){
-	materials.preload();
-		
-    	var objLoader=new THREE.OBJLoader();
-		objLoader.setMaterials(materials);
-		objLoader.load("Pieza1.obj",  function(mesh){
-			escena.add(mesh);
-			mesh.position.set(0,0,0);
-		});
-	});
+//var forma=new THREE.BoxGeometry(1,1,1);
+//var material=new THREE.MeshNormalMaterial();
+//var cubo=new THREE.Mesh(forma, material);
+//escena.add(cubo);
+
+var loader = new THREE.JSONLoader();
+var createMesh = function( geometry )
+{
+    var zmesh = new THREE.Mesh( geometry, new THREE.MeshNormalMaterial() );
+    zmesh.position.set( 0, 0, 0 );
+    zmesh.scale.set( 1,1, 1 );
+    zmesh.overdraw = true;
+    escena.add( zmesh );
+};
+loader.load( "Pieza1.js", createMesh );
+
 
 camara.position.z=30;
 camara.position.y=0;
