@@ -27,8 +27,8 @@ loader.load( "Pieza1.js", createMesh );
 camara.position.z=50;
 camara.position.y=0;
 	
-luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
-	escena.add(luzambiente);
+//luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
+//escena.add(luzambiente);
 
 renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
