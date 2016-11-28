@@ -16,11 +16,12 @@ var createMesh = function( geometry )
     zmesh.position.set( 0, 0, 0 );
     zmesh.scale.set( 1,1, 1 );
     zmesh.overdraw = true;
+    zmesh.rotation.y=-Math.PI/4;
     escena.add( zmesh );
 };
 loader.load( "Pieza1.js", createMesh );
 
-zmesh.rotation.y=-Math.PI/4;
+
 
 camara.position.z=50;
 camara.position.y=0;
