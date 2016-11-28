@@ -20,6 +20,7 @@ var createMesh = function( geometry )
 };
 loader.load( "Pieza1.js", createMesh );
 
+zmesh.rotation.y=-Math.PI/4;
 
 camara.position.z=50;
 camara.position.y=0;
