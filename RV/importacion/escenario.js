@@ -1,4 +1,4 @@
-var escena, camara, luzambiente, renderizador
+var escena, camara, luzambiente, renderizador, posx
 
 function init(){
 escena=new THREE.Scene();
@@ -25,6 +25,7 @@ loader.load( "peon.js", createMesh );
 
 
 camara.position.z=100;
+camara.position.x=50;
 camara.position.y=0;
 	
 //luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
