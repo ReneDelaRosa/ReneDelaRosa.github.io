@@ -16,8 +16,11 @@ var createMesh = function( geometry )
     zmesh.position.set( 0, 0, 0 );
     zmesh.scale.set( 1,1, 1 );
     zmesh.overdraw = true;
-    zmesh.rotation.y=-Math.PI/4;
-    zmesh.rotation.x=Math.PI/8;
+    zmesh.position.z=0;
+    zmesh.position.z=0;
+    zmesh.position.z=0;
+    //zmesh.rotation.y=-Math.PI/4;
+    //zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
 };
 loader.load( "peon.js", createMesh );
