@@ -17,7 +17,7 @@ var createMesh = function( geometry )
     zmesh.scale.set( 1,1, 1 );
     zmesh.overdraw = true;
     zmesh.rotation.y=-Math.PI/4;
-    zmesh.rotation.x=Math.PI/4;
+    zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
 };
 loader.load( "peon.js", createMesh );
@@ -25,7 +25,7 @@ loader.load( "peon.js", createMesh );
 
 
 camara.position.z=50;
-camara.position.x=25;
+//camara.position.x=25;
 camara.position.y=0;
 	
 //luzambiente=new THREE.AmbientLight(0xffffff, 0.2);
