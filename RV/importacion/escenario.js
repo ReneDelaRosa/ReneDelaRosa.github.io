@@ -27,7 +27,7 @@ loader.load( "peon.js", createMesh );
 
 
 
-camara.position.z=50;
+camara.position.z=100;
 //camara.position.x=25;
 camara.position.y=0;
 	
