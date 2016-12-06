@@ -23,7 +23,7 @@ var createMesh = function( geometry )
     //zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
 };
-loader.load( "Pieza1.js", createMesh );
+loader.load( "peon.js", createMesh );
 
 
 
