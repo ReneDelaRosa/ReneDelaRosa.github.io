@@ -23,11 +23,12 @@ function setup(){
   renderizador=new THREE.WebGLRenderer();
   renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
   document.body.appendChild(renderizador.domElement);
+  
 }
 
 function loop(){
   //pieza.rotateY(0.1);
-  pieza.piernaIzq.rotateZ(0.05);
+  pieza.piernaIzq.rotateZ(0.5);
   pieza.piernaDer.rotateZ(-0.05);
   renderizador.render(escena,camara);
   requestAnimationFrame(loop);
