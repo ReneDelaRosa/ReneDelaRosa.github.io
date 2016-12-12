@@ -23,18 +23,20 @@ function setup(){
   renderizador=new THREE.WebGLRenderer();
   renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
   document.body.appendChild(renderizador.domElement);
+  pIzqinit=0.05
+  pDerinit=-0.05
   
 }
 
 function loop(){
   //pieza.rotateY(0.1);
-  pieza.piernaIzq.rotateZ(0.05);
+  pieza.piernaIzq.rotateZ(pIzqinit);
   if (pieza.piernaIzq.rotation.z>=0.785398){
-    pieza.piernaIzq.rotateZ(-0.05);}
+    pieza.piernaIzq.rotateZ(-pIzqinit);}
   
-  pieza.piernaDer.rotateZ(-0.05);
+  pieza.piernaDer.rotateZ(pDerinit);
   if (pieza.piernaDer.rotation.z<=-0.785398){
-    pieza.piernaDer.rotateZ(0.05);}
+    pieza.piernaDer.rotateZ(-pDerinit);}
   renderizador.render(escena,camara);
   requestAnimationFrame(loop);
 }
