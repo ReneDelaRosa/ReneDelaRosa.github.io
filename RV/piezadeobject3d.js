@@ -33,7 +33,7 @@ function loop(){
     pieza.piernaIzq.rotateZ(-0.05);}
   
   pieza.piernaDer.rotateZ(-0.05);
-  if (pieza.piernaDer.rotation.z>=-0.785398){
+  if (pieza.piernaDer.rotation.z<=-0.785398){
     pieza.piernaDer.rotateZ(0.05);}
   renderizador.render(escena,camara);
   requestAnimationFrame(loop);
