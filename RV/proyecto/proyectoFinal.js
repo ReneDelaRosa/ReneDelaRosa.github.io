@@ -3984,6 +3984,8 @@ function init() {
 }
 
 function loop() {
+  patitas1.position.x=torreblanca1.position.x;
+  patitas1.position.z=torreblanca1.position.z;
   requestAnimationFrame(loop);
   escena.sense();
   escena.plan();
