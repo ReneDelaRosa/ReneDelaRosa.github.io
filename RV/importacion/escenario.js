@@ -3,8 +3,33 @@ var escena, camara, luzambiente, renderizador, posx
 function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
-piernaIzq=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1,6.5,32),new THREE.MeshNormalMaterial());
-piernaDer=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1,6.5,32),new THREE.MeshNormalMaterial());
+piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieIzq=new THREE.CylinderGeometry(1,.6,2,32);
+piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieDer=new THREE.CylinderGeometry(1,.6,2,32);
+//
+pieIzq.translate(0,-2.02,0);
+pieDer.translate(0,-2.02,0);
+pieIzq.rotateZ(Math.PI/2);
+pieDer.rotateZ(Math.PI/2);
+	
+var PiernaizqMalla=new THREE.Mesh(piernaIzq);
+var PieizqMalla=new THREE.Mesh(pieIzq);
+
+var PiernaderMalla=new THREE.Mesh(piernaDer);
+var PiederMalla=new THREE.Mesh(pieDer);
+	
+var Piernal=new THREE.Geometry();
+Piernal.merge(PiernaizqMalla.geometry, PiernaizqMalla.matrix);
+Piernal.merge(PieizqMalla.geometry, PieizqMalla.matrix);
+var Plcompleta=new THREE.Mesh(Piernal,new THREE.MeshNormalMaterial());
+	
+var Piernar=new THREE.Geometry();
+Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
+Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
+var Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
+
+
 
 var loader = new THREE.JSONLoader();
 var createMesh = function( geometry )
@@ -19,12 +44,12 @@ var createMesh = function( geometry )
     //zmesh.rotation.y=-Math.PI/4;
     //zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
-    escena.add(piernaIzq);
-    escena.add(piernaDer);
-    piernaIzq.position.y=-1.3;
-    piernaIzq.position.z=-3;
-    piernaDer.position.y=-1.3;
-    piernaDer.position.z=3;
+    escena.add(Plcompleta);
+    escena.add(Prcompleta);
+    Plcompleta.position.y=-1.3;
+    Plcompleta.position.z=-3;
+    Prcompleta.position.y=-1.3;
+    Prcompleta.position.z=3;
 };
 loader.load( "Alfil.js", createMesh );
 pIzqinit=0.05;
@@ -42,18 +67,18 @@ document.body.appendChild(renderizador.domElement);
 }
 
 function animate() {
-  piernaIzq.rotateZ(pIzqinit);
-  if (piernaIzq.rotation.z>0.785398){
+  Plcompleta.rotateZ(pIzqinit);
+  if (Plcompleta.rotation.z>0.785398){
     pIzqinit=-pIzqinit;
   }
-  else if(piernaIzq.rotation.z<-0.785398){
+  else if(Plcompleta.rotation.z<-0.785398){
     pIzqinit=-pIzqinit;
   }
-  piernaDer.rotateZ(pDerinit);
-  if (piernaDer.rotation.z<-0.785398){
+  Prcompleta.rotateZ(pDerinit);
+  if (Prcompleta.rotation.z<-0.785398){
     pDerinit=-pDerinit;
   }
-  else if(piernaDer.rotation.z>0.785398){
+  else if(Prcompleta.rotation.z>0.785398){
     pDerinit=-pDerinit;
   }
 requestAnimationFrame(animate);
