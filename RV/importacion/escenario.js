@@ -67,20 +67,6 @@ document.body.appendChild(renderizador.domElement);
 }
 
 function animate() {
-  Plcompleta.rotateZ(pIzqinit);
-  if (Plcompleta.rotation.z>0.785398){
-    pIzqinit=-pIzqinit;
-  }
-  else if(Plcompleta.rotation.z<-0.785398){
-    pIzqinit=-pIzqinit;
-  }
-  Prcompleta.rotateZ(pDerinit);
-  if (Prcompleta.rotation.z<-0.785398){
-    pDerinit=-pDerinit;
-  }
-  else if(Prcompleta.rotation.z>0.785398){
-    pDerinit=-pDerinit;
-  }
 requestAnimationFrame(animate);
 renderizador.render(escena,camara);
 }
