@@ -409,6 +409,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Torre blanca 1//////////////////////////////////////////////////////////////////
 		  if (torreblanca1.position.x===bloquerojo.position.x && torreblanca1.position.z===bloquerojo.position.z){
 		    var bvtb1=bloqueverde;//Bloqueverdetorreblanca1
+		    var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    TorreBlanca.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvtb1,true);
@@ -434,25 +436,26 @@ BloqueAzul.prototype.act = function(environment){
 			}
 		      }//fin if posicion z
 		  if (this.colision!=1){
-				var pIzqinit=0.05;
-				var pDerinit=-0.05;
 				if(torreblanca1.position.x!=bvtb1.position.x || torreblanca1.position.z!=bvtb1.position.z)
-			   {patitas1.Plcompleta.rotateZ(pIzqinit);
+			   	{patitas1.Plcompleta.rotateZ(pIzqinit);
 					patitas1.Prcompleta.rotateZ(pDerinit);
 					if (patitas1.Plcompleta.rotation.z>0.785398){
 					pIzqinit=-pIzqinit;
 					}
-					else{pIzqinit=-pIzqinit;}
+					else if(patitas1.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
 					if(patitas1.Prcompleta.rotation.z<-0.785398){
 					pDerinit=-pDerinit;				
-				  }
-					else {pDerinit=-pDerinit;}
-			}
-			else{
+				  	}
+					else (patitas1.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
 				patitas1.Plcompleta.rotateZ(0);
 				patitas1.Prcompleta.rotateZ(0);				
-			}				 
-			}
+				}				 
+		}
 
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
 		        if((torreblanca1.position.x==torrenegra1.position.x && torreblanca1.position.z==torrenegra1.position.z)&&
