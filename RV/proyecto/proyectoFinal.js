@@ -2583,7 +2583,7 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 //Movimiento de las patrullas
 		 if (this.colision!=1){
-				if(peonnegro7.position.x!=bvpn6.position.x || peonnegro7.position.z!=bvpn6.position.z)
+				if(peonnegro7.position.x!=bvpn7.position.x || peonnegro7.position.z!=bvpn7.position.z)
 			   	{patitasn9.Plcompleta.rotateZ(pIzqinit);
 					patitasn9.Prcompleta.rotateZ(pDerinit);
 					if (patitasn9.Plcompleta.rotation.z>0.785398){
@@ -3909,7 +3909,7 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion y
 //Movimiento de las patrullas
 		 if (this.colision!=1){
-				if(caballoblanco2.position.x!=bvcb1.position.x || caballoblanco2.position.z!=bvcb1.position.z)
+				if(caballoblanco2.position.x!=bvcb2.position.x || caballoblanco2.position.z!=bvcb2.position.z)
 			   	{patitas14.Plcompleta.rotateZ(pIzqinit);
 					patitas14.Prcompleta.rotateZ(pDerinit);
 					if (patitas14.Plcompleta.rotation.z>0.785398){
