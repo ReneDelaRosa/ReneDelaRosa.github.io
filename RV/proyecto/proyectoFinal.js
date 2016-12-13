@@ -3878,7 +3878,7 @@ function init() {
   torreblanca2 = new TorreBlanca(10,8,-80);
   torrenegra1 = new TorreNegra(80,8,-10);
   torrenegra2 = new TorreNegra(80,8,-80);
-  patitas1=new Patitasblancas(7,-20)
+  patitas1=new Patitasblancas(20,-40)
   //patitas2=new Patitasblancas(7,-80)
 
 	
