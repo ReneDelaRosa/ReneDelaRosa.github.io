@@ -433,29 +433,27 @@ BloqueAzul.prototype.act = function(environment){
 			  torreblanca1.position.z -= this.step;
 			}
 		      }//fin if posicion z
-			if (this.colision!=1){
+		  if (this.colision!=1){
 				var pIzqinit=0.05;
 				var pDerinit=-0.05;
-				patitas1.Plcompleta.rotateZ(pIzqinit);
-				patitas1.Prcompleta.rotateZ(pDerinit);	
-				if (patitas1.Plcompleta.rotation.z>0.785398){
-					pIzqinit=-pIzqinit;				
-				}
-				else{
+				if(torreblanca1.position.x!=bvcb1.position.x || torreblanca1.position.z!=bvcb1.position.z)
+			   {patitas1.Plcompleta.rotateZ(pIzqinit);
+					patitas1.Prcompleta.rotateZ(pDerinit);
+					if (patitas1.Plcompleta.rotation.z>0.785398){
 					pIzqinit=-pIzqinit;
-				}
-				if(patitas1.Prcompleta.rotation.z<-0.785398){
+					}
+					else{pIzqinit=-pIzqinit;}
+					if(patitas1.Prcompleta.rotation.z<-0.785398){
 					pDerinit=-pDerinit;				
-				}
-				else {
-					pDerinit=-pDerinit;
-				}
+				  }
+					else {pDerinit=-pDerinit;}
 			}
 			else{
 				patitas1.Plcompleta.rotateZ(0);
-				patitas1.Prcompleta.rotateZ(0);
-				
+				patitas1.Prcompleta.rotateZ(0);				
+			}				 
 			}
+
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
 		        if((torreblanca1.position.x==torrenegra1.position.x && torreblanca1.position.z==torrenegra1.position.z)&&
 		 	  (torreblanca1.position.y==torrenegra1.position.y))
