@@ -44,44 +44,10 @@ Environment.prototype.act = function(){
   }
 }
 
-///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
-var camara,escena,renderizador;
-var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
-var bloquemorado,bloqueazul,bloquerojo,bloqueverde;
-var bandera=0,banderacaballo=0;
-var torreblanca1,torreblanca2,torrenegra1,torrenegra2;
-var peonblanco1,peonblanco2,peonblanco3,peonblanco4,peonblanco5,peonblanco6,peonblanco7,peonblanco8;
-var peonnegro1,peonnegro2,peonnegro3,peonnegro4,peonnegro5,peonnegro6,peonnegro7,peonnegro8;
-var alfilblanco1,alfilblanco2,alfilnegro1,alfilnegro2;
-var caballoblanco1,caballoblanco2,caballonegro1,caballonegro2;
-var reinablanca,reinanegra;
-var reyblanco,reynegro;
-var patitas1,patitas2,patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10;
-var patitas11,patitas12,patitas13,patitas14,patitas15,patitas16;
-
-//////////////////////////////////////////Sensor/////////////////////////////////////////////////////////////////////////////////
-function Sensor(position,direction){ 
-  THREE.Raycaster.call(this,position,direction);
-  this.colision = false;
-}
-
-Sensor.prototype = new THREE.Raycaster();
-//////////////////////////////////////////////Torres////////////////////////////////////////////////////////////////////////////////////
-function TorreBlanca(x=0,y=0,z=0){
-  Agent.call(this,x,y,z);
-  var textura1 = new THREE.TextureLoader().load('maderablanca.jpg');
-  var maderablanca = new THREE.MeshLambertMaterial({map:textura1});
-  this.actuator = new THREE.Mesh(torrefinal13,maderablanca);
-  this.actuator.commands = [];
-  this.add(this.actuator);
-  this.position.y=y;//5;
-  this.position.z=z;//-10;
-  this.position.x=x;//10;
-  this.sensor = new Sensor();
-}
-
 function Patitasblancas(x=0,z=0){
 THREE.Object3D.call(this);
+var textura1 = new THREE.TextureLoader().load('maderablanca.jpg');
+var maderablanca = new THREE.MeshLambertMaterial({map:textura1});
 piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
 pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
 piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
@@ -115,8 +81,43 @@ this.Prcompleta.position.z=z+3.5;
 	
 this.add(this.Plcompleta,this.Prcompleta);
 }
-Patitasblancas.prototype=new THREE.Object3D;
 
+///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
+var camara,escena,renderizador;
+var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
+var bloquemorado,bloqueazul,bloquerojo,bloqueverde;
+var bandera=0,banderacaballo=0;
+var torreblanca1,torreblanca2,torrenegra1,torrenegra2;
+var peonblanco1,peonblanco2,peonblanco3,peonblanco4,peonblanco5,peonblanco6,peonblanco7,peonblanco8;
+var peonnegro1,peonnegro2,peonnegro3,peonnegro4,peonnegro5,peonnegro6,peonnegro7,peonnegro8;
+var alfilblanco1,alfilblanco2,alfilnegro1,alfilnegro2;
+var caballoblanco1,caballoblanco2,caballonegro1,caballonegro2;
+var reinablanca,reinanegra;
+var reyblanco,reynegro;
+var patitas1,patitas2,patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10;
+var patitas11,patitas12,patitas13,patitas14,patitas15,patitas16;
+
+Patitasblancas.prototype=new THREE.Object3D;
+//////////////////////////////////////////Sensor/////////////////////////////////////////////////////////////////////////////////
+function Sensor(position,direction){ 
+  THREE.Raycaster.call(this,position,direction);
+  this.colision = false;
+}
+
+Sensor.prototype = new THREE.Raycaster();
+//////////////////////////////////////////////Torres////////////////////////////////////////////////////////////////////////////////////
+function TorreBlanca(x=0,y=0,z=0){
+  Agent.call(this,x,y,z);
+  var textura1 = new THREE.TextureLoader().load('maderablanca.jpg');
+  var maderablanca = new THREE.MeshLambertMaterial({map:textura1});
+  this.actuator = new THREE.Mesh(torrefinal13,maderablanca);
+  this.actuator.commands = [];
+  this.add(this.actuator);
+  this.position.y=y;//5;
+  this.position.z=z;//-10;
+  this.position.x=x;//10;
+  this.sensor = new Sensor();
+}
 
 function TorreNegra(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
