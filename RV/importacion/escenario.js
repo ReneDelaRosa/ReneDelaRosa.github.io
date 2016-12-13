@@ -4,12 +4,12 @@ function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
 piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
-pieIzq=new THREE.CylinderGeometry(1,.6,2,32);
+pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
 piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
-pieDer=new THREE.CylinderGeometry(1,.6,2,32);
+pieDer=new THREE.CylinderGeometry(1,.6,4,32);
 //
-pieIzq.translate(-3,0,0);
-pieDer.translate(-3,0,0);
+pieIzq.translate(-3,-1,0);
+pieDer.translate(-3,-1,0);
 pieIzq.rotateZ(Math.PI/2);
 pieDer.rotateZ(Math.PI/2);
 	
