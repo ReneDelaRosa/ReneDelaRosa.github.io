@@ -3986,8 +3986,8 @@ function init() {
 function loop() {
   patitas1.position.x=torreblanca1.position.x-10;
   patitas1.position.z=torreblanca1.position.z+10;
-  patitas1n.position.x=torrenegra1.position.x-10;
-  patitas1n.position.z=torrenegra1.position.z+10;
+  patitasn1.position.x=torrenegra1.position.x-10;
+  patitasn1.position.z=torrenegra1.position.z+10;
 
   requestAnimationFrame(loop);
   escena.sense();
