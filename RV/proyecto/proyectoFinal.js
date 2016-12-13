@@ -3972,27 +3972,47 @@ function init() {
   /////////////////////////////////////////Alfiles/////////////////////////////////////////////////////////////////
   alfilblanco1 = new AlfilBlanco(10,12,-30);
   alfilblanco2 = new AlfilBlanco(10,12,-60);
+  patitas11=new Patitasblancas(10,-30);
+  patitas12=new Patitasblancas(10,-60);
+	
   alfilnegro1 = new AlfilNegro(80,12,-30);
   alfilnegro2 = new AlfilNegro(80,12,-60);
+  patitasn11=new Patitasnegras(80,-30);
+  patitasn12=new Patitasnegras(80,-60);
 	
   escena.add(alfilblanco1,alfilblanco2,alfilnegro1,alfilnegro2);
+  escena.add(patitas11,patitas12,patitasn11,patitasn12);
   ////////////////////////////////////////////Caballos/////////////////////////////////////////////////////////////
   caballoblanco1 = new CaballoBlanco(10,12,-20);
   caballoblanco2 = new CaballoBlanco(10,12,-70);
+  patitas13=new Patitasblancas(10,-20);
+  patitas14=new Patitasblancas(10,-70);
+	
   caballonegro1 = new CaballoNegro(80,12,-20);
   caballonegro2 = new CaballoNegro(80,12,-70);
+  patitasn13=new Patitasnegras(80,-20);
+  patitasn14=new Patitasnegras(80,-70);
 	
   escena.add(caballoblanco1,caballoblanco2,caballonegro1,caballonegro2);	
+  escena.add(patitas13,patitas14,patitasn13,patitasn14);
   ////////////////////////////////////////////Reinas/////////////////////////////////////////////////////////////////
   reinablanca = new ReinaBlanca(10,12,-40);
-  reinanegra = new ReinaNegra(80,12,-40);
+  patitas15=new Patitasblancas(10,-40);	
 	
+  reinanegra = new ReinaNegra(80,12,-40);
+  patitasn15=new Patitasnegras(80,-40);	
+ 
   escena.add(reinablanca,reinanegra);
+  escena.add(patitas15,patitasn15);
   ///////////////////////////////////////////Reyes////////////////////////////////////////////////////////////////////
   reyblanco = new ReyBlanco(10,12,-50);
-  reynegro = new ReyNegro(80,12,-50);
+  patitas16=new Patitasblancas(10,-50);
 	
+  reynegro = new ReyNegro(80,12,-50);
+  patitasn16=new Patitasnegras(80,-50);	
+  
   escena.add(reyblanco,reynegro);	
+  escena.add(patitas16,patitasn16);
   /////////////////////////////////////////Bloques////////////////////////////////////////////////////////////////////
   bloqueazul = new BloqueAzul(10,0,-10);
   escena.add(grupo,grupo2,grupo3,bloqueazul);
@@ -4005,7 +4025,7 @@ function loop() {
   patitas1.position.x=(torreblanca1.position.x)-10;
   patitas1.position.z=(torreblanca1.position.z)+10;
   patitas2.position.x=(torreblanca2.position.x)-10;
-  patitas2.position.z=(torreblanca2.position.z)+80;
+  patitas2.position.z=(torreblanca2.position.z)+60;
   patitas3.position.x=(peonblanco1.position.x)-20;
   patitas3.position.z=(peonblanco1.position.z)+10;
   patitas4.position.x=(peonblanco2.position.x)-20;
@@ -4022,6 +4042,20 @@ function loop() {
   patitas9.position.z=(peonblanco7.position.z)+70;
   patitas10.position.x=(peonblanco8.position.x)-20;
   patitas10.position.z=(peonblanco8.position.z)+80;
+  patitas11.position.x=(alfilblanco1.position.x)-10;
+  patitas11.position.z=(alfilblanco1.position.z)+30;
+  patitas12.position.x=(alfilblanco2.position.x)-10;
+  patitas12.position.z=(alfilblanco2.position.z)+30;
+  patitas13.position.x=(caballoblanco1.position.x)-10;
+  patitas13.position.y=caballoblanco1.position.y;	
+  patitas13.position.z=(caballoblanco1.position.z)+20;
+  patitas14.position.x=(caballoblanco2.position.x)-10;
+  patitas14.position.y=caballoblanco2.position.y;
+  patitas14.position.z=(caballoblanco2.position.z)+70;
+  patitas15.position.x=(reinablanca.position.x)-10;
+  patitas15.position.z=(reinablanca.position.z)+40;
+  patitas16.position.x=(reyblanco.position.x)-10;
+  patitas16.position.z=(reyblanco.position.z)+50;
 	
 	
 	
@@ -4030,10 +4064,10 @@ function loop() {
   patitasn1.position.z=(torrenegra1.position.z)+10;
   patitasn2.position.x=(torrenegra2.position.x)-80;
   patitasn2.position.z=(torrenegra2.position.z)+80;
-  patitasn3.position.x=(peonnegro1.position.x)-70;
+  patitasn3.position.x=(peonnegro1.position.x)-80;
   patitasn3.position.z=(peonnegro1.position.z)+10;
-  patitasn4.position.x=(peonnegro2.position.x)-70;
-  patitasn4.position.z=(peonnegro2.position.z)+20;
+  patitasn4.position.x=(peonnegro2.position.x)-80;
+  patitasn4.position.z=(peonnegro2.position.z)+20;	
   patitasn5.position.x=(peonnegro3.position.x)-70;
   patitasn5.position.z=(peonnegro3.position.z)+30;
   patitasn6.position.x=(peonnegro4.position.x)-70;
@@ -4045,7 +4079,21 @@ function loop() {
   patitasn9.position.x=(peonnegro7.position.x)-70;
   patitasn9.position.z=(peonnegro7.position.z)+70;
   patitasn10.position.x=(peonnegro8.position.x)-70;
-  patitasn10.position.z=(peonnegro8.position.z)+80;
+  patitasn10.position.z=(peonnegro8.position.z)+80;	
+  patitasn11.position.x=(alfilnegro1.position.x)-80;
+  patitasn11.position.z=(alfilnegro1.position.z)+30;
+  patitasn12.position.x=(alfilnegro2.position.x)-80;
+  patitasn12.position.z=(alfilnegro2.position.z)+60;
+  patitasn13.position.x=(caballonegro1.position.x)-80;
+  patitasn13.position.y=caballonegro1.position.y;
+  patitasn13.position.z=(caballonegro1.position.z)+20;
+  patitasn14.position.x=(caballonegro2.position.x)-80;
+  patitasn14.position.y=caballonegro2.position.y;
+  patitasn14.position.z=(caballonegro2.position.z)+70;
+  patitasn15.position.x=(reinanegra.position.x)-80;
+  patitasn15.position.z=(reinanegra.position.z)+40;
+  patitasn16.position.x=(reynegro.position.x)-80;
+  patitasn16.position.z=(reynegro.position.z)+50;
 
   requestAnimationFrame(loop);
   escena.sense();
