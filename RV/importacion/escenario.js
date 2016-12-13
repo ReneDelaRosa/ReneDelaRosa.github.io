@@ -46,9 +46,9 @@ var createMesh = function( geometry )
     escena.add( zmesh );
     escena.add(Plcompleta);
     escena.add(Prcompleta);
-    Plcompleta.position.y=-1.4;
+    Plcompleta.position.y=-1.5;
     Plcompleta.position.z=-3.5;
-    Prcompleta.position.y=-1.4;
+    Prcompleta.position.y=-1.5;
     Prcompleta.position.z=3.5;
 };
 loader.load( "Alfil.js", createMesh );
