@@ -4047,10 +4047,10 @@ function loop() {
   patitas12.position.x=(alfilblanco2.position.x)-10;
   patitas12.position.z=(alfilblanco2.position.z)+30;
   patitas13.position.x=(caballoblanco1.position.x)-10;
-  patitas13.position.y=(caballoblanco1.position.y)-10;	
+  patitas13.position.y=(caballoblanco1.position.y)-15;	
   patitas13.position.z=(caballoblanco1.position.z)+20;
   patitas14.position.x=(caballoblanco2.position.x)-10;
-  patitas14.position.y=(caballoblanco2.position.y)-10;
+  patitas14.position.y=(caballoblanco2.position.y)-15;
   patitas14.position.z=(caballoblanco2.position.z)+70;
   patitas15.position.x=(reinablanca.position.x)-10;
   patitas15.position.z=(reinablanca.position.z)+40;
@@ -4085,10 +4085,10 @@ function loop() {
   patitasn12.position.x=(alfilnegro2.position.x)-80;
   patitasn12.position.z=(alfilnegro2.position.z)+60;
   patitasn13.position.x=(caballonegro1.position.x)-80;
-  patitasn13.position.y=(caballonegro1.position.y)-10;
+  patitasn13.position.y=(caballonegro1.position.y)-15;
   patitasn13.position.z=(caballonegro1.position.z)+20;
   patitasn14.position.x=(caballonegro2.position.x)-80;
-  patitasn14.position.y=(caballonegro2.position.y)-10;
+  patitasn14.position.y=(caballonegro2.position.y)-15;
   patitasn14.position.z=(caballonegro2.position.z)+70;
   patitasn15.position.x=(reinanegra.position.x)-80;
   patitasn15.position.z=(reinanegra.position.z)+40;
