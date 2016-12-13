@@ -417,10 +417,27 @@ BloqueAzul.prototype.act = function(environment){
 		        {this.colision = 0;this.step=0.25;}
 		    }//fin prototype sense
 		
-		    TorreBlanca.prototype.act = function(environment){ 	
+		    TorreBlanca.prototype.act = function(environment){
+	              pIzqinit=0.05;
+		      pDerinit=-0.05;
 		      if (this.colision!=1){
-			if(torreblanca1.position.x<=bvtb1.position.x)
+			if(torreblanca1.position.x<=bvtb1.position.x){
 			  torreblanca1.position.x += this.step;
+			  patitas1.Plcompleta.rotateZ(pIzqinit);
+  			  if (patitas1.Plcompleta.rotation.z>0.785398){
+                          pIzqinit=-pIzqinit;
+                          }
+                          else if(patitas1.Plcompleta.rotation.z<-0.785398){
+                          pIzqinit=-pIzqinit;
+                          }
+                          patitas1.Prcompleta.rotateZ(pDerinit);
+                          if (patitas1.Prcompleta.rotation.z<-0.785398){
+                          pDerinit=-pDerinit;
+                          }
+                          else if(patitas1.Prcompleta.rotation.z>0.785398){
+                          pDerinit=-pDerinit;
+                          }
+			}
 			else
 			  torreblanca1.position.x -= this.step;
 		      }//fin if posicion x
