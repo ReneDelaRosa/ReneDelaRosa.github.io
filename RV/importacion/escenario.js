@@ -8,8 +8,8 @@ pieIzq=new THREE.CylinderGeometry(1,.6,2,32);
 piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
 pieDer=new THREE.CylinderGeometry(1,.6,2,32);
 //
-pieIzq.translate(0,-3.25,0);
-pieDer.translate(0,-3.25,0);
+pieIzq.translate(-3,0,0);
+pieDer.translate(-3,0,0);
 pieIzq.rotateZ(Math.PI/2);
 pieDer.rotateZ(Math.PI/2);
 	
