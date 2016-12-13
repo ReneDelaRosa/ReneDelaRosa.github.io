@@ -439,18 +439,20 @@ BloqueAzul.prototype.act = function(environment){
 			}
 			else{
 			  torreblanca1.position.x -= this.step;
-			  //pDerinit=0;
-			  //pIzqinit=0;
+			  pDerinit=0;
+			  pIzqinit=0;
 		        }
 		      }//fin if posicion x
 		      if (this.colision!=1){
 			if(torreblanca1.position.z<=bvtb1.position.z){
 			  torreblanca1.position.z += this.step;
+			  patitas1.Plcompleta.rotateZ(pIzqinit);
+  			  patitas1.Prcompleta.rotateZ(pDerinit);
 			}
 			else{
 			  torreblanca1.position.z -= this.step;
-			  //pDerinit=0;
-			  //pIzqinit=0;
+			  pDerinit=0;
+			  pIzqinit=0;
 			}
 		      }//fin if posicion z
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
