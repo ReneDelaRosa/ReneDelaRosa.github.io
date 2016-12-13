@@ -438,8 +438,11 @@ BloqueAzul.prototype.act = function(environment){
                           pDerinit=-pDerinit;
                           }
 			}
-			else
+			else{
 			  torreblanca1.position.x -= this.step;
+			  patitas1.Prcompleta.rotateZ(0);
+			  patitas1.Plcompleta.rotateZ(0);
+			}
 		      }//fin if posicion x
 		      if (this.colision!=1){
 			if(torreblanca1.position.z<=bvtb1.position.z)
