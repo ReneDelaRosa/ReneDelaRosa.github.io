@@ -62,7 +62,7 @@ loader.load( "Alfil.js", createMesh );
 pIzqinit=0.05;
 pDerinit=-0.05;
 camara.position.z=50;
-camara.position.y=30;
+camara.position.y=20;
 camara.rotateX(-Math.PI/12);
 //camara.rotateY(Math.PI/6);
 
