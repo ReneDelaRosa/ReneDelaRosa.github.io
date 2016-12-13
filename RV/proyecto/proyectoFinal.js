@@ -441,13 +441,13 @@ BloqueAzul.prototype.act = function(environment){
 				if (patitas1.Plcompleta.rotation.z>0.785398){
 					pIzqinit=-pIzqinit;				
 				}
-				else if(patitas1.Plcompleta.rotation.z<-0.785398){
+				else{
 					pIzqinit=-pIzqinit;
 				}
-				if (patitas1.Prcompleta.rotation.z<-0.785398){
+				if(patitas1.Prcompleta.rotation.z<-0.785398){
 					pDerinit=-pDerinit;				
 				}
-				else if(patitas1.Prcompleta.rotation.z>0.785398){
+				else {
 					pDerinit=-pDerinit;
 				}
 			}
