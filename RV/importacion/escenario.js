@@ -64,7 +64,7 @@ pDerinit=-0.05;
 camara.position.z=50;
 camara.position.y=30;
 camara.rotateX(-Math.PI/8);
-camara.rotateY(Math.PI/16);
+camara.rotateY(Math.PI/8);
 
 renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
