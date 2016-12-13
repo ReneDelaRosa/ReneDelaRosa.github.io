@@ -3939,6 +3939,14 @@ function init() {
   peonblanco6 = new PeonBlanco(20,12,-60);
   peonblanco7 = new PeonBlanco(20,12,-70);
   peonblanco8 = new PeonBlanco(20,12,-80);
+  patitas3=new Patitasblancas(20,-10);
+  patitas4=new Patitasblancas(20,-20);
+  patitas5=new Patitasblancas(20,-30);
+  patitas6=new Patitasblancas(20,-40);
+  patitas7=new Patitasblancas(20,-50);
+  patitas8=new Patitasblancas(20,-60);
+  patitas9=new Patitasblancas(20,-70);
+  patitas10=new Patitasblancas(20,-80);
 	
   peonnegro1 = new PeonNegro(70,12,-10);
   peonnegro2 = new PeonNegro(70,12,-20);
@@ -3948,9 +3956,19 @@ function init() {
   peonnegro6 = new PeonNegro(70,12,-60);
   peonnegro7 = new PeonNegro(70,12,-70);
   peonnegro8 = new PeonNegro(70,12,-80);
+  patitasn3=new Patitasnegras(70,-10);
+  patitasn4=new Patitasnegras(70,-20);
+  patitasn5=new Patitasnegras(70,-30);
+  patitasn6=new Patitasnegras(70,-40);
+  patitasn7=new Patitasnegras(70,-50);
+  patitasn8=new Patitasnegras(70,-60);
+  patitasn9=new Patitasnegras(70,-70);
+  patitasn10=new Patitasnegras(70,-80);
 	
   escena.add(peonblanco1,peonblanco2,peonblanco3,peonblanco4,peonblanco5,peonblanco6,peonblanco7,peonblanco8);
   escena.add(peonnegro1,peonnegro2,peonnegro3,peonnegro4,peonnegro5,peonnegro6,peonnegro7,peonnegro8);
+  escena.add(patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10);
+  escena.add(patitasn3,patitasn4,patitasn5,patitasn6,patitasn7,patitasn8,patitasn9,patitasn10);
   /////////////////////////////////////////Alfiles/////////////////////////////////////////////////////////////////
   alfilblanco1 = new AlfilBlanco(10,12,-30);
   alfilblanco2 = new AlfilBlanco(10,12,-60);
