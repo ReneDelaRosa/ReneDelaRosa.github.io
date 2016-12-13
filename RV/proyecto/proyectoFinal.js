@@ -44,42 +44,6 @@ Environment.prototype.act = function(){
   }
 }
 
-function Patitasblancas(x=0,z=0){
-THREE.Object3D.call(this);
-piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
-pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
-piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
-pieDer=new THREE.CylinderGeometry(1,.6,4,32);
-pieIzq.translate(-3.5,-1,0);
-pieDer.translate(-3.5,-1,0);
-pieIzq.rotateZ(Math.PI/2);
-pieDer.rotateZ(Math.PI/2);
-var PiernaizqMalla=new THREE.Mesh(piernaIzq);
-var PieizqMalla=new THREE.Mesh(pieIzq);
-	
-var PiernaderMalla=new THREE.Mesh(piernaDer);
-var PiederMalla=new THREE.Mesh(pieDer);
-
-var Piernal=new THREE.Geometry();
-Piernal.merge(PiernaizqMalla.geometry, PiernaizqMalla.matrix);
-Piernal.merge(PieizqMalla.geometry, PieizqMalla.matrix);
-this.Plcompleta=new THREE.Mesh(Piernal);
-	
-var Piernar=new THREE.Geometry();
-Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
-Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
-this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
-
-this.Plcompleta.position.x=x;
-this.Plcompleta.position.y=10;
-this.Plcompleta.position.z=z-3.5;
-this.Prcompleta.position.x=x;
-this.Prcompleta.position.y=10;
-this.Prcompleta.position.z=z+3.5;
-	
-this.add(this.Plcompleta,this.Prcompleta);
-}
-
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
@@ -95,7 +59,6 @@ var reyblanco,reynegro;
 var patitas1,patitas2,patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10;
 var patitas11,patitas12,patitas13,patitas14,patitas15,patitas16;
 
-Patitasblancas.prototype=new THREE.Object3D;
 //////////////////////////////////////////Sensor/////////////////////////////////////////////////////////////////////////////////
 function Sensor(position,direction){ 
   THREE.Raycaster.call(this,position,direction);
@@ -116,6 +79,44 @@ function TorreBlanca(x=0,y=0,z=0){
   this.position.x=x;//10;
   this.sensor = new Sensor();
 }
+
+function Patitasblancas(x=0,z=0){
+THREE.Object3D.call(this);
+piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
+piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieDer=new THREE.CylinderGeometry(1,.6,4,32);
+pieIzq.translate(-3.5,-1,0);
+pieDer.translate(-3.5,-1,0);
+pieIzq.rotateZ(Math.PI/2);
+pieDer.rotateZ(Math.PI/2);
+var PiernaizqMalla=new THREE.Mesh(piernaIzq);
+var PieizqMalla=new THREE.Mesh(pieIzq);
+	
+var PiernaderMalla=new THREE.Mesh(piernaDer);
+var PiederMalla=new THREE.Mesh(pieDer);
+
+var Piernal=new THREE.Geometry();
+Piernal.merge(PiernaizqMalla.geometry, PiernaizqMalla.matrix);
+Piernal.merge(PieizqMalla.geometry, PieizqMalla.matrix);
+this.Plcompleta=new THREE.Mesh(Piernal,maderablanca);
+	
+var Piernar=new THREE.Geometry();
+Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
+Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
+this.Prcompleta=new THREE.Mesh(Piernar,maderablanca);//new THREE.MeshNormalMaterial()
+
+this.Plcompleta.position.x=x;
+this.Plcompleta.position.y=10;
+this.Plcompleta.position.z=z-3.5;
+this.Prcompleta.position.x=x;
+this.Prcompleta.position.y=10;
+this.Prcompleta.position.z=z+3.5;
+	
+this.add(this.Plcompleta,this.Prcompleta);
+}
+Patitasblancas.prototype=new THREE.Object3D;
+
 
 function TorreNegra(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
