@@ -2351,52 +2351,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((alfilblanco1.position.x==torrenegra1.position.x && alfilblanco1.position.z==torrenegra1.position.z)&&
 			  (alfilblanco1.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((alfilblanco1.position.x==torrenegra2.position.x && alfilblanco1.position.z==torrenegra2.position.z)&&
 			  (alfilblanco1.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((alfilblanco1.position.x==caballonegro1.position.x && alfilblanco1.position.z==caballonegro1.position.z)&&
 			  (alfilblanco1.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((alfilblanco1.position.x==caballonegro2.position.x && alfilblanco1.position.z==caballonegro2.position.z)&&
 			  (alfilblanco1.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((alfilblanco1.position.x==alfilnegro1.position.x && alfilblanco1.position.z==alfilnegro1.position.z)&&
 			  (alfilblanco1.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((alfilblanco1.position.x==alfilnegro2.position.x && alfilblanco1.position.z==alfilnegro2.position.z)&&
 			  (alfilblanco1.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((alfilblanco1.position.x==reinanegra.position.x && alfilblanco1.position.z==reinanegra.position.z)&&
 			  (alfilblanco1.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((alfilblanco1.position.x==reynegro.position.x && alfilblanco1.position.z==reynegro.position.z)&&
 			  (alfilblanco1.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((alfilblanco1.position.x==peonnegro1.position.x && alfilblanco1.position.z==peonnegro1.position.z)&&
 			  (alfilblanco1.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((alfilblanco1.position.x==peonnegro2.position.x && alfilblanco1.position.z==peonnegro2.position.z)&&
 			  (alfilblanco1.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((alfilblanco1.position.x==peonnegro3.position.x && alfilblanco1.position.z==peonnegro3.position.z)&&
 			  (alfilblanco1.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((alfilblanco1.position.x==peonnegro4.position.x && alfilblanco1.position.z==peonnegro4.position.z)&&
 			  (alfilblanco1.position.y==peonnegro4.position.y))
-			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((alfilblanco1.position.x==peonnegro5.position.x && alfilblanco1.position.z==peonnegro5.position.z)&&
 			  (alfilblanco1.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((alfilblanco1.position.x==peonnegro6.position.x && alfilblanco1.position.z==peonnegro6.position.z)&&
 			  (alfilblanco1.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((alfilblanco1.position.x==peonnegro7.position.x && alfilblanco1.position.z==peonnegro7.position.z)&&
 			  (alfilblanco1.position.y==peonnegro7.position.y))
-			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((alfilblanco1.position.x==peonnegro8.position.x && alfilblanco1.position.z==peonnegro8.position.z)&&
 			  (alfilblanco1.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((alfilblanco1.position.x==peonblanco1.position.x && alfilblanco1.position.z==peonblanco1.position.z)||
 			   (alfilblanco1.position.x==peonblanco2.position.x && alfilblanco1.position.z==peonblanco2.position.z))||
@@ -2446,52 +2446,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((alfilblanco2.position.x==torrenegra1.position.x && alfilblanco2.position.z==torrenegra1.position.z)&&
 			  (alfilblanco2.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((alfilblanco2.position.x==torrenegra2.position.x && alfilblanco2.position.z==torrenegra2.position.z)&&
 			  (alfilblanco2.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((alfilblanco2.position.x==caballonegro1.position.x && alfilblanco2.position.z==caballonegro1.position.z)&&
 			  (alfilblanco2.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((alfilblanco2.position.x==caballonegro2.position.x && alfilblanco2.position.z==caballonegro2.position.z)&&
 			  (alfilblanco2.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((alfilblanco2.position.x==alfilnegro1.position.x && alfilblanco2.position.z==alfilnegro1.position.z)&&
 			  (alfilblanco2.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((alfilblanco2.position.x==alfilnegro2.position.x && alfilblanco2.position.z==alfilnegro2.position.z)&&
 			  (alfilblanco2.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((alfilblanco2.position.x==reinanegra.position.x && alfilblanco2.position.z==reinanegra.position.z)&&
 			  (alfilblanco2.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((alfilblanco2.position.x==reynegro.position.x && alfilblanco2.position.z==reynegro.position.z)&&
 			  (alfilblanco2.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((alfilblanco2.position.x==peonnegro1.position.x && alfilblanco2.position.z==peonnegro1.position.z)&&
 			  (alfilblanco2.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((alfilblanco2.position.x==peonnegro2.position.x && alfilblanco2.position.z==peonnegro2.position.z)&&
 			  (alfilblanco2.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((alfilblanco2.position.x==peonnegro3.position.x && alfilblanco2.position.z==peonnegro3.position.z)&&
 			  (alfilblanco2.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((alfilblanco2.position.x==peonnegro4.position.x && alfilblanco2.position.z==peonnegro4.position.z)&&
 			  (alfilblanco2.position.y==peonnegro4.position.y))
-			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((alfilblanco2.position.x==peonnegro5.position.x && alfilblanco2.position.z==peonnegro5.position.z)&&
 			  (alfilblanco2.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((alfilblanco2.position.x==peonnegro6.position.x && alfilblanco2.position.z==peonnegro6.position.z)&&
 			  (alfilblanco2.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((alfilblanco2.position.x==peonnegro7.position.x && alfilblanco2.position.z==peonnegro7.position.z)&&
 			  (alfilblanco2.position.y==peonnegro7.position.y))
-			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((alfilblanco2.position.x==peonnegro8.position.x && alfilblanco2.position.z==peonnegro8.position.z)&&
 			  (alfilblanco2.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((alfilblanco2.position.x==peonblanco1.position.x && alfilblanco2.position.z==peonblanco1.position.z)||
 			   (alfilblanco2.position.x==peonblanco2.position.x && alfilblanco2.position.z==peonblanco2.position.z))||
@@ -2541,52 +2541,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((alfilnegro1.position.x==torreblanca1.position.x && alfilnegro1.position.z==torreblanca1.position.z)&&
 			  (alfilnegro1.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((alfilnegro1.position.x==torreblanca2.position.x && alfilnegro1.position.z==torreblanca2.position.z)&&
 			  (alfilnegro1.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((alfilnegro1.position.x==caballoblanco1.position.x && alfilnegro1.position.z==caballoblanco1.position.z)&&
 			  (alfilnegro1.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((alfilnegro1.position.x==caballoblanco2.position.x && alfilnegro1.position.z==caballoblanco2.position.z)&&
 			  (alfilnegro1.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((alfilnegro1.position.x==alfilblanco1.position.x && alfilnegro1.position.z==alfilblanco1.position.z)&&
 			  (alfilnegro1.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((alfilnegro1.position.x==alfilblanco2.position.x && alfilnegro1.position.z==alfilblanco2.position.z)&&
 			  (alfilnegro1.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas11);}
 		        if((alfilnegro1.position.x==reinablanca.position.x && alfilnegro1.position.z==reinablanca.position.z)&&
 			  (alfilnegro1.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((alfilnegro1.position.x==reyblanco.position.x && alfilnegro1.position.z==reyblanco.position.z)&&
 			  (alfilnegro1.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((alfilnegro1.position.x==peonblanco1.position.x && alfilnegro1.position.z==peonblanco1.position.z)&&
 			  (alfilnegro1.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((alfilnegro1.position.x==peonblanco2.position.x && alfilnegro1.position.z==peonblanco2.position.z)&&
 			  (alfilnegro1.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((alfilnegro1.position.x==peonblanco3.position.x && alfilnegro1.position.z==peonblanco3.position.z)&&
 			  (alfilnegro1.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((alfilnegro1.position.x==peonblanco4.position.x && alfilnegro1.position.z==peonblanco4.position.z)&&
 			  (alfilnegro1.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((alfilnegro1.position.x==peonblanco5.position.x && alfilnegro1.position.z==peonblanco5.position.z)&&
 			  (alfilnegro1.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((alfilnegro1.position.x==peonblanco6.position.x && alfilnegro1.position.z==peonblanco6.position.z)&&
 			  (alfilnegro1.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((alfilnegro1.position.x==peonblanco7.position.x && alfilnegro1.position.z==peonblanco7.position.z)&&
 			  (alfilnegro1.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((alfilnegro1.position.x==peonblanco8.position.x && alfilnegro1.position.z==peonblanco8.position.z)&&
 			  (alfilnegro1.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((alfilnegro1.position.x==peonnegro1.position.x && alfilnegro1.position.z==peonnegro1.position.z)||
 			   (alfilnegro1.position.x==peonnegro2.position.x && alfilnegro1.position.z==peonnegro2.position.z))||
@@ -2636,52 +2636,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((alfilnegro2.position.x==torreblanca1.position.x && alfilnegro2.position.z==torreblanca1.position.z)&&
 			  (alfilnegro2.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((alfilnegro2.position.x==torreblanca2.position.x && alfilnegro2.position.z==torreblanca2.position.z)&&
 			  (alfilnegro2.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((alfilnegro2.position.x==caballoblanco1.position.x && alfilnegro2.position.z==caballoblanco1.position.z)&&
 			  (alfilnegro2.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((alfilnegro2.position.x==caballoblanco2.position.x && alfilnegro2.position.z==caballoblanco2.position.z)&&
 			  (alfilnegro2.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((alfilnegro2.position.x==alfilblanco1.position.x && alfilnegro2.position.z==alfilblanco1.position.z)&&
 			  (alfilnegro2.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((alfilnegro2.position.x==alfilblanco2.position.x && alfilnegro2.position.z==alfilblanco2.position.z)&&
 			  (alfilnegro2.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas12);}
 		        if((alfilnegro2.position.x==reinablanca.position.x && alfilnegro2.position.z==reinablanca.position.z)&&
 			  (alfilnegro2.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((alfilnegro2.position.x==reyblanco.position.x && alfilnegro2.position.z==reyblanco.position.z)&&
 			  (alfilnegro2.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((alfilnegro2.position.x==peonblanco1.position.x && alfilnegro2.position.z==peonblanco1.position.z)&&
 			  (alfilnegro2.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((alfilnegro2.position.x==peonblanco2.position.x && alfilnegro2.position.z==peonblanco2.position.z)&&
 			  (alfilnegro2.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((alfilnegro2.position.x==peonblanco3.position.x && alfilnegro2.position.z==peonblanco3.position.z)&&
 			  (alfilnegro2.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((alfilnegro2.position.x==peonblanco4.position.x && alfilnegro2.position.z==peonblanco4.position.z)&&
 			  (alfilnegro2.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((alfilnegro2.position.x==peonblanco5.position.x && alfilnegro2.position.z==peonblanco5.position.z)&&
 			  (alfilnegro2.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((alfilnegro2.position.x==peonblanco6.position.x && alfilnegro2.position.z==peonblanco6.position.z)&&
 			  (alfilnegro2.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((alfilnegro2.position.x==peonblanco7.position.x && alfilnegro2.position.z==peonblanco7.position.z)&&
 			  (alfilnegro2.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((alfilnegro2.position.x==peonblanco8.position.x && alfilnegro2.position.z==peonblanco8.position.z)&&
 			  (alfilnegro2.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((alfilnegro2.position.x==peonnegro1.position.x && alfilnegro2.position.z==peonnegro1.position.z)||
 			   (alfilnegro2.position.x==peonnegro2.position.x && alfilnegro2.position.z==peonnegro2.position.z))||
@@ -2732,52 +2732,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((reinablanca.position.x==torrenegra1.position.x && reinablanca.position.z==torrenegra1.position.z)&&
 			  (reinablanca.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((reinablanca.position.x==torrenegra2.position.x && reinablanca.position.z==torrenegra2.position.z)&&
 			  (reinablanca.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((reinablanca.position.x==caballonegro1.position.x && reinablanca.position.z==caballonegro1.position.z)&&
 			  (reinablanca.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((reinablanca.position.x==caballonegro2.position.x && reinablanca.position.z==caballonegro2.position.z)&&
 			  (reinablanca.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((reinablanca.position.x==alfilnegro1.position.x && reinablanca.position.z==alfilnegro1.position.z)&&
 			  (reinablanca.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((reinablanca.position.x==alfilnegro2.position.x && reinablanca.position.z==alfilnegro2.position.z)&&
 			  (reinablanca.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((reinablanca.position.x==reinanegra.position.x && reinablanca.position.z==reinanegra.position.z)&&
 			  (reinablanca.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((reinablanca.position.x==reynegro.position.x && reinablanca.position.z==reynegro.position.z)&&
 			  (reinablanca.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((reinablanca.position.x==peonnegro1.position.x && reinablanca.position.z==peonnegro1.position.z)&&
 			  (reinablanca.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((reinablanca.position.x==peonnegro2.position.x && reinablanca.position.z==peonnegro2.position.z)&&
 			  (reinablanca.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((reinablanca.position.x==peonnegro3.position.x && reinablanca.position.z==peonnegro3.position.z)&&
 			  (reinablanca.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((reinablanca.position.x==peonnegro4.position.x && reinablanca.position.z==peonnegro4.position.z)&&
 			  (reinablanca.position.y==peonnegro4.position.y))
-			{peonengro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonengro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((reinablanca.position.x==peonnegro5.position.x && reinablanca.position.z==peonnegro5.position.z)&&
 			  (reinablanca.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((reinablanca.position.x==peonnegro6.position.x && reinablanca.position.z==peonnegro6.position.z)&&
 			  (reinablanca.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((reinablanca.position.x==peonnegro7.position.x && reinablanca.position.z==peonnegro7.position.z)&&
 			  (reinablanca.position.y==peonnegro7.position.y))
-			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((reinablanca.position.x==peonnegro8.position.x && reinablanca.position.z==peonnegro8.position.z)&&
 			  (reinablanca.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((reinablanca.position.x==peonblanco1.position.x && reinablanca.position.z==peonblanco1.position.z)||
 			   (reinablanca.position.x==peonblanco2.position.x && reinablanca.position.z==peonblanco2.position.z))||
@@ -2827,52 +2827,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((reinanegra.position.x==torreblanca1.position.x && reinanegra.position.z==torreblanca1.position.z)&&
 			  (reinanegra.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((reinanegra.position.x==torreblanca2.position.x && reinanegra.position.z==torreblanca2.position.z)&&
 			  (reinanegra.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((reinanegra.position.x==caballoblanco1.position.x && reinanegra.position.z==caballoblanco1.position.z)&&
 			  (reinanegra.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((reinanegra.position.x==caballoblanco2.position.x && reinanegra.position.z==caballoblanco2.position.z)&&
 			  (reinanegra.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((reinanegra.position.x==alfilblanco1.position.x && reinanegra.position.z==alfilblanco1.position.z)&&
 			  (reinanegra.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((reinanegra.position.x==alfilblanco2.position.x && reinanegra.position.z==alfilblanco2.position.z)&&
 			  (reinanegra.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas12);}
 		        if((reinanegra.position.x==reinablanca.position.x && reinanegra.position.z==reinablanca.position.z)&&
 			  (reinanegra.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((reinanegra.position.x==reyblanco.position.x && reinanegra.position.z==reyblanco.position.z)&&
 			  (reinanegra.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((reinanegra.position.x==peonblanco1.position.x && reinanegra.position.z==peonblanco1.position.z)&&
 			  (reinanegra.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((reinanegra.position.x==peonblanco2.position.x && reinanegra.position.z==peonblanco2.position.z)&&
 			  (reinanegra.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((reinanegra.position.x==peonblanco3.position.x && reinanegra.position.z==peonblanco3.position.z)&&
 			  (reinanegra.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((reinanegra.position.x==peonblanco4.position.x && reinanegra.position.z==peonblanco4.position.z)&&
 			  (reinanegra.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((reinanegra.position.x==peonblanco5.position.x && reinanegra.position.z==peonblanco5.position.z)&&
 			  (reinanegra.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((reinanegra.position.x==peonblanco6.position.x && reinanegra.position.z==peonblanco6.position.z)&&
 			  (reinanegra.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((reinanegra.position.x==peonblanco7.position.x && reinanegra.position.z==peonblanco7.position.z)&&
 			  (reinanegra.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((reinanegra.position.x==peonblanco8.position.x && reinanegra.position.z==peonblanco8.position.z)&&
 			  (reinanegra.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((reinanegra.position.x==peonnegro1.position.x && reinanegra.position.z==peonnegro1.position.z)||
 			   (reinanegra.position.x==peonnegro2.position.x && reinanegra.position.z==peonnegro2.position.z))||
@@ -2923,52 +2923,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((reyblanco.position.x==torrenegra1.position.x && reyblanco.position.z==torrenegra1.position.z)&&
 			  (reyblanco.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((reyblanco.position.x==torrenegra2.position.x && reyblanco.position.z==torrenegra2.position.z)&&
 			  (reyblanco.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((reyblanco.position.x==caballonegro1.position.x && reyblanco.position.z==caballonegro1.position.z)&&
 			  (reyblanco.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((reyblanco.position.x==caballonegro2.position.x && reyblanco.position.z==caballonegro2.position.z)&&
 			  (reyblanco.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((reyblanco.position.x==alfilnegro1.position.x && reyblanco.position.z==alfilnegro1.position.z)&&
 			  (reyblanco.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((reyblanco.position.x==alfilnegro2.position.x && reyblanco.position.z==alfilnegro2.position.z)&&
 			  (reyblanco.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((reyblanco.position.x==reinanegra.position.x && reyblanco.position.z==reinanegra.position.z)&&
 			  (reyblanco.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((reyblanco.position.x==reynegro.position.x && reyblanco.position.z==reynegro.position.z)&&
 			  (reyblanco.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((reyblanco.position.x==peonnegro1.position.x && reyblanco.position.z==peonnegro1.position.z)&&
 			  (reyblanco.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((reyblanco.position.x==peonnegro2.position.x && reyblanco.position.z==peonnegro2.position.z)&&
 			  (reyblanco.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((reyblanco.position.x==peonnegro3.position.x && reyblanco.position.z==peonnegro3.position.z)&&
 			  (reyblanco.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((reyblanco.position.x==peonnegro4.position.x && reyblanco.position.z==peonnegro4.position.z)&&
 			  (reyblanco.position.y==peonnegro4.position.y))
-			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((reyblanco.position.x==peonnegro5.position.x && reyblanco.position.z==peonnegro5.position.z)&&
 			  (reyblanco.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((reyblanco.position.x==peonnegro6.position.x && reyblanco.position.z==peonnegro6.position.z)&&
 			  (reyblanco.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((reyblanco.position.x==peonnegro7.position.x && reyblanco.position.z==peonnegro7.position.z)&&
 			  (reyblanco.position.y==peonnegro7.position.y))
-			{peonengro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonengro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((reyblanco.position.x==peonnegro8.position.x && reyblanco.position.z==peonnegro8.position.z)&&
 			  (reyblanco.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((reyblanco.position.x==peonblanco1.position.x && reyblanco.position.z==peonblanco1.position.z)||
 			   (reyblanco.position.x==peonblanco2.position.x && reyblanco.position.z==peonblanco2.position.z))||
@@ -3018,52 +3018,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion z
 			if((reynegro.position.x==torreblanca1.position.x && reynegro.position.z==torreblanca1.position.z)&&
 			  (reynegro.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((reynegro.position.x==torreblanca2.position.x && reynegro.position.z==torreblanca2.position.z)&&
 			  (reynegro.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((reynegro.position.x==caballoblanco1.position.x && reynegro.position.z==caballoblanco1.position.z)&&
 			  (reynegro.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((reynegro.position.x==caballoblanco2.position.x && reynegro.position.z==caballoblanco2.position.z)&&
 			  (reynegro.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((reynegro.position.x==alfilblanco1.position.x && reynegro.position.z==alfilblanco1.position.z)&&
 			  (reynegro.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((reynegro.position.x==alfilblanco2.position.x && reynegro.position.z==alfilblanco2.position.z)&&
 			  (reynegro.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas12);}
 		        if((reynegro.position.x==reinablanca.position.x && reynegro.position.z==reinablanca.position.z)&&
 			  (reynegro.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((reynegro.position.x==reyblanco.position.x && reynegro.position.z==reyblanco.position.z)&&
 			  (reynegro.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((reynegro.position.x==peonblanco1.position.x && reynegro.position.z==peonblanco1.position.z)&&
 			  (reynegro.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((reynegro.position.x==peonblanco2.position.x && reynegro.position.z==peonblanco2.position.z)&&
 			  (reynegro.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((reynegro.position.x==peonblanco3.position.x && reynegro.position.z==peonblanco3.position.z)&&
 			  (reynegro.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((reynegro.position.x==peonblanco4.position.x && reynegro.position.z==peonblanco4.position.z)&&
 			  (reynegro.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((reynegro.position.x==peonblanco5.position.x && reynegro.position.z==peonblanco5.position.z)&&
 			  (reynegro.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((reynegro.position.x==peonblanco6.position.x && reynegro.position.z==peonblanco6.position.z)&&
 			  (reynegro.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((reynegro.position.x==peonblanco7.position.x && reynegro.position.z==peonblanco7.position.z)&&
 			  (reynegro.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((reynegro.position.x==peonblanco8.position.x && reynegro.position.z==peonblanco8.position.z)&&
 			  (reynegro.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if (((((((((((((((reynegro.position.x==peonnegro1.position.x && reynegro.position.z==peonnegro1.position.z)||
 			   (reynegro.position.x==peonnegro2.position.x && reynegro.position.z==peonnegro2.position.z))||
@@ -3120,52 +3120,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion y
 			if((caballoblanco1.position.x==torrenegra1.position.x && caballoblanco1.position.z==torrenegra1.position.z)&&
 			  (caballoblanco1.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((caballoblanco1.position.x==torrenegra2.position.x && caballoblanco1.position.z==torrenegra2.position.z)&&
 			  (caballoblanco1.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((caballoblanco1.position.x==caballonegro1.position.x && caballoblanco1.position.z==caballonegro1.position.z)&&
 			  (caballoblanco1.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((caballoblanco1.position.x==caballonegro2.position.x && caballoblanco1.position.z==caballonegro2.position.z)&&
 			  (caballoblanco1.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((caballoblanco1.position.x==alfilnegro1.position.x && caballoblanco1.position.z==alfilnegro1.position.z)&&
 			  (caballoblanco1.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((caballoblanco1.position.x==alfilnegro2.position.x && caballoblanco1.position.z==alfilnegro2.position.z)&&
 			  (caballoblanco1.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((caballoblanco1.position.x==reinanegra.position.x && caballoblanco1.position.z==reinanegra.position.z)&&
 			  (caballoblanco1.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((caballoblanco1.position.x==reynegro.position.x && caballoblanco1.position.z==reynegro.position.z)&&
 			  (caballoblanco1.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((caballoblanco1.position.x==peonnegro1.position.x && caballoblanco1.position.z==peonnegro1.position.z)&&
 			  (caballoblanco1.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((caballoblanco1.position.x==peonnegro2.position.x && caballoblanco1.position.z==peonnegro2.position.z)&&
 			  (caballoblanco1.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((caballoblanco1.position.x==peonnegro3.position.x && caballoblanco1.position.z==peonnegro3.position.z)&&
 			  (caballoblanco1.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((caballoblanco1.position.x==peonnegro4.position.x && caballoblanco1.position.z==peonnegro4.position.z)&&
 			  (caballoblanco1.position.y==peonnegro4.position.y))
-			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((caballoblanco1.position.x==peonnegro5.position.x && caballoblanco1.position.z==peonnegro5.position.z)&&
 			  (caballoblanco1.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((caballoblanco1.position.x==peonnegro6.position.x && caballoblanco1.position.z==peonnegro6.position.z)&&
 			  (caballoblanco1.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((caballoblanco1.position.x==peonnegro7.position.x && caballoblanco1.position.z==peonnegro7.position.z)&&
 			  (caballoblanco1.position.y==peonnegro7.position.y))
-			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((caballoblanco1.position.x==peonnegro8.position.x && caballoblanco1.position.z==peonnegro8.position.z)&&
 			  (caballoblanco1.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
                         if ((((((((((((((((caballoblanco1.position.x==peonblanco1.position.x && caballoblanco1.position.z==peonblanco1.position.z)||
 			   (caballoblanco1.position.x==peonblanco2.position.x && caballoblanco1.position.z==peonblanco2.position.z))||
@@ -3222,52 +3222,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion y
 			if((caballoblanco2.position.x==torrenegra1.position.x && caballoblanco2.position.z==torrenegra1.position.z)&&
 			  (caballoblanco2.position.y==torrenegra1.position.y))
-			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);}
+			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
 		        if((caballoblanco2.position.x==torrenegra2.position.x && caballoblanco2.position.z==torrenegra2.position.z)&&
 			  (caballoblanco2.position.y==torrenegra2.position.y))
-			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);}
+			{torrenegra2.position.y=100;torrenegra2.position.x=100;escena.remove(torrenegra2);escena.remove(patitasn2);}
 		        if((caballoblanco2.position.x==caballonegro1.position.x && caballoblanco2.position.z==caballonegro1.position.z)&&
 			  (caballoblanco2.position.y==caballonegro1.position.y))
-			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);}
+			{caballonegro1.position.y=100;caballonegro1.position.x=100;escena.remove(caballonegro1);escena.remove(patitasn13);}
 		        if((caballoblanco2.position.x==caballonegro2.position.x && caballoblanco2.position.z==caballonegro2.position.z)&&
 			  (caballoblanco2.position.y==caballonegro2.position.y))
-			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);}
+			{caballonegro2.position.y=100;caballonegro2.position.x=100;escena.remove(caballonegro2);escena.remove(patitasn14);}
 		        if((caballoblanco2.position.x==alfilnegro1.position.x && caballoblanco2.position.z==alfilnegro1.position.z)&&
 			  (caballoblanco2.position.y==alfilnegro1.position.y))
-			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);}
+			{alfilnegro1.position.y=100;alfilnegro1.position.x=100;escena.remove(alfilnegro1);escena.remove(patitasn11);}
 		        if((caballoblanco2.position.x==alfilnegro2.position.x && caballoblanco2.position.z==alfilnegro2.position.z)&&
 			  (caballoblanco2.position.y==alfilnegro2.position.y))
-			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);}
+			{alfilnegro2.position.y=100;alfilnegro2.position.x=100;escena.remove(alfilnegro2);escena.remove(patitasn12);}
 		        if((caballoblanco2.position.x==reinanegra.position.x && caballoblanco2.position.z==reinanegra.position.z)&&
 			  (caballoblanco2.position.y==reinanegra.position.y))
-			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);}
+			{reinanegra.position.y=100;reinanegra.position.x=100;escena.remove(reinanegra);escena.remove(patitasn15);}
 		        if((caballoblanco2.position.x==reynegro.position.x && caballoblanco2.position.z==reynegro.position.z)&&
 			  (caballoblanco2.position.y==reynegro.position.y))
-			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);}
+			{reynegro.position.y=100;reynegro.position.x=100;escena.remove(reynegro);escena.remove(patitasn16);}
 		        if((caballoblanco2.position.x==peonnegro1.position.x && caballoblanco2.position.z==peonnegro1.position.z)&&
 			  (caballoblanco2.position.y==peonnegro1.position.y))
-			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);}
+			{peonnegro1.position.y=100;peonnegro1.position.x=100;escena.remove(peonnegro1);escena.remove(patitasn3);}
 		        if((caballoblanco2.position.x==peonnegro2.position.x && caballoblanco2.position.z==peonnegro2.position.z)&&
 			  (caballoblanco2.position.y==peonnegro2.position.y))
-			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);}
+			{peonnegro2.position.y=100;peonnegro2.position.x=100;escena.remove(peonnegro2);escena.remove(patitasn4);}
 		        if((caballoblanco2.position.x==peonnegro3.position.x && caballoblanco2.position.z==peonnegro3.position.z)&&
 			  (caballoblanco2.position.y==peonnegro3.position.y))
-			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);}
+			{peonnegro3.position.y=100;peonnegro3.position.x=100;escena.remove(peonnegro3);escena.remove(patitasn5);}
 		        if((caballoblanco2.position.x==peonnegro4.position.x && caballoblanco2.position.z==peonnegro4.position.z)&&
 			  (caballoblanco2.position.y==peonnegro4.position.y))
-			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);}
+			{peonnegro4.position.y=100;peonnegro4.position.x=100;escena.remove(peonnegro4);escena.remove(patitasn6);}
 		        if((caballoblanco2.position.x==peonnegro5.position.x && caballoblanco2.position.z==peonnegro5.position.z)&&
 			  (caballoblanco2.position.y==peonnegro5.position.y))
-			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);}
+			{peonnegro5.position.y=100;peonnegro5.position.x=100;escena.remove(peonnegro5);escena.remove(patitasn7);}
 		        if((caballoblanco2.position.x==peonnegro6.position.x && caballoblanco2.position.z==peonnegro6.position.z)&&
 			  (caballoblanco2.position.y==peonnegro6.position.y))
-			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);}
+			{peonnegro6.position.y=100;peonnegro6.position.x=100;escena.remove(peonnegro6);escena.remove(patitasn8);}
 		        if((caballoblanco2.position.x==peonnegro7.position.x && caballoblanco2.position.z==peonnegro7.position.z)&&
 			  (caballoblanco2.position.y==peonnegro7.position.y))
-			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);}
+			{peonnegro7.position.y=100;peonnegro7.position.x=100;escena.remove(peonnegro7);escena.remove(patitasn9);}
 		        if((caballoblanco2.position.x==peonnegro8.position.x && caballoblanco2.position.z==peonnegro8.position.z)&&
 			  (caballoblanco2.position.y==peonnegro8.position.y))
-			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);}
+			{peonnegro8.position.y=100;peonnegro8.position.x=100;escena.remove(peonnegro8);escena.remove(patitasn10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if ((((((((((((((((caballoblanco2.position.x==peonblanco1.position.x && caballoblanco2.position.z==peonblanco1.position.z)||
 			   (caballoblanco2.position.x==peonblanco2.position.x && caballoblanco2.position.z==peonblanco2.position.z))||
@@ -3324,52 +3324,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion y
 			if((caballonegro1.position.x==torreblanca1.position.x && caballonegro1.position.z==torreblanca1.position.z)&&
 			  (caballonegro1.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((caballonegro1.position.x==torreblanca2.position.x && caballonegro1.position.z==torreblanca2.position.z)&&
 			  (caballonegro1.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((caballonegro1.position.x==caballoblanco1.position.x && caballonegro1.position.z==caballoblanco1.position.z)&&
 			  (caballonegro1.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((caballonegro1.position.x==caballoblanco2.position.x && caballonegro1.position.z==caballoblanco2.position.z)&&
 			  (caballonegro1.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((caballonegro1.position.x==alfilblanco1.position.x && caballonegro1.position.z==alfilblanco1.position.z)&&
 			  (caballonegro1.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((caballonegro1.position.x==alfilblanco2.position.x && caballonegro1.position.z==alfilblanco2.position.z)&&
 			  (caballonegro1.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas12);}
 		        if((caballonegro1.position.x==reinablanca.position.x && caballonegro1.position.z==reinablanca.position.z)&&
 			  (caballonegro1.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((caballonegro1.position.x==reyblanco.position.x && caballonegro1.position.z==reyblanco.position.z)&&
 			  (caballonegro1.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((caballonegro1.position.x==peonblanco1.position.x && caballonegro1.position.z==peonblanco1.position.z)&&
 			  (caballonegro1.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((caballonegro1.position.x==peonblanco2.position.x && caballonegro1.position.z==peonblanco2.position.z)&&
 			  (caballonegro1.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((caballonegro1.position.x==peonblanco3.position.x && caballonegro1.position.z==peonblanco3.position.z)&&
 			  (caballonegro1.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((caballonegro1.position.x==peonblanco4.position.x && caballonegro1.position.z==peonblanco4.position.z)&&
 			  (caballonegro1.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((caballonegro1.position.x==peonblanco5.position.x && caballonegro1.position.z==peonblanco5.position.z)&&
 			  (caballonegro1.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((caballonegro1.position.x==peonblanco6.position.x && caballonegro1.position.z==peonblanco6.position.z)&&
 			  (caballonegro1.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((caballonegro1.position.x==peonblanco7.position.x && caballonegro1.position.z==peonblanco7.position.z)&&
 			  (caballonegro1.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((caballonegro1.position.x==peonblanco8.position.x && caballonegro1.position.z==peonblanco8.position.z)&&
 			  (caballonegro1.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;peonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if ((((((((((((((((caballonegro1.position.x==peonnegro1.position.x && caballonegro1.position.z==peonnegro1.position.z)||
 			   (caballonegro1.position.x==peonnegro2.position.x && caballonegro1.position.z==peonnegro2.position.z))||
@@ -3426,52 +3426,52 @@ BloqueAzul.prototype.act = function(environment){
 		      }//fin if posicion y
 			if((caballonegro2.position.x==torreblanca1.position.x && caballonegro2.position.z==torreblanca1.position.z)&&
 			  (caballonegro2.position.y==torreblanca1.position.y))
-			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);}
+			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
 		        if((caballonegro2.position.x==torreblanca2.position.x && caballonegro2.position.z==torreblanca2.position.z)&&
 			  (caballonegro2.position.y==torreblanca2.position.y))
-			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);}
+			{torreblanca2.position.y=100;torreblanca2.position.x=100;escena.remove(torreblanca2);escena.remove(patitas2);}
 		        if((caballonegro2.position.x==caballoblanco1.position.x && caballonegro2.position.z==caballoblanco1.position.z)&&
 			  (caballonegro2.position.y==caballoblanco1.position.y))
-			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);}
+			{caballoblanco1.position.y=100;caballoblanco1.position.x=100;escena.remove(caballoblanco1);escena.remove(patitas13);}
 		        if((caballonegro2.position.x==caballoblanco2.position.x && caballonegro2.position.z==caballoblanco2.position.z)&&
 			  (caballonegro2.position.y==caballoblanco2.position.y))
-			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);}
+			{caballoblanco2.position.y=100;caballoblanco2.position.x=100;escena.remove(caballoblanco2);escena.remove(patitas14);}
 		        if((caballonegro2.position.x==alfilblanco1.position.x && caballonegro2.position.z==alfilblanco1.position.z)&&
 			  (caballonegro2.position.y==alfilblanco1.position.y))
-			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);}
+			{alfilblanco1.position.y=100;alfilblanco1.position.x=100;escena.remove(alfilblanco1);escena.remove(patitas11);}
 		        if((caballonegro2.position.x==alfilblanco2.position.x && caballonegro2.position.z==alfilblanco2.position.z)&&
 			  (caballonegro2.position.y==alfilblanco2.position.y))
-			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);}
+			{alfilblanco2.position.y=100;alfilblanco2.position.x=100;escena.remove(alfilblanco2);escena.remove(patitas12);}
 		        if((caballonegro2.position.x==reinablanca.position.x && caballonegro2.position.z==reinablanca.position.z)&&
 			  (caballonegro2.position.y==reinablanca.position.y))
-			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);}
+			{reinablanca.position.y=100;reinablanca.position.x=100;escena.remove(reinablanca);escena.remove(patitas15);}
 		        if((caballonegro2.position.x==reyblanco.position.x && caballonegro2.position.z==reyblanco.position.z)&&
 			  (caballonegro2.position.y==reyblanco.position.y))
-			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);}
+			{reyblanco.position.y=100;reyblanco.position.x=100;escena.remove(reyblanco);escena.remove(patitas16);}
 		        if((caballonegro2.position.x==peonblanco1.position.x && caballonegro2.position.z==peonblanco1.position.z)&&
 			  (caballonegro2.position.y==peonblanco1.position.y))
-			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);}
+			{peonblanco1.position.y=100;peonblanco1.position.x=100;escena.remove(peonblanco1);escena.remove(patitas3);}
 		        if((caballonegro2.position.x==peonblanco2.position.x && caballonegro2.position.z==peonblanco2.position.z)&&
 			  (caballonegro2.position.y==peonblanco2.position.y))
-			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);}
+			{peonblanco2.position.y=100;peonblanco2.position.x=100;escena.remove(peonblanco2);escena.remove(patitas4);}
 		        if((caballonegro2.position.x==peonblanco3.position.x && caballonegro2.position.z==peonblanco3.position.z)&&
 			  (caballonegro2.position.y==peonblanco3.position.y))
-			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);}
+			{peonblanco3.position.y=100;peonblanco3.position.x=100;escena.remove(peonblanco3);escena.remove(patitas5);}
 		        if((caballonegro2.position.x==peonblanco4.position.x && caballonegro2.position.z==peonblanco4.position.z)&&
 			  (caballonegro2.position.y==peonblanco4.position.y))
-			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);}
+			{peonblanco4.position.y=100;peonblanco4.position.x=100;escena.remove(peonblanco4);escena.remove(patitas6);}
 		        if((caballonegro2.position.x==peonblanco5.position.x && caballonegro2.position.z==peonblanco5.position.z)&&
 			  (caballonegro2.position.y==peonblanco5.position.y))
-			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);}
+			{peonblanco5.position.y=100;peonblanco5.position.x=100;escena.remove(peonblanco5);escena.remove(patitas7);}
 		        if((caballonegro2.position.x==peonblanco6.position.x && caballonegro2.position.z==peonblanco6.position.z)&&
 			  (caballonegro2.position.y==peonblanco6.position.y))
-			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);}
+			{peonblanco6.position.y=100;peonblanco6.position.x=100;escena.remove(peonblanco6);escena.remove(patitas8);}
 		        if((caballonegro2.position.x==peonblanco7.position.x && caballonegro2.position.z==peonblanco7.position.z)&&
 			  (caballonegro2.position.y==peonblanco7.position.y))
-			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);}
+			{peonblanco7.position.y=100;peonblanco7.position.x=100;escena.remove(peonblanco7);escena.remove(patitas9);}
 		        if((caballonegro2.position.x==peonblanco8.position.x && caballonegro2.position.z==peonblanco8.position.z)&&
 			  (caballonegro2.position.y==peonblanco8.position.y))
-			{peonblanco8.position.y=100;eonblanco8.position.x=100;escena.remove(peonblanco8);}
+			{peonblanco8.position.y=100;eonblanco8.position.x=100;escena.remove(peonblanco8);escena.remove(patitas10);}
 			///////////////////////////////////Piezas iguales///////////////////////////////////////////////
 			if ((((((((((((((((caballonegro2.position.x==peonnegro1.position.x && caballonegro2.position.z==peonnegro1.position.z)||
 			   (caballonegro2.position.x==peonnegro2.position.x && caballonegro2.position.z==peonnegro2.position.z))||
