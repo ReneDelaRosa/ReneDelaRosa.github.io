@@ -21,15 +21,14 @@ var createMesh = function( geometry )
     escena.add( zmesh );
     escena.add(piernaIzq);
     escena.add(piernaDer);
-    piernaIzq.position.y=-2.5;
+    piernaIzq.position.y=-2;
     piernaIzq.position.z=-3;
-    piernaDer.position.y=-2.5;
+    piernaDer.position.y=-2;
     piernaDer.position.z=3;
 };
 loader.load( "Alfil.js", createMesh );
-
-
-
+pIzqinit=0.05;
+pDerinit=-0.05;
 camara.position.z=50;
 //camara.position.x=25;
 camara.position.y=10;
@@ -41,7 +40,22 @@ renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 }
+
 function animate() {
+  piernaIzq.rotateZ(pIzqinit);
+  if (piernaIzq.rotation.z>0.785398){
+    pIzqinit=-pIzqinit;
+  }
+  else if(piernaIzq.rotation.z<-0.785398){
+    pIzqinit=-pIzqinit;
+  }
+  piernaDer.rotateZ(pDerinit);
+  if (piernaDer.rotation.z<-0.785398){
+    pDerinit=-pDerinit;
+  }
+  else if(piernaDer.rotation.z>0.785398){
+    pDerinit=-pDerinit;
+  }
 requestAnimationFrame(animate);
 renderizador.render(escena,camara);
 }
