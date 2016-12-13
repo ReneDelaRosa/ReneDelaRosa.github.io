@@ -3929,7 +3929,7 @@ function init() {
 
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
-  escena.add(patitas1,patitas2);
+  escena.add(patitas1,patitas2,patitasn1,patitasn2);
   /////////////////////////////////////////Peones/////////////////////////////////////////////////////////////////
   peonblanco1 = new PeonBlanco(20,8,-10);
   peonblanco2 = new PeonBlanco(20,8,-20);
