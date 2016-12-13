@@ -32,10 +32,10 @@ function loop(){
   //pieza.rotateY(0.1);
   pieza.piernaIzq.rotateZ(pIzqinit);
   if (pieza.piernaIzq.rotation.z>0.785398){
-    pIzqinit=-0.05;
+    pIzqinit=-pIzqinit;
   }
   else if(pieza.piernaIzq.rotation.z<-0.785398){
-    pIzqinit=0.05;
+    pIzqinit=-pIzqinit;
   }
 
   
