@@ -92,8 +92,8 @@ piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
 pieDer=new THREE.CylinderGeometry(1,.6,4,32);
 pieIzq.translate(-3.5,-1,0);
 pieDer.translate(-3.5,-1,0);
-pieIzq.rotateZ(-Math.PI);
-pieDer.rotateZ(-Math.PI);
+pieIzq.rotateZ(-Math.PI/2);
+pieDer.rotateZ(-Math.PI/2);
 var PiernaizqMalla=new THREE.Mesh(piernaIzq);
 var PieizqMalla=new THREE.Mesh(pieIzq);
 	
