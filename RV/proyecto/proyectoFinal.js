@@ -3875,12 +3875,11 @@ function init() {
   }}
   ///////////////////////////////////////////Torres////////////////////////////////////////////////////////////////
   //torreblanca1 = new TorreBlanca(10,8,-10);
-  torreblanca2 = new TorreBlanca(10,8,-80);
+  //torreblanca2 = new TorreBlanca(10,8,-80);
   torrenegra1 = new TorreNegra(80,8,-10);
   torrenegra2 = new TorreNegra(80,8,-80);
-  patitas1=new Patitasblancas(10,-10)
-  patitas2=new Patitasblancas(10,-80)
-
+  patitas1=new Patitasblancas(10,-10);
+  patitas2=new Patitasblancas(10,-80);
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
   escena.add(patitas1,patitas2);
