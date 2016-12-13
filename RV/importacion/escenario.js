@@ -21,9 +21,9 @@ var createMesh = function( geometry )
     escena.add( zmesh );
     escena.add(piernaIzq);
     escena.add(piernaDer);
-    piernaIzq.position.y=-1;
+    piernaIzq.position.y=-1.3;
     piernaIzq.position.z=-3;
-    piernaDer.position.y=-1;
+    piernaDer.position.y=-1.3;
     piernaDer.position.z=3;
 };
 loader.load( "Alfil.js", createMesh );
