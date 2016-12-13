@@ -3918,10 +3918,10 @@ function init() {
     grupo3.add(malla3);
   }}
   ///////////////////////////////////////////Torres////////////////////////////////////////////////////////////////
-  //torreblanca1 = new TorreBlanca(10,12,-10);
-  //torreblanca2 = new TorreBlanca(10,12,-80);
-  //torrenegra1 = new TorreNegra(80,12,-10);
-  //torrenegra2 = new TorreNegra(80,12,-80);
+  torreblanca1 = new TorreBlanca(10,12,-10);
+  torreblanca2 = new TorreBlanca(10,12,-80);
+  torrenegra1 = new TorreNegra(80,12,-10);
+  torrenegra2 = new TorreNegra(80,12,-80);
   patitas1=new Patitasblancas(10,-10);
   patitasn1=new Patitasnegras(80,-10);
   patitas2=new Patitasblancas(10,-80);
@@ -3984,15 +3984,15 @@ function init() {
 }
 
 function loop() {
-  patitas1.position.x=torreblanca1.position.x-10;
-  patitas1.position.z=torreblanca1.position.z+10;
-  patitasn1.position.x=torrenegra1.position.x-80;
-  patitasn1.position.z=torrenegra1.position.z+10;
+  patitas1.position.x=(torreblanca1.position.x)-10;
+  patitas1.position.z=(torreblanca1.position.z)+10;
+  patitasn1.position.x=(torrenegra1.position.x)-80;
+  patitasn1.position.z=(torrenegra1.position.z)+10;
 
-  patitas2.position.x=torreblanca2.position.x-10;
-  patitas2.position.z=torreblanca2.position.z-80;
-  patitasn2.position.x=torrenegra2.position.x-80;
-  patitasn2.position.z=torrenegra2.position.z+80;
+  patitas2.position.x=(torreblanca2.position.x)-10;
+  patitas2.position.z=(torreblanca2.position.z)-80;
+  patitasn2.position.x=(torrenegra2.position.x)-80;
+  patitasn2.position.z=(torrenegra2.position.z)+80;
 
   requestAnimationFrame(loop);
   escena.sense();
