@@ -3841,14 +3841,14 @@ function init() {
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
   /////////////////////////////////////////Peones/////////////////////////////////////////////////////////////////
-  peonblanco1 = new PeonBlanco(20,4.5,-10);
-  peonblanco2 = new PeonBlanco(20,4.5,-20);
-  peonblanco3 = new PeonBlanco(20,4.5,-30);
-  peonblanco4 = new PeonBlanco(20,4.5,-40);
-  peonblanco5 = new PeonBlanco(20,4.5,-50);
-  peonblanco6 = new PeonBlanco(20,4.5,-60);
-  peonblanco7 = new PeonBlanco(20,4.5,-70);
-  peonblanco8 = new PeonBlanco(20,4.5,-80);
+  peonblanco1 = new PeonBlanco(20,10.5,-10);
+  peonblanco2 = new PeonBlanco(20,10.5,-20);
+  peonblanco3 = new PeonBlanco(20,10.5,-30);
+  peonblanco4 = new PeonBlanco(20,10.5,-40);
+  peonblanco5 = new PeonBlanco(20,10.5,-50);
+  peonblanco6 = new PeonBlanco(20,10.5,-60);
+  peonblanco7 = new PeonBlanco(20,10.5,-70);
+  peonblanco8 = new PeonBlanco(20,10.5,-80);
 	
   peonnegro1 = new PeonNegro(70,4.5,-10);
   peonnegro2 = new PeonNegro(70,4.5,-20);
