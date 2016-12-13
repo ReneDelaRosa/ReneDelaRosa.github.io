@@ -412,38 +412,44 @@ BloqueAzul.prototype.act = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvtb1,true);
 		      if(obstaculo.length >0)
-			{this.colision = 1;this.step=0;this.pIzqinit=0;this.pDerinit=0}
- 		      else{this.colision = 0;this.step=0.25;this.pIzqinit=-0.05;this.pDerinit=0.05;}
+			{this.colision = 1;this.step=0;pIzqinit=0;pDerinit=0}
+ 		      else{this.colision = 0;this.step=0.25;pIzqinit=-0.05;pDerinit=0.05;}
 		    }//fin prototype sense
 		
 		    TorreBlanca.prototype.act = function(environment){ 
 		      if (this.colision!=1){
 			if(torreblanca1.position.x<=bvtb1.position.x){
 			  torreblanca1.position.x += this.step;
-		          patitas1.Plcompleta.rotateZ(this.pIzqinit);
+		          patitas1.Plcompleta.rotateZ(pIzqinit);
   			  if (patitas1.Plcompleta.rotation.z>0.785398){
-                          this.pIzqinit=-this.pIzqinit;
+                          pIzqinit=-pIzqinit;
                           }
                           else if(patitas1.Plcompleta.rotation.z<-0.785398){
-                          this.pIzqinit=-this.pIzqinit;
+                          pIzqinit=-pIzqinit;
                           }
                           patitas1.Prcompleta.rotateZ(this.pDerinit);
                           if (patitas1.Prcompleta.rotation.z<-0.785398){
-                          this.pDerinit=-this.pDerinit;
+                          pDerinit=-pDerinit;
                           }
                           else if(patitas1.Prcompleta.rotation.z>0.785398){
-                          this.pDerinit=-this.pDerinit;
+                          pDerinit=-pDerinit;
                           }
 			}
 			else{
 			  torreblanca1.position.x -= this.step;
+			  pDerinit=0;
+			  pIzqinit=0;
 		        }
 		      }//fin if posicion x
 		      if (this.colision!=1){
-			if(torreblanca1.position.z<=bvtb1.position.z)
+			if(torreblanca1.position.z<=bvtb1.position.z){
 			  torreblanca1.position.z += this.step;
-			else
+			}
+			else{
 			  torreblanca1.position.z -= this.step;
+			  pDerinit=0;
+			  pIzqinit=0;
+			}
 		      }//fin if posicion z
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
 		        if((torreblanca1.position.x==torrenegra1.position.x && torreblanca1.position.z==torrenegra1.position.z)&&
