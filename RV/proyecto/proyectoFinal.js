@@ -71,11 +71,11 @@ Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
 this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
 
 this.Plcompleta.position.x=x;
-this.Plcompleta.position.y=15;
-this.Plcompleta.position.z=-z;
-this.Prcompleta.position.y=-x;
-this.Prcompleta.position.y=15;
-this.Prcompleta.position.z=z;
+this.Plcompleta.position.y=10;
+this.Plcompleta.position.z=z-3.5;
+this.Prcompleta.position.y=x;
+this.Prcompleta.position.y=10;
+this.Prcompleta.position.z=z+3.5;
 	
 this.add(this.Plcompleta,this.Prcompleta);
 }
