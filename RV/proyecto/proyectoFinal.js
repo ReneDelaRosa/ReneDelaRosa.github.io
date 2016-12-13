@@ -93,7 +93,7 @@ function TorreNegra(x=0,y=0,z=0){
 TorreBlanca.prototype = new Agent();
 TorreNegra.prototype = new Agent();
 ///////////////////////////////////////Peones//////////////////////////////////////////////////////////////////////////////////////////
-function PeonBlanco(x=0,y=0,z=10){
+function PeonBlanco(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
   var textura1 = new THREE.TextureLoader().load('maderablanca.jpg');
   var maderablanca = new THREE.MeshLambertMaterial({map:textura1});
