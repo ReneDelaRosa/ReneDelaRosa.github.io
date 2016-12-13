@@ -4060,9 +4060,9 @@ function loop() {
 	
 	
 	
-  patitasn1.position.x=(torrenegra1.position.x)-70;
+  patitasn1.position.x=(torrenegra1.position.x)-80;
   patitasn1.position.z=(torrenegra1.position.z)+10;
-  patitasn2.position.x=(torrenegra2.position.x)-70;
+  patitasn2.position.x=(torrenegra2.position.x)-80;
   patitasn2.position.z=(torrenegra2.position.z)+80;
   patitasn3.position.x=(peonnegro1.position.x)-70;
   patitasn3.position.z=(peonnegro1.position.z)+10;
