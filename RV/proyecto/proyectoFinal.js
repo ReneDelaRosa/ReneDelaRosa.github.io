@@ -4032,6 +4032,20 @@ function loop() {
   patitasn2.position.z=(torrenegra2.position.z)+80;
   patitasn3.position.x=(peonnegro1.position.x)-70;
   patitasn3.position.z=(peonnegro1.position.z)+10;
+  patitasn4.position.x=(peonnegro2.position.x)-70;
+  patitasn4.position.z=(peonnegro2.position.z)+20;
+  patitasn5.position.x=(peonnegro3.position.x)-70;
+  patitasn5.position.z=(peonnegro3.position.z)+30;
+  patitasn6.position.x=(peonnegro4.position.x)-70;
+  patitasn6.position.z=(peonnegro4.position.z)+40;
+  patitasn7.position.x=(peonnegro5.position.x)-70;
+  patitasn7.position.z=(peonnegro5.position.z)+50;
+  patitasn8.position.x=(peonnegro6.position.x)-70;
+  patitasn8.position.z=(peonnegro6.position.z)+60;
+  patitasn9.position.x=(peonnegro7.position.x)-70;
+  patitasn9.position.z=(peonnegro7.position.z)+70;
+  patitasn10.position.x=(peonnegro8.position.x)-70;
+  patitasn10.position.z=(peonnegro8.position.z)+80;
 
   requestAnimationFrame(loop);
   escena.sense();
