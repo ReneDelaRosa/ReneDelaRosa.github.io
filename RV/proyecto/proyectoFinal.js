@@ -531,6 +531,8 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Torre blanca 2//////////////////////////////////////////////////////////////////
 		  if (torreblanca2.position.x===bloquerojo.position.x && torreblanca2.position.z===bloquerojo.position.z){
 		    var bvtb2=bloqueverde;//Bloqueverdetorreblanca2
+				var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    TorreBlanca.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvtb2,true);
@@ -553,6 +555,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  torreblanca2.position.z -= this.step;
 		      }//fin if posicion z
+					//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(torreblanca2.position.x!=bvtb2.position.x || torreblanca2.position.z!=bvtb2.position.z)
+			   	{patitas2.Plcompleta.rotateZ(pIzqinit);
+					patitas2.Prcompleta.rotateZ(pDerinit);
+					if (patitas2.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas2.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas2.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas2.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas2.Plcompleta.rotation.z=0;
+				patitas2.Prcompleta.rotation.z=0;				
+				}				 
+		}
 		        if((torreblanca2.position.x==torrenegra1.position.x && torreblanca2.position.z==torrenegra1.position.z)&&
 			  (torreblanca2.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -626,6 +650,8 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Torre negra 1///////////////////////////////////////////////////////////////////
 		  if (torrenegra1.position.x===bloquerojo.position.x && torrenegra1.position.z===bloquerojo.position.z){
 		    var bvtn1 = bloqueverde;
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    TorreNegra.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvtn1,true);
@@ -648,6 +674,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  torrenegra1.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(torrenegra1.position.x!=bvtn1.position.x || torrenegra1.position.z!=bvtn1.position.z)
+			   	{patitasn1.Plcompleta.rotateZ(pIzqinit);
+					patitasn1.Prcompleta.rotateZ(pDerinit);
+					if (patitasn1.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn1.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn1.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn1.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn1.Plcompleta.rotation.z=0;
+				patitasn1.Prcompleta.rotation.z=0;				
+				}				 
+		}
 		        if((torrenegra1.position.x==torreblanca1.position.x && torrenegra1.position.z==torreblanca1.position.z)&&
 			  (torrenegra1.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -721,6 +769,8 @@ BloqueAzul.prototype.act = function(environment){
 		  ////////////////////////////Torre negra 2///////////////////////////////////////////////////////////////////  
 		  if (torrenegra2.position.x===bloquerojo.position.x && torrenegra2.position.z===bloquerojo.position.z){
 		    var bvtn2 = bloqueverde;
+				var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    TorreNegra.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvtn2,true);
@@ -743,6 +793,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  torrenegra2.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(torrenegra2.position.x!=bvtn2.position.x || torrenegra2.position.z!=bvtn2.position.z)
+			   	{patitasn2.Plcompleta.rotateZ(pIzqinit);
+					patitasn2.Prcompleta.rotateZ(pDerinit);
+					if (patitasn2.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn2.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn2.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn2.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn2.Plcompleta.rotation.z=0;
+				patitasn2.Prcompleta.rotation.z=0;				
+				}				 
+		}
 		        if((torrenegra2.position.x==torreblanca1.position.x && torrenegra2.position.z==torreblanca1.position.z)&&
 			  (torrenegra2.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -817,6 +889,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 1//////////////////////////////////////////////////////////////////
 		  if (peonblanco1.position.x===bloquerojo.position.x && peonblanco1.position.z===bloquerojo.position.z){
 		    var bvpb1=bloqueverde;//Bloqueverdetorreblanca1
+				var pIzqinit=0.05;
+				var pDerinit=-0.05;
 			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
@@ -840,6 +914,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco1.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco1.position.x!=bvpb1.position.x || peonblanco1.position.z!=bvpb1.position.z)
+			   	{patitas3.Plcompleta.rotateZ(pIzqinit);
+					patitas3.Prcompleta.rotateZ(pDerinit);
+					if (patitas3.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas3.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas3.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas3.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas3.Plcompleta.rotation.z=0;
+				patitas3.Prcompleta.rotation.z=0;				
+				}				 
+		}
                         if((peonblanco1.position.x==torrenegra1.position.x && peonblanco1.position.z==torrenegra1.position.z)&&
 			  (peonblanco1.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -913,6 +1009,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 2//////////////////////////////////////////////////////////////////
 		  if (peonblanco2.position.x===bloquerojo.position.x && peonblanco2.position.z===bloquerojo.position.z){
 		    var bvpb2=bloqueverde;//Bloqueverdetorreblanca1
+				var pIzqinit=0.05;
+				var pDerinit=-0.05;
 			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
@@ -936,6 +1034,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco2.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco2.position.x!=bvpb2.position.x || peonblanco2.position.z!=bvpb2.position.z)
+			   	{patitas4.Plcompleta.rotateZ(pIzqinit);
+					patitas4.Prcompleta.rotateZ(pDerinit);
+					if (patitas4.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas4.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas4.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas4.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas4.Plcompleta.rotation.z=0;
+				patitas4.Prcompleta.rotation.z=0;				
+				}				 
+		}
 		        if((peonblanco2.position.x==torrenegra1.position.x && peonblanco2.position.z==torrenegra1.position.z)&&
 			  (peonblanco2.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1009,7 +1129,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 3//////////////////////////////////////////////////////////////////
 		  if (peonblanco3.position.x===bloquerojo.position.x && peonblanco3.position.z===bloquerojo.position.z){
 		    var bvpb3=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb3,true);
@@ -1032,6 +1153,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco3.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco3.position.x!=bvpb3.position.x || peonblanco3.position.z!=bvpb3.position.z)
+			   	{patitas5.Plcompleta.rotateZ(pIzqinit);
+					patitas5.Prcompleta.rotateZ(pDerinit);
+					if (patitas5.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas5.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas5.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas5.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas5.Plcompleta.rotation.z=0;
+				patitas5.Prcompleta.rotation.z=0;				
+				}				 
+		}
 		        if((peonblanco3.position.x==torrenegra1.position.x && peonblanco3.position.z==torrenegra1.position.z)&&
 			  (peonblanco3.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1105,7 +1248,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 4//////////////////////////////////////////////////////////////////
 		  if (peonblanco4.position.x===bloquerojo.position.x && peonblanco4.position.z===bloquerojo.position.z){
 		    var bvpb4=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb4,true);
@@ -1128,6 +1272,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco4.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco4.position.x!=bvpb4.position.x || peonblanco4.position.z!=bvpb4.position.z)
+			   	{patitas6.Plcompleta.rotateZ(pIzqinit);
+					patitas6.Prcompleta.rotateZ(pDerinit);
+					if (patitas6.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas6.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas6.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas6.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas6.Plcompleta.rotation.z=0;
+				patitas6.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonblanco4.position.x==torrenegra1.position.x && peonblanco4.position.z==torrenegra1.position.z)&&
 			  (peonblanco4.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1201,7 +1367,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 5//////////////////////////////////////////////////////////////////
 		  if (peonblanco5.position.x===bloquerojo.position.x && peonblanco5.position.z===bloquerojo.position.z){
 		    var bvpb5=bloqueverde;//Bloqueverdetorreblanca1
-			  
+				var pIzqinit=0.05;
+				var pDerinit=-0.05;		  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb5,true);
@@ -1224,6 +1391,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco5.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco5.position.x!=bvpb5.position.x || peonblanco5.position.z!=bvpb5.position.z)
+			   	{patitas7.Plcompleta.rotateZ(pIzqinit);
+					patitas7.Prcompleta.rotateZ(pDerinit);
+					if (patitas7.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas7.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas7.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas7.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas7.Plcompleta.rotation.z=0;
+				patitas7.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonblanco5.position.x==torrenegra1.position.x && peonblanco5.position.z==torrenegra1.position.z)&&
 			  (peonblanco5.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1297,7 +1486,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 6//////////////////////////////////////////////////////////////////
 		  if (peonblanco6.position.x===bloquerojo.position.x && peonblanco6.position.z===bloquerojo.position.z){
 		    var bvpb6=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb6,true);
@@ -1320,6 +1510,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco6.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco6.position.x!=bvpb6.position.x || peonblanco6.position.z!=bvpb6.position.z)
+			   	{patitas8.Plcompleta.rotateZ(pIzqinit);
+					patitas8.Prcompleta.rotateZ(pDerinit);
+					if (patitas8.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas8.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas8.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas8.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas8.Plcompleta.rotation.z=0;
+				patitas8.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonblanco6.position.x==torrenegra1.position.x && peonblanco6.position.z==torrenegra1.position.z)&&
 			  (peonblanco6.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1393,7 +1605,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 7//////////////////////////////////////////////////////////////////
 		  if (peonblanco7.position.x===bloquerojo.position.x && peonblanco7.position.z===bloquerojo.position.z){
 		    var bvpb7=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb7,true);
@@ -1416,6 +1629,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco7.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco7.position.x!=bvpb7.position.x || peonblanco7.position.z!=bvpb7.position.z)
+			   	{patitas9.Plcompleta.rotateZ(pIzqinit);
+					patitas9.Prcompleta.rotateZ(pDerinit);
+					if (patitas9.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas9.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas9.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas9.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas9.Plcompleta.rotation.z=0;
+				patitas9.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonblanco7.position.x==torrenegra1.position.x && peonblanco7.position.z==torrenegra1.position.z)&&
 			  (peonblanco7.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1489,7 +1724,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon blanco 8//////////////////////////////////////////////////////////////////
 		  if (peonblanco8.position.x===bloquerojo.position.x && peonblanco8.position.z===bloquerojo.position.z){
 		    var bvpb8=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpb8,true);
@@ -1512,6 +1748,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonblanco8.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonblanco8.position.x!=bvpb8.position.x || peonblanco8.position.z!=bvpb8.position.z)
+			   	{patitas10.Plcompleta.rotateZ(pIzqinit);
+					patitas10.Prcompleta.rotateZ(pDerinit);
+					if (patitas10.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas10.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas10.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas10.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas10.Plcompleta.rotation.z=0;
+				patitas10.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonblanco8.position.x==torrenegra1.position.x && peonblanco8.position.z==torrenegra1.position.z)&&
 			  (peonblanco8.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -1585,7 +1843,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 1//////////////////////////////////////////////////////////////////
 		  if (peonnegro1.position.x===bloquerojo.position.x && peonnegro1.position.z===bloquerojo.position.z){
 		    var bvpn1=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn1,true);
@@ -1608,6 +1867,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro1.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro1.position.x!=bvpn1.position.x || peonnegro1.position.z!=bvpn1.position.z)
+			   	{patitasn3.Plcompleta.rotateZ(pIzqinit);
+					patitasn3.Prcompleta.rotateZ(pDerinit);
+					if (patitasn3.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn3.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn3.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn3.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn3.Plcompleta.rotation.z=0;
+				patitasn3.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro1.position.x==torreblanca1.position.x && peonnegro1.position.z==torreblanca1.position.z)&&
 			  (peonnegro1.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -1681,7 +1962,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 2//////////////////////////////////////////////////////////////////
 		  if (peonnegro2.position.x===bloquerojo.position.x && peonnegro2.position.z===bloquerojo.position.z){
 		    var bvpn2=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn2,true);
@@ -1704,6 +1986,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro2.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro2.position.x!=bvpn2.position.x || peonnegro2.position.z!=bvpn2.position.z)
+			   	{patitasn4.Plcompleta.rotateZ(pIzqinit);
+					patitasn4.Prcompleta.rotateZ(pDerinit);
+					if (patitasn4.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn4.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn4.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn4.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn4.Plcompleta.rotation.z=0;
+				patitasn4.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro2.position.x==torreblanca1.position.x && peonnegro2.position.z==torreblanca1.position.z)&&
 			  (peonnegro2.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -1777,7 +2081,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 3//////////////////////////////////////////////////////////////////
 		  if (peonnegro3.position.x===bloquerojo.position.x && peonnegro3.position.z===bloquerojo.position.z){
 		    var bvpn3=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn3,true);
@@ -1800,6 +2105,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro3.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro3.position.x!=bvpn3.position.x || peonnegro3.position.z!=bvpn3.position.z)
+			   	{patitasn5.Plcompleta.rotateZ(pIzqinit);
+					patitasn5.Prcompleta.rotateZ(pDerinit);
+					if (patitasn5.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn5.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn5.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn5.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn5.Plcompleta.rotation.z=0;
+				patitasn5.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro3.position.x==torreblanca1.position.x && peonnegro3.position.z==torreblanca1.position.z)&&
 			  (peonnegro3.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -1873,7 +2200,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 4//////////////////////////////////////////////////////////////////
 		  if (peonnegro4.position.x===bloquerojo.position.x && peonnegro4.position.z===bloquerojo.position.z){
 		    var bvpn4=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn4,true);
@@ -1896,6 +2224,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro4.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro4.position.x!=bvpn4.position.x || peonnegro4.position.z!=bvpn4.position.z)
+			   	{patitasn6.Plcompleta.rotateZ(pIzqinit);
+					patitasn6.Prcompleta.rotateZ(pDerinit);
+					if (patitasn6.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn6.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn6.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn6.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn6.Plcompleta.rotation.z=0;
+				patitasn6.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro4.position.x==torreblanca1.position.x && peonnegro4.position.z==torreblanca1.position.z)&&
 			  (peonnegro4.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -1969,7 +2319,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 5//////////////////////////////////////////////////////////////////
 		  if (peonnegro5.position.x===bloquerojo.position.x && peonnegro5.position.z===bloquerojo.position.z){
 		    var bvpn5=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn5,true);
@@ -1992,6 +2343,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro5.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro5.position.x!=bvpn5.position.x || peonnegro5.position.z!=bvpn5.position.z)
+			   	{patitasn7.Plcompleta.rotateZ(pIzqinit);
+					patitasn7.Prcompleta.rotateZ(pDerinit);
+					if (patitasn7.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn7.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn7.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn7.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn7.Plcompleta.rotation.z=0;
+				patitasn7.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro5.position.x==torreblanca1.position.x && peonnegro5.position.z==torreblanca1.position.z)&&
 			  (peonnegro5.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2065,7 +2438,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 6//////////////////////////////////////////////////////////////////
 		  if (peonnegro6.position.x===bloquerojo.position.x && peonnegro6.position.z===bloquerojo.position.z){
 		    var bvpn6=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn6,true);
@@ -2088,6 +2462,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro6.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro6.position.x!=bvpn6.position.x || peonnegro6.position.z!=bvpn6.position.z)
+			   	{patitasn8.Plcompleta.rotateZ(pIzqinit);
+					patitasn8.Prcompleta.rotateZ(pDerinit);
+					if (patitasn8.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn8.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn8.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn8.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn8.Plcompleta.rotation.z=0;
+				patitasn8.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro6.position.x==torreblanca1.position.x && peonnegro6.position.z==torreblanca1.position.z)&&
 			  (peonnegro6.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2161,7 +2557,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 7/////////////////////////////////////////////////////////////////
 		  if (peonnegro7.position.x===bloquerojo.position.x && peonnegro7.position.z===bloquerojo.position.z){
 		    var bvpn7=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn7,true);
@@ -2184,6 +2581,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro7.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro7.position.x!=bvpn6.position.x || peonnegro7.position.z!=bvpn6.position.z)
+			   	{patitasn9.Plcompleta.rotateZ(pIzqinit);
+					patitasn9.Prcompleta.rotateZ(pDerinit);
+					if (patitasn9.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn9.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn9.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn9.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn9.Plcompleta.rotation.z=0;
+				patitasn9.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro7.position.x==torreblanca1.position.x && peonnegro7.position.z==torreblanca1.position.z)&&
 			  (peonnegro7.position.y==torreblanca1.position.y))
 			{torreblanca.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2257,7 +2676,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Peon negro 8//////////////////////////////////////////////////////////////////
 		  if (peonnegro8.position.x===bloquerojo.position.x && peonnegro8.position.z===bloquerojo.position.z){
 		    var bvpn8=bloqueverde;//Bloqueverdetorreblanca1
-			  
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;			  
 		    PeonNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvpn8,true);
@@ -2280,6 +2700,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  peonnegro8.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(peonnegro8.position.x!=bvpn8.position.x || peonnegro8.position.z!=bvpn8.position.z)
+			   	{patitasn10.Plcompleta.rotateZ(pIzqinit);
+					patitasn10.Prcompleta.rotateZ(pDerinit);
+					if (patitasn10.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn10.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn10.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn10.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn10.Plcompleta.rotation.z=0;
+				patitasn10.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((peonnegro8.position.x==torreblanca1.position.x && peonnegro8.position.z==torreblanca1.position.z)&&
 			  (peonnegro8.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2354,7 +2796,9 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Alfil Blanco 1//////////////////////////////////////////////////////////////////
 		  if (alfilblanco1.position.x===bloquerojo.position.x && alfilblanco1.position.z===bloquerojo.position.z){
 		    var bvab1=bloqueverde;//Bloqueverdealfilblanco1
-		    AlfilBlanco.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				AlfilBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvab1,true);
 		      if(obstaculo.length >0)
@@ -2376,6 +2820,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  alfilblanco1.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(alfilblanco1.position.x!=bvab1.position.x || alfilblanco1.position.z!=bvab1.position.z)
+			   	{patitas11.Plcompleta.rotateZ(pIzqinit);
+					patitas11.Prcompleta.rotateZ(pDerinit);
+					if (patitas11.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas11.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas11.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas11.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas11.Plcompleta.rotation.z=0;
+				patitas11.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((alfilblanco1.position.x==torrenegra1.position.x && alfilblanco1.position.z==torrenegra1.position.z)&&
 			  (alfilblanco1.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -2449,7 +2915,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Alfil blanco 2//////////////////////////////////////////////////////////////////
 		  if (alfilblanco2.position.x===bloquerojo.position.x && alfilblanco2.position.z===bloquerojo.position.z){
 		    var bvab2=bloqueverde;//Bloqueverdealfilblanco2
-		    AlfilBlanco.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				AlfilBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvab2,true);
 		      if(obstaculo.length >0)
@@ -2471,6 +2939,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  alfilblanco2.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(alfilblanco2.position.x!=bvab2.position.x || alfilblanco2.position.z!=bvab2.position.z)
+			   	{patitas11.Plcompleta.rotateZ(pIzqinit);
+					patitas12.Prcompleta.rotateZ(pDerinit);
+					if (patitas12.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas12.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas12.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas12.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas12.Plcompleta.rotation.z=0;
+				patitas12.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((alfilblanco2.position.x==torrenegra1.position.x && alfilblanco2.position.z==torrenegra1.position.z)&&
 			  (alfilblanco2.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -2544,7 +3034,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Alfil Negro 1///////////////////////////////////////////////////////////////////
 		  if (alfilnegro1.position.x===bloquerojo.position.x && alfilnegro1.position.z===bloquerojo.position.z){
 		    var bvan1 = bloqueverde;
-		    AlfilNegro.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;		    
+				AlfilNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvan1,true);
 		      if(obstaculo2.length > 0)
@@ -2566,6 +3058,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  alfilnegro1.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(alfilnegro1.position.x!=bvan1.position.x || alfilnegro1.position.z!=bvan1.position.z)
+			   	{patitasn11.Plcompleta.rotateZ(pIzqinit);
+					patitasn11.Prcompleta.rotateZ(pDerinit);
+					if (patitasn11.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn11.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn11.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn11.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn11.Plcompleta.rotation.z=0;
+				patitasn11.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((alfilnegro1.position.x==torreblanca1.position.x && alfilnegro1.position.z==torreblanca1.position.z)&&
 			  (alfilnegro1.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2639,7 +3153,9 @@ BloqueAzul.prototype.act = function(environment){
 		  ////////////////////////////Alfil Negro 2///////////////////////////////////////////////////////////////////  
 		  if (alfilnegro2.position.x===bloquerojo.position.x && alfilnegro2.position.z===bloquerojo.position.z){
 		    var bvan2 = bloqueverde;
-		    AlfilNegro.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				AlfilNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvan2,true);
 		      if(obstaculo2.length > 0)
@@ -2661,6 +3177,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  alfilnegro2.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(alfilnegro2.position.x!=bvan2.position.x || alfilnegro2.position.z!=bvan2.position.z)
+			   	{patitasn12.Plcompleta.rotateZ(pIzqinit);
+					patitasn12.Prcompleta.rotateZ(pDerinit);
+					if (patitasn12.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn12.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn12.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn12.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn12.Plcompleta.rotation.z=0;
+				patitasn12.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((alfilnegro2.position.x==torreblanca1.position.x && alfilnegro2.position.z==torreblanca1.position.z)&&
 			  (alfilnegro2.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2735,7 +3273,9 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Reina Blanca//////////////////////////////////////////////////////////////////
 		  if (reinablanca.position.x===bloquerojo.position.x && reinablanca.position.z===bloquerojo.position.z){
 		    var bvrab=bloqueverde;
-		    ReinaBlanca.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				ReinaBlanca.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvrab,true);
 		      if(obstaculo.length >0)
@@ -2757,6 +3297,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  reinablanca.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(reinablanca.position.x!=bvrab.position.x || reinablanca.position.z!=bvrab.position.z)
+			   	{patitas15.Plcompleta.rotateZ(pIzqinit);
+					patitas15.Prcompleta.rotateZ(pDerinit);
+					if (patitas15.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas15.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas15.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas15.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas15.Plcompleta.rotation.z=0;
+				patitas15.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((reinablanca.position.x==torrenegra1.position.x && reinablanca.position.z==torrenegra1.position.z)&&
 			  (reinablanca.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -2830,7 +3392,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Reina Negra//////////////////////////////////////////////////////////////////
 		  if (reinanegra.position.x===bloquerojo.position.x && reinanegra.position.z===bloquerojo.position.z){
 		    var bvran=bloqueverde;
-		    ReinaNegra.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				ReinaNegra.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvran,true);
 		      if(obstaculo.length >0)
@@ -2852,6 +3416,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  reinanegra.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(reinanegra.position.x!=bvran.position.x || reinanegra.position.z!=bvran.position.z)
+			   	{patitasn15.Plcompleta.rotateZ(pIzqinit);
+					patitasn15.Prcompleta.rotateZ(pDerinit);
+					if (patitasn15.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn15.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn15.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn15.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn15.Plcompleta.rotation.z=0;
+				patitasn15.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((reinanegra.position.x==torreblanca1.position.x && reinanegra.position.z==torreblanca1.position.z)&&
 			  (reinanegra.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -2926,6 +3512,8 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Rey Blanco//////////////////////////////////////////////////////////////////
 		  if (reyblanco.position.x===bloquerojo.position.x && reyblanco.position.z===bloquerojo.position.z){
 		    var bvryb=bloqueverde;
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
 		    ReyBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvryb,true);
@@ -2948,6 +3536,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  reyblanco.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(reyblanco.position.x!=bvryb.position.x || reyblanco.position.z!=bvryb.position.z)
+			   	{patitas16.Plcompleta.rotateZ(pIzqinit);
+					patitas16.Prcompleta.rotateZ(pDerinit);
+					if (patitas16.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas16.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas16.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas16.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas16.Plcompleta.rotation.z=0;
+				patitas16.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((reyblanco.position.x==torrenegra1.position.x && reyblanco.position.z==torrenegra1.position.z)&&
 			  (reyblanco.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -3021,7 +3631,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Rey Negro//////////////////////////////////////////////////////////////////
 		  if (reynegro.position.x===bloquerojo.position.x && reynegro.position.z===bloquerojo.position.z){
 		    var bvryn=bloqueverde;
-		    ReyNegro.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				ReyNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvryn,true);
 		      if(obstaculo.length >0)
@@ -3043,6 +3655,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			  reynegro.position.z -= this.step;
 		      }//fin if posicion z
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(reynegro.position.x!=bvryn.position.x || reynegro.position.z!=bvryn.position.z)
+			   	{patitasn16.Plcompleta.rotateZ(pIzqinit);
+					patitasn16.Prcompleta.rotateZ(pDerinit);
+					if (patitasn16.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn16.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn16.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn16.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn16.Plcompleta.rotation.z=0;
+				patitasn16.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((reynegro.position.x==torreblanca1.position.x && reynegro.position.z==torreblanca1.position.z)&&
 			  (reynegro.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -3117,7 +3751,9 @@ BloqueAzul.prototype.act = function(environment){
 	          ///////////////////////////////////Caballo Blanco 1//////////////////////////////////////////////////////////////////
 		  if (caballoblanco1.position.x===bloquerojo.position.x && caballoblanco1.position.z===bloquerojo.position.z){
 		    var bvcb1=bloqueverde;
-		    CaballoBlanco.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				CaballoBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvcb1,true);
 		      if(obstaculo.length >0)
@@ -3145,6 +3781,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			   {caballoblanco1.position.y = 12;}
 		      }//fin if posicion y
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(caballoblanco1.position.x!=bvcb1.position.x || caballoblanco1.position.z!=bvcb1.position.z)
+			   	{patitas13.Plcompleta.rotateZ(pIzqinit);
+					patitas13.Prcompleta.rotateZ(pDerinit);
+					if (patitas13.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas13.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas13.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas13.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas13.Plcompleta.rotation.z=0;
+				patitas13.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((caballoblanco1.position.x==torrenegra1.position.x && caballoblanco1.position.z==torrenegra1.position.z)&&
 			  (caballoblanco1.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -3219,7 +3877,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Caballo blanco 2//////////////////////////////////////////////////////////////////
 		  if (caballoblanco2.position.x===bloquerojo.position.x && caballoblanco2.position.z===bloquerojo.position.z){
 		    var bvcb2=bloqueverde;//Bloqueverdealfilblanco2
-		    CaballoBlanco.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				CaballoBlanco.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvcb2,true);
 		      if(obstaculo.length >0)
@@ -3247,6 +3907,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			   {caballoblanco2.position.y = 12;}
 		      }//fin if posicion y
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(caballoblanco2.position.x!=bvcb1.position.x || caballoblanco2.position.z!=bvcb1.position.z)
+			   	{patitas14.Plcompleta.rotateZ(pIzqinit);
+					patitas14.Prcompleta.rotateZ(pDerinit);
+					if (patitas14.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitas14.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitas14.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitas14.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitas14.Plcompleta.rotation.z=0;
+				patitas14.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((caballoblanco2.position.x==torrenegra1.position.x && caballoblanco2.position.z==torrenegra1.position.z)&&
 			  (caballoblanco2.position.y==torrenegra1.position.y))
 			{torrenegra1.position.y=100;torrenegra1.position.x=100;escena.remove(torrenegra1);escena.remove(patitasn1);}
@@ -3321,7 +4003,9 @@ BloqueAzul.prototype.act = function(environment){
 	          /////////////////////////////////Caballo Negro 1///////////////////////////////////////////////////////////////////
 		  if (caballonegro1.position.x===bloquerojo.position.x && caballonegro1.position.z===bloquerojo.position.z){
 		    var bvcn1 = bloqueverde;
-		    CaballoNegro.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				CaballoNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvcn1,true);
 		      if(obstaculo2.length > 0)
@@ -3349,6 +4033,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			   {caballonegro1.position.y = 12;}
 		      }//fin if posicion y
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(caballonegro1.position.x!=bvcn1.position.x || caballonegro1.position.z!=bvcn1.position.z)
+			   	{patitasn13.Plcompleta.rotateZ(pIzqinit);
+					patitasn13.Prcompleta.rotateZ(pDerinit);
+					if (patitasn13.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn13.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn13.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn13.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn13.Plcompleta.rotation.z=0;
+				patitasn13.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((caballonegro1.position.x==torreblanca1.position.x && caballonegro1.position.z==torreblanca1.position.z)&&
 			  (caballonegro1.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
@@ -3423,7 +4129,9 @@ BloqueAzul.prototype.act = function(environment){
 		  ////////////////////////////Caballo Negro 2///////////////////////////////////////////////////////////////////  
 		  if (caballonegro2.position.x===bloquerojo.position.x && caballonegro2.position.z===bloquerojo.position.z){
 		    var bvcn2 = bloqueverde;
-		    CaballoNegro.prototype.sense = function(environment){
+			  var pIzqinit=0.05;
+				var pDerinit=-0.05;
+				CaballoNegro.prototype.sense = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo2 = this.sensor.intersectObjects(bvcn2,true);
 		      if(obstaculo2.length > 0)
@@ -3451,6 +4159,28 @@ BloqueAzul.prototype.act = function(environment){
 			else
 			   {caballonegro2.position.y = 12;}
 		      }//fin if posicion y
+//Movimiento de las patrullas
+		 if (this.colision!=1){
+				if(caballonegro2.position.x!=bvcn2.position.x || caballonegro2.position.z!=bvcn2.position.z)
+			   	{patitasn14.Plcompleta.rotateZ(pIzqinit);
+					patitasn14.Prcompleta.rotateZ(pDerinit);
+					if (patitasn14.Plcompleta.rotation.z>0.785398){
+					pIzqinit=-pIzqinit;
+					}
+					else if(patitasn14.Plcompleta.rotation.z<-0.785398){
+						pIzqinit=-pIzqinit;}
+					if(patitasn14.Prcompleta.rotation.z<-0.785398){
+					pDerinit=-pDerinit;				
+				  	}
+					else if(patitasn14.Prcompleta.rotation.z>0.785398) {
+					pDerinit=-pDerinit;
+					}
+				}
+				else{
+				patitasn14.Plcompleta.rotation.z=0;
+				patitasn14.Prcompleta.rotation.z=0;				
+				}				 
+		}
 			if((caballonegro2.position.x==torreblanca1.position.x && caballonegro2.position.z==torreblanca1.position.z)&&
 			  (caballonegro2.position.y==torreblanca1.position.y))
 			{torreblanca1.position.y=100;torreblanca1.position.x=100;escena.remove(torreblanca1);escena.remove(patitas1);}
