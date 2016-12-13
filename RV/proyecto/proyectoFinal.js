@@ -427,7 +427,7 @@ BloqueAzul.prototype.act = function(environment){
                           else if(patitas1.Plcompleta.rotation.z<-0.785398){
                           pIzqinit=-pIzqinit;
                           }
-                          patitas1.Prcompleta.rotateZ(this.pDerinit);
+                          patitas1.Prcompleta.rotateZ(pDerinit);
                           if (patitas1.Prcompleta.rotation.z<-0.785398){
                           pDerinit=-pDerinit;
                           }
