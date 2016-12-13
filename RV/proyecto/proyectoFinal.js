@@ -436,7 +436,7 @@ BloqueAzul.prototype.act = function(environment){
 		  if (this.colision!=1){
 				var pIzqinit=0.05;
 				var pDerinit=-0.05;
-				if(torreblanca1.position.x!=bvcb1.position.x || torreblanca1.position.z!=bvcb1.position.z)
+				if(torreblanca1.position.x!=bvtb1.position.x || torreblanca1.position.z!=bvtb1.position.z)
 			   {patitas1.Plcompleta.rotateZ(pIzqinit);
 					patitas1.Prcompleta.rotateZ(pDerinit);
 					if (patitas1.Plcompleta.rotation.z>0.785398){
