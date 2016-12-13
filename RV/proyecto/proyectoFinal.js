@@ -122,6 +122,7 @@ this.add(this.Plcompleta,this.Prcompleta);
 
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
+var pIzqinit,pDerinit;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
 var bloquemorado,bloqueazul,bloquerojo,bloqueverde;
 var bandera=0,banderacaballo=0;
@@ -412,7 +413,7 @@ BloqueAzul.prototype.act = function(environment){
 		      this.sensor.set(this.position,new THREE.Vector3(0,-1,0));
 		      var obstaculo = this.sensor.intersectObjects(bvtb1,true);
 		      if(obstaculo.length >0){
-			this.colision = 1;this.step=0;pIzqinit=0;pDerinit=0
+			this.colision = 1;this.step=0;pIzqinit=0;pDerinit=0;
 			}
  		      else{this.colision = 0;this.step=0.25;pIzqinit=0.05;pDerinit=-0.05;
 			  if (patitas1.Plcompleta.rotation.z>0.785398){
