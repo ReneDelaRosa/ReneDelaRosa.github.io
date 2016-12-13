@@ -3,11 +3,8 @@ var escena, camara, luzambiente, renderizador, posx
 function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
-	
-//var forma=new THREE.BoxGeometry(1,1,1);
-//var material=new THREE.MeshNormalMaterial();
-//var cubo=new THREE.Mesh(forma, material);
-//escena.add(cubo);
+piernaIzq=new THREE.Mesh(new THREE.CylinderGeometry(2,1,10,32 ););
+piernaDer=new THREE.Mesh(new THREE.CylinderGeometry(2,1,10,32 ););
 
 var loader = new THREE.JSONLoader();
 var createMesh = function( geometry )
@@ -22,6 +19,12 @@ var createMesh = function( geometry )
     //zmesh.rotation.y=-Math.PI/4;
     //zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
+    escena.add(piernaIzq);
+    escena.add(piernaDer);
+    piernaIzq.position.y=5;
+    piernaIzq.position.z=-3;
+    piernaDer.position.y=5;
+    piernaDer.position.z=3;
 };
 loader.load( "Alfil.js", createMesh );
 
