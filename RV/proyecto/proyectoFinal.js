@@ -4025,7 +4025,7 @@ function loop() {
   patitas1.position.x=(torreblanca1.position.x)-10;
   patitas1.position.z=(torreblanca1.position.z)+10;
   patitas2.position.x=(torreblanca2.position.x)-10;
-  patitas2.position.z=(torreblanca2.position.z)+70;
+  patitas2.position.z=(torreblanca2.position.z)+80;
   patitas3.position.x=(peonblanco1.position.x)-20;
   patitas3.position.z=(peonblanco1.position.z)+10;
   patitas4.position.x=(peonblanco2.position.x)-20;
