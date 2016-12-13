@@ -71,10 +71,10 @@ Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
 this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
 
 this.Plcompleta.position.x=x;
-this.Plcompleta.position.y=8;
+this.Plcompleta.position.y=10;
 this.Plcompleta.position.z=z-3.5;
 this.Prcompleta.position.x=x;
-this.Prcompleta.position.y=8;
+this.Prcompleta.position.y=10;
 this.Prcompleta.position.z=z+3.5;
 	
 this.add(this.Plcompleta,this.Prcompleta);
@@ -3879,7 +3879,7 @@ function init() {
   torrenegra1 = new TorreNegra(80,8,-10);
   torrenegra2 = new TorreNegra(80,8,-80);
   patitas1=new Patitasblancas(10,-10)
-  //patitas2=new Patitasblancas(7,-80)
+  patitas2=new Patitasblancas(10,-80)
 
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
