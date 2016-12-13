@@ -455,10 +455,6 @@ BloqueAzul.prototype.act = function(environment){
 				torreblanca1.position.x=bloquerojo.position.x;torreblanca1.position.z=bloquerojo.position.z;
 				bloqueverde.position.x=bloquerojo.position.x;bloqueverde.position.z=bloquerojo.position.z;
 			}
-		      ////////////////////////////////Pruebas de patitas//////////////////////////
-			pieza=new Pieza();
-			escena.add(pieza);
-			    
 		    }//fin prototype act
 		  }//fin if torreblanca1
 	          /////////////////////////////////Torre blanca 2//////////////////////////////////////////////////////////////////
@@ -3878,12 +3874,12 @@ function init() {
     grupo3.add(malla3);
   }}
   ///////////////////////////////////////////Torres////////////////////////////////////////////////////////////////
-  torreblanca1 = new TorreBlanca(10,8,-10);
+  //torreblanca1 = new TorreBlanca(10,8,-10);
   torreblanca2 = new TorreBlanca(10,8,-80);
   torrenegra1 = new TorreNegra(80,8,-10);
   torrenegra2 = new TorreNegra(80,8,-80);
-  patitas1=new Patitasblancas(3.5,-10)
-  patitas2=new Patitasblancas(3.5,-80)
+  patitas1=new Patitasblancas(7,-10)
+  patitas2=new Patitasblancas(7,-80)
 
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
