@@ -41,7 +41,7 @@ function loop(){
   if (pieza.piernaDer.rotation.z<-0.785398){
     pDerinit=-pDerinit;
   }
-  else if(pieza.piernaIzq.rotation.z>0.785398){
+  else if(pieza.piernaDer.rotation.z>0.785398){
     pDerinit=-pDerinit;
   }
     
