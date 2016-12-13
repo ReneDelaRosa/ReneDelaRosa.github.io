@@ -122,7 +122,7 @@ this.add(this.Plcompleta,this.Prcompleta);
 
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
-var pIzqinit,pDerinit;
+//var pIzqinit,pDerinit;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
 var bloquemorado,bloqueazul,bloquerojo,bloqueverde;
 var bandera=0,banderacaballo=0;
@@ -440,8 +440,10 @@ BloqueAzul.prototype.act = function(environment){
 			}
 			else{
 			  torreblanca1.position.x -= this.step;
-			  pDerinit=0;
-			  pIzqinit=0;
+		          patitas1.Plcompleta.rotateZ(0);
+  			  patitas1.Prcompleta.rotateZ(0);
+		          pIzqinit=0;
+		          pDerinit=0;
 		        }
 		      }//fin if posicion x
 		      if (this.colision!=1){
@@ -452,8 +454,10 @@ BloqueAzul.prototype.act = function(environment){
 			}
 			else{
 			  torreblanca1.position.z -= this.step;
-			  pDerinit=0;
-			  pIzqinit=0;
+		          patitas1.Plcompleta.rotateZ(0);
+  			  patitas1.Prcompleta.rotateZ(0);
+		          pIzqinit=0;
+		          pDerinit=0;
 			}
 		      }//fin if posicion z
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
