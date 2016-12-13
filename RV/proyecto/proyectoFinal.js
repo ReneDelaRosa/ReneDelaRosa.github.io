@@ -3834,55 +3834,55 @@ function init() {
     grupo3.add(malla3);
   }}
   ///////////////////////////////////////////Torres////////////////////////////////////////////////////////////////
-  torreblanca1 = new TorreBlanca(10,4.5,-10);
-  torreblanca2 = new TorreBlanca(10,4.5,-80);
-  torrenegra1 = new TorreNegra(80,4.5,-10);
-  torrenegra2 = new TorreNegra(80,4.5,-80);
+  torreblanca1 = new TorreBlanca(10,8,-10);
+  torreblanca2 = new TorreBlanca(10,8,-80);
+  torrenegra1 = new TorreNegra(80,8,-10);
+  torrenegra2 = new TorreNegra(80,8,-80);
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
   /////////////////////////////////////////Peones/////////////////////////////////////////////////////////////////
-  peonblanco1 = new PeonBlanco(20,10.5,-10);
-  peonblanco2 = new PeonBlanco(20,10.5,-20);
-  peonblanco3 = new PeonBlanco(20,10.5,-30);
-  peonblanco4 = new PeonBlanco(20,10.5,-40);
-  peonblanco5 = new PeonBlanco(20,10.5,-50);
-  peonblanco6 = new PeonBlanco(20,10.5,-60);
-  peonblanco7 = new PeonBlanco(20,10.5,-70);
-  peonblanco8 = new PeonBlanco(20,10.5,-80);
+  peonblanco1 = new PeonBlanco(20,8,-10);
+  peonblanco2 = new PeonBlanco(20,8,-20);
+  peonblanco3 = new PeonBlanco(20,8,-30);
+  peonblanco4 = new PeonBlanco(20,8,-40);
+  peonblanco5 = new PeonBlanco(20,8,-50);
+  peonblanco6 = new PeonBlanco(20,8,-60);
+  peonblanco7 = new PeonBlanco(20,8,-70);
+  peonblanco8 = new PeonBlanco(20,8,-80);
 	
-  peonnegro1 = new PeonNegro(70,4.5,-10);
-  peonnegro2 = new PeonNegro(70,4.5,-20);
-  peonnegro3 = new PeonNegro(70,4.5,-30);
-  peonnegro4 = new PeonNegro(70,4.5,-40);
-  peonnegro5 = new PeonNegro(70,4.5,-50);
-  peonnegro6 = new PeonNegro(70,4.5,-60);
-  peonnegro7 = new PeonNegro(70,4.5,-70);
-  peonnegro8 = new PeonNegro(70,4.5,-80);
+  peonnegro1 = new PeonNegro(70,8,-10);
+  peonnegro2 = new PeonNegro(70,8,-20);
+  peonnegro3 = new PeonNegro(70,8,-30);
+  peonnegro4 = new PeonNegro(70,8,-40);
+  peonnegro5 = new PeonNegro(70,8,-50);
+  peonnegro6 = new PeonNegro(70,8,-60);
+  peonnegro7 = new PeonNegro(70,8,-70);
+  peonnegro8 = new PeonNegro(70,8,-80);
 	
   escena.add(peonblanco1,peonblanco2,peonblanco3,peonblanco4,peonblanco5,peonblanco6,peonblanco7,peonblanco8);
   escena.add(peonnegro1,peonnegro2,peonnegro3,peonnegro4,peonnegro5,peonnegro6,peonnegro7,peonnegro8);
   /////////////////////////////////////////Alfiles/////////////////////////////////////////////////////////////////
-  alfilblanco1 = new AlfilBlanco(10,4.5,-30);
-  alfilblanco2 = new AlfilBlanco(10,4.5,-60);
-  alfilnegro1 = new AlfilNegro(80,4.5,-30);
-  alfilnegro2 = new AlfilNegro(80,4.5,-60);
+  alfilblanco1 = new AlfilBlanco(10,8,-30);
+  alfilblanco2 = new AlfilBlanco(10,8,-60);
+  alfilnegro1 = new AlfilNegro(80,8,-30);
+  alfilnegro2 = new AlfilNegro(80,8,-60);
 	
   escena.add(alfilblanco1,alfilblanco2,alfilnegro1,alfilnegro2);
   ////////////////////////////////////////////Caballos/////////////////////////////////////////////////////////////
-  caballoblanco1 = new CaballoBlanco(10,4.5,-20);
-  caballoblanco2 = new CaballoBlanco(10,4.5,-70);
-  caballonegro1 = new CaballoNegro(80,4.5,-20);
-  caballonegro2 = new CaballoNegro(80,4.5,-70);
+  caballoblanco1 = new CaballoBlanco(10,8,-20);
+  caballoblanco2 = new CaballoBlanco(10,8,-70);
+  caballonegro1 = new CaballoNegro(80,8,-20);
+  caballonegro2 = new CaballoNegro(80,8,-70);
 	
   escena.add(caballoblanco1,caballoblanco2,caballonegro1,caballonegro2);	
   ////////////////////////////////////////////Reinas/////////////////////////////////////////////////////////////////
-  reinablanca = new ReinaBlanca(10,4.5,-40);
-  reinanegra = new ReinaNegra(80,4.5,-40);
+  reinablanca = new ReinaBlanca(10,8,-40);
+  reinanegra = new ReinaNegra(80,8,-40);
 	
   escena.add(reinablanca,reinanegra);
   ///////////////////////////////////////////Reyes////////////////////////////////////////////////////////////////////
-  reyblanco = new ReyBlanco(10,4.5,-50);
-  reynegro = new ReyNegro(80,4.5,-50);
+  reyblanco = new ReyBlanco(10,8,-50);
+  reynegro = new ReyNegro(80,8,-50);
 	
   escena.add(reyblanco,reynegro);	
   /////////////////////////////////////////Bloques////////////////////////////////////////////////////////////////////
