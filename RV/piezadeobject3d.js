@@ -31,14 +31,10 @@ function setup(){
 function loop(){
   //pieza.rotateY(0.1);
   pieza.piernaIzq.rotateZ(pIzqinit);
-  if (pieza.piernaIzq.rotation.z>=0.785398){
+  if (pieza.piernaIzq.rotation.z>0.785398){
     pIzqinit=-0.05;
-    pieza.piernaIzq.rotateZ(pIzqinit);
   }
-  else if(pieza.piernaIzq.rotation.z<0.785398){
-    pIzqinit=0.05;
-    pieza.piernaIzq.rotateZ(pIzqinit);
-  }
+
   
   pieza.piernaDer.rotateZ(pDerinit);
   if (pieza.piernaDer.rotation.z<=-0.785398){
