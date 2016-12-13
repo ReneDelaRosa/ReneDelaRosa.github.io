@@ -4047,10 +4047,10 @@ function loop() {
   patitas12.position.x=(alfilblanco2.position.x)-10;
   patitas12.position.z=(alfilblanco2.position.z)+30;
   patitas13.position.x=(caballoblanco1.position.x)-10;
-  patitas13.position.y=caballoblanco1.position.y;	
+  patitas13.position.y=(caballoblanco1.position.y)-10;	
   patitas13.position.z=(caballoblanco1.position.z)+20;
   patitas14.position.x=(caballoblanco2.position.x)-10;
-  patitas14.position.y=caballoblanco2.position.y;
+  patitas14.position.y=(caballoblanco2.position.y)-10;
   patitas14.position.z=(caballoblanco2.position.z)+70;
   patitas15.position.x=(reinablanca.position.x)-10;
   patitas15.position.z=(reinablanca.position.z)+40;
@@ -4060,13 +4060,13 @@ function loop() {
 	
 	
 	
-  patitasn1.position.x=(torrenegra1.position.x)-80;
+  patitasn1.position.x=(torrenegra1.position.x)-70;
   patitasn1.position.z=(torrenegra1.position.z)+10;
-  patitasn2.position.x=(torrenegra2.position.x)-80;
+  patitasn2.position.x=(torrenegra2.position.x)-70;
   patitasn2.position.z=(torrenegra2.position.z)+80;
-  patitasn3.position.x=(peonnegro1.position.x)-80;
+  patitasn3.position.x=(peonnegro1.position.x)-70;
   patitasn3.position.z=(peonnegro1.position.z)+10;
-  patitasn4.position.x=(peonnegro2.position.x)-80;
+  patitasn4.position.x=(peonnegro2.position.x)-70;
   patitasn4.position.z=(peonnegro2.position.z)+20;	
   patitasn5.position.x=(peonnegro3.position.x)-70;
   patitasn5.position.z=(peonnegro3.position.z)+30;
@@ -4085,10 +4085,10 @@ function loop() {
   patitasn12.position.x=(alfilnegro2.position.x)-80;
   patitasn12.position.z=(alfilnegro2.position.z)+60;
   patitasn13.position.x=(caballonegro1.position.x)-80;
-  patitasn13.position.y=caballonegro1.position.y;
+  patitasn13.position.y=(caballonegro1.position.y)-10;
   patitasn13.position.z=(caballonegro1.position.z)+20;
   patitasn14.position.x=(caballonegro2.position.x)-80;
-  patitasn14.position.y=caballonegro2.position.y;
+  patitasn14.position.y=(caballonegro2.position.y)-10;
   patitasn14.position.z=(caballonegro2.position.z)+70;
   patitasn15.position.x=(reinanegra.position.x)-80;
   patitasn15.position.z=(reinanegra.position.z)+40;
