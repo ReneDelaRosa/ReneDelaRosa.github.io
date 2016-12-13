@@ -25,7 +25,7 @@ function setup(){
   document.body.appendChild(renderizador.domElement);
   pIzqinit=0.05;
   pDerinit=-0.05;
-  pieza.piernaIzq.applyMatrix(new THREE.Matrix4().makeTranslation( 0, 0, 0 ) );
+  pieza.piernaIzq.applyMatrix(new THREE.Matrix4().makeTranslation( 0, -2.5, 0 ) );
   
 }
 
