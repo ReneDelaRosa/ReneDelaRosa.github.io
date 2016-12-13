@@ -34,6 +34,9 @@ function loop(){
   if (pieza.piernaIzq.rotation.z>0.785398){
     pIzqinit=-0.05;
   }
+  else if(pieza.piernaIzq.rotation.z<-0.785398){
+    pIzqinit=0.05;
+  }
 
   
   pieza.piernaDer.rotateZ(pDerinit);
