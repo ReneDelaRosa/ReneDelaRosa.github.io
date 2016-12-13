@@ -26,9 +26,9 @@ Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
 Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
 this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
 	
-this.Plcompleta.position.y=-1.6;
+this.Plcompleta.position.y=-1.7;
 this.Plcompleta.position.z=-3.5;
-this.Prcompleta.position.y=-1.6;
+this.Prcompleta.position.y=-1.7;
 this.Prcompleta.position.z=3.5;
 	
 this.add(this.Plcompleta,this.Prcompleta);
