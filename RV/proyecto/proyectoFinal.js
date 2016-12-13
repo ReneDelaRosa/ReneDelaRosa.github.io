@@ -3755,7 +3755,8 @@ function init() {
   //////////////////////////////////////////////////Camara///////////////////////////////////////////////////////////////////////
   camara = new THREE.PerspectiveCamera();
   camara.position.z=130;
-  camara.position.x=50; 
+  camara.position.x=45; 
+  camara.rotateX=(-Math.PI/4);
   ///////////////////////////////////////////Renderizador//////////////////////////////////////////////////////////////////////////
   renderizador = new THREE.WebGLRenderer({antialias:true});
   renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
