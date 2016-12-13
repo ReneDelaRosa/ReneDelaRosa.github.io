@@ -413,7 +413,20 @@ BloqueAzul.prototype.act = function(environment){
 		      var obstaculo = this.sensor.intersectObjects(bvtb1,true);
 		      if(obstaculo.length >0)
 			{this.colision = 1;this.step=0;pIzqinit=0;pDerinit=0}
- 		      else{this.colision = 0;this.step=0.25;pIzqinit=-0.05;pDerinit=0.05;}
+ 		      else{this.colision = 0;this.step=0.25;pIzqinit=-0.05;pDerinit=0.05;
+			  if (patitas1.Plcompleta.rotation.z>0.785398){
+                          pIzqinit=-pIzqinit;
+                          }
+                          else if(patitas1.Plcompleta.rotation.z<-0.785398){
+                          pIzqinit=-pIzqinit;
+                          }
+			  if (patitas1.Prcompleta.rotation.z<-0.785398){
+                          pDerinit=-pDerinit;
+                          }
+                          else if(patitas1.Prcompleta.rotation.z>0.785398){
+                          pDerinit=-pDerinit;
+                          }
+		       }
 		    }//fin prototype sense
 		
 		    TorreBlanca.prototype.act = function(environment){ 
@@ -421,24 +434,12 @@ BloqueAzul.prototype.act = function(environment){
 			if(torreblanca1.position.x<=bvtb1.position.x){
 			  torreblanca1.position.x += this.step;
 		          patitas1.Plcompleta.rotateZ(pIzqinit);
-  			  if (patitas1.Plcompleta.rotation.z>0.785398){
-                          pIzqinit=-pIzqinit;
-                          }
-                          else if(patitas1.Plcompleta.rotation.z<-0.785398){
-                          pIzqinit=-pIzqinit;
-                          }
-                          patitas1.Prcompleta.rotateZ(pDerinit);
-                          if (patitas1.Prcompleta.rotation.z<-0.785398){
-                          pDerinit=-pDerinit;
-                          }
-                          else if(patitas1.Prcompleta.rotation.z>0.785398){
-                          pDerinit=-pDerinit;
-                          }
+  			  patitas1.Prcompleta.rotateZ(pDerinit);
 			}
 			else{
 			  torreblanca1.position.x -= this.step;
-			  pDerinit=0;
-			  pIzqinit=0;
+			  //pDerinit=0;
+			  //pIzqinit=0;
 		        }
 		      }//fin if posicion x
 		      if (this.colision!=1){
@@ -447,8 +448,8 @@ BloqueAzul.prototype.act = function(environment){
 			}
 			else{
 			  torreblanca1.position.z -= this.step;
-			  pDerinit=0;
-			  pIzqinit=0;
+			  //pDerinit=0;
+			  //pIzqinit=0;
 			}
 		      }//fin if posicion z
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
