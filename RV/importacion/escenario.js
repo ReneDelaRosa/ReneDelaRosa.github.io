@@ -55,6 +55,7 @@ var createMesh = function( geometry )
     //zmesh.rotation.y=-Math.PI/4;
     //zmesh.rotation.x=Math.PI/8;
     escena.add( zmesh );
+    escena.add(pieza);
 
 };
 loader.load( "Alfil.js", createMesh );
