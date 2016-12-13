@@ -452,8 +452,8 @@ BloqueAzul.prototype.act = function(environment){
 					}
 				}
 				else{
-				patitas1.Plcompleta.rotateZ(0);
-				patitas1.Prcompleta.rotateZ(0);				
+				patitas1.Plcompleta.rotation.z=0;
+				patitas1.Prcompleta.rotation.z=0;				
 				}				 
 		}
 
