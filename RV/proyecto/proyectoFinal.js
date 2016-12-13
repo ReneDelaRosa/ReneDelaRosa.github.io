@@ -3990,7 +3990,7 @@ function loop() {
   patitasn1.position.z=(torrenegra1.position.z)+10;
 
   patitas2.position.x=(torreblanca2.position.x)-10;
-  patitas2.position.z=(torreblanca2.position.z)-80;
+  patitas2.position.z=(torreblanca2.position.z)+80;
   patitasn2.position.x=(torrenegra2.position.x)-80;
   patitasn2.position.z=(torrenegra2.position.z)+80;
 
