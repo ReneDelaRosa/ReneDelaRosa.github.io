@@ -3,8 +3,8 @@ var escena, camara, luzambiente, renderizador, posx
 function init(){
 escena=new THREE.Scene();
 camara=new THREE.PerspectiveCamera();
-piernaIzq=new THREE.Mesh(new THREE.CylinderGeometry(2,1,10,32),new THREE.MeshNormalMaterial());
-piernaDer=new THREE.Mesh(new THREE.CylinderGeometry(2,1,10,32),new THREE.MeshNormalMaterial());
+piernaIzq=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1,5,32),new THREE.MeshNormalMaterial());
+piernaDer=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1,5,32),new THREE.MeshNormalMaterial());
 
 var loader = new THREE.JSONLoader();
 var createMesh = function( geometry )
