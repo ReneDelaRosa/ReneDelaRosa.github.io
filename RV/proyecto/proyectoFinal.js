@@ -82,6 +82,44 @@ this.Prcompleta.position.z=z+3.5;
 this.add(this.Plcompleta,this.Prcompleta);
 }
 
+function Patitasnegras(x=0,z=0){
+THREE.Object3D.call(this);
+var textura2 = new THREE.TextureLoader().load('maderanegra.jpg');
+var maderanegra = new THREE.MeshLambertMaterial({map:textura2});
+piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
+piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieDer=new THREE.CylinderGeometry(1,.6,4,32);
+pieIzq.translate(-3.5,-1,0);
+pieDer.translate(-3.5,-1,0);
+pieIzq.rotateZ(Math.PI/2);
+pieDer.rotateZ(Math.PI/2);
+var PiernaizqMalla=new THREE.Mesh(piernaIzq);
+var PieizqMalla=new THREE.Mesh(pieIzq);
+	
+var PiernaderMalla=new THREE.Mesh(piernaDer);
+var PiederMalla=new THREE.Mesh(pieDer);
+
+var Piernal=new THREE.Geometry();
+Piernal.merge(PiernaizqMalla.geometry, PiernaizqMalla.matrix);
+Piernal.merge(PieizqMalla.geometry, PieizqMalla.matrix);
+this.Plcompleta=new THREE.Mesh(Piernal,maderanegra);
+	
+var Piernar=new THREE.Geometry();
+Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
+Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
+this.Prcompleta=new THREE.Mesh(Piernar,maderanegra);//new THREE.MeshNormalMaterial()
+
+this.Plcompleta.position.x=x;
+this.Plcompleta.position.y=10;
+this.Plcompleta.position.z=z-3.5;
+this.Prcompleta.position.x=x;
+this.Prcompleta.position.y=10;
+this.Prcompleta.position.z=z+3.5;
+	
+this.add(this.Plcompleta,this.Prcompleta);
+}
+
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
@@ -97,7 +135,11 @@ var reyblanco,reynegro;
 var patitas1,patitas2,patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10;
 var patitas11,patitas12,patitas13,patitas14,patitas15,patitas16;
 
+var patitasn1,patitasn2,patitasn3,patitasn4,patitasn5,patitasn6,patitasn7,patitasn8,patitasn9,patitasn10;
+var patitasn11,patitasn12,patitasn13,patitasn14,patitasn15,patitasn16;
+
 Patitasblancas.prototype=new THREE.Object3D;
+Patitasnegras.prototype=new THREE.Object3D;
 //////////////////////////////////////////Sensor/////////////////////////////////////////////////////////////////////////////////
 function Sensor(position,direction){ 
   THREE.Raycaster.call(this,position,direction);
@@ -3878,10 +3920,13 @@ function init() {
   ///////////////////////////////////////////Torres////////////////////////////////////////////////////////////////
   torreblanca1 = new TorreBlanca(10,12,-10);
   torreblanca2 = new TorreBlanca(10,12,-80);
-  torrenegra1 = new TorreNegra(80,8,-10);
-  torrenegra2 = new TorreNegra(80,8,-80);
+  torrenegra1 = new TorreNegra(80,12,-10);
+  torrenegra2 = new TorreNegra(80,12,-80);
   patitas1=new Patitasblancas(10,-10);
+  patitasn1=new Patitasnegras(80,-10);
   //patitas2=new Patitasblancas(10,-80);
+  //patitasn2=new Patitasnegras(80,-80);
+
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
   escena.add(patitas1,patitas2);
