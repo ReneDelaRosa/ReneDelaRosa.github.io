@@ -451,7 +451,9 @@ BloqueAzul.prototype.act = function(environment){
 					pDerinit=-pDerinit;
 				}
 			}
-			else{pIzqinit=0;pDerinit=0;
+			else{
+				patitas1.Plcompleta.rotateZ(0);
+				patitas1.Prcompleta.rotateZ(0);
 				
 			}
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
