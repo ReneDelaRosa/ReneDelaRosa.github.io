@@ -3116,7 +3116,7 @@ BloqueAzul.prototype.act = function(environment){
 			if(caballoblanco1.position.x!=bvcb1.position.x || caballoblanco1.position.z!=bvcb1.position.z)
 			   {caballoblanco1.position.y += this.step/2;}
 			else
-			   {caballoblanco1.position.y = 4.5;}
+			   {caballoblanco1.position.y = 12;}
 		      }//fin if posicion y
 			if((caballoblanco1.position.x==torrenegra1.position.x && caballoblanco1.position.z==torrenegra1.position.z)&&
 			  (caballoblanco1.position.y==torrenegra1.position.y))
@@ -3218,7 +3218,7 @@ BloqueAzul.prototype.act = function(environment){
 			if(caballoblanco2.position.x!=bvcb2.position.x || caballoblanco2.position.z!=bvcb2.position.z)
 			   {caballoblanco2.position.y += this.step/2;}
 			else
-			   {caballoblanco2.position.y = 4.5;}
+			   {caballoblanco2.position.y = 12;}
 		      }//fin if posicion y
 			if((caballoblanco2.position.x==torrenegra1.position.x && caballoblanco2.position.z==torrenegra1.position.z)&&
 			  (caballoblanco2.position.y==torrenegra1.position.y))
@@ -3320,7 +3320,7 @@ BloqueAzul.prototype.act = function(environment){
 			if(caballonegro1.position.x!=bvcn1.position.x || caballonegro1.position.z!=bvcn1.position.z)
 			   {caballonegro1.position.y += this.step/2;}
 			else
-			   {caballonegro1.position.y = 4.5;}
+			   {caballonegro1.position.y = 12;}
 		      }//fin if posicion y
 			if((caballonegro1.position.x==torreblanca1.position.x && caballonegro1.position.z==torreblanca1.position.z)&&
 			  (caballonegro1.position.y==torreblanca1.position.y))
@@ -3422,7 +3422,7 @@ BloqueAzul.prototype.act = function(environment){
 			if(caballonegro2.position.x!=bvcn2.position.x || caballonegro2.position.z!=bvcn2.position.z)
 			   {caballonegro2.position.y += this.step/2;}
 			else
-			   {caballonegro2.position.y = 4.5;}
+			   {caballonegro2.position.y = 12;}
 		      }//fin if posicion y
 			if((caballonegro2.position.x==torreblanca1.position.x && caballonegro2.position.z==torreblanca1.position.z)&&
 			  (caballonegro2.position.y==torreblanca1.position.y))
