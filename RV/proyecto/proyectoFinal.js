@@ -4045,7 +4045,7 @@ function loop() {
   patitas11.position.x=(alfilblanco1.position.x)-10;
   patitas11.position.z=(alfilblanco1.position.z)+30;
   patitas12.position.x=(alfilblanco2.position.x)-10;
-  patitas12.position.z=(alfilblanco2.position.z)+30;
+  patitas12.position.z=(alfilblanco2.position.z)+60;
   patitas13.position.x=(caballoblanco1.position.x)-10;
   patitas13.position.y=(caballoblanco1.position.y)-12;	
   patitas13.position.z=(caballoblanco1.position.z)+20;
