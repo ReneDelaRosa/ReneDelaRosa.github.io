@@ -44,7 +44,7 @@ Environment.prototype.act = function(){
   }
 }
 
-function Pieza(){
+function Patitasblancas(x=0,z=0){
 THREE.Object3D.call(this);
 piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
 pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
@@ -69,17 +69,16 @@ var Piernar=new THREE.Geometry();
 Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
 Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
 this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
-	
+
+this.Plcompleta.position.x=x;
 this.Plcompleta.position.y=-1.7;
-this.Plcompleta.position.z=-3.5;
+this.Plcompleta.position.z=-z;
+this.Prcompleta.position.y=-x;
 this.Prcompleta.position.y=-1.7;
-this.Prcompleta.position.z=3.5;
+this.Prcompleta.position.z=z;
 	
 this.add(this.Plcompleta,this.Prcompleta);
 }
-
-var pieza;
-Pieza.prototype=new THREE.Object3D;
 
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
@@ -93,6 +92,10 @@ var alfilblanco1,alfilblanco2,alfilnegro1,alfilnegro2;
 var caballoblanco1,caballoblanco2,caballonegro1,caballonegro2;
 var reinablanca,reinanegra;
 var reyblanco,reynegro;
+var patitas1,patitas2,patitas3,patitas4,patitas5,patitas6,patitas7,patitas8,patitas9,patitas10;
+var patitas11,patitas12,patitas13,patitas14,patitas15,patitas16;
+
+Patitasblancas.prototype=new THREE.Object3D;
 //////////////////////////////////////////Sensor/////////////////////////////////////////////////////////////////////////////////
 function Sensor(position,direction){ 
   THREE.Raycaster.call(this,position,direction);
@@ -3879,8 +3882,12 @@ function init() {
   torreblanca2 = new TorreBlanca(10,8,-80);
   torrenegra1 = new TorreNegra(80,8,-10);
   torrenegra2 = new TorreNegra(80,8,-80);
+  patitas1=new Patitasblancas(3.5,-10)
+  patitas2=new Patitasblancas(3.5,-80)
+
 	
   escena.add(torreblanca1,torreblanca2,torrenegra1,torrenegra2);
+  escena.add(patitas1,patitas2);
   /////////////////////////////////////////Peones/////////////////////////////////////////////////////////////////
   peonblanco1 = new PeonBlanco(20,8,-10);
   peonblanco2 = new PeonBlanco(20,8,-20);
