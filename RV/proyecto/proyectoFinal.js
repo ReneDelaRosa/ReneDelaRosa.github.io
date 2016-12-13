@@ -375,20 +375,20 @@ BloqueAzul.prototype.act = function(environment){
 		
 		    TorreBlanca.prototype.act = function(environment){ 	
 		      if (this.colision!=1){
-			if(torreblanca1.position.x<=bvtb1.position.x)
+			if(torreblanca1.position.x<=bvtb1.position.x){
 			  torreblanca1.position.x += this.step;
-			  Patitasblancas.position.x+= this.step;
-			else
+			  Patitasblancas.position.x+= this.step;}
+			else{
 			  torreblanca1.position.x -= this.step;
-			  Patitasblancas.position.x+= this.step;
+			  Patitasblancas.position.x+= this.step;}
 		      }//fin if posicion x
 		      if (this.colision!=1){
-			if(torreblanca1.position.z<=bvtb1.position.z)
+			if(torreblanca1.position.z<=bvtb1.position.z){
 			  torreblanca1.position.z += this.step;
-			  Patitasblancas.position.z+= this.step;
-			else
+			  Patitasblancas.position.z+= this.step;}
+			else{
 			  torreblanca1.position.z -= this.step;
-			  Patitasblancas.position.z-= this.step;
+			  Patitasblancas.position.z-= this.step;}
 		      }//fin if posicion z
 			//////////////////////////////////////////Piezas diferentes////////////////////////////////////////
 		        if((torreblanca1.position.x==torrenegra1.position.x && torreblanca1.position.z==torrenegra1.position.z)&&
