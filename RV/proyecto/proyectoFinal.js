@@ -4004,13 +4004,34 @@ function init() {
 function loop() {
   patitas1.position.x=(torreblanca1.position.x)-10;
   patitas1.position.z=(torreblanca1.position.z)+10;
-  patitasn1.position.x=(torrenegra1.position.x)-80;
-  patitasn1.position.z=(torrenegra1.position.z)+10;
-
   patitas2.position.x=(torreblanca2.position.x)-10;
   patitas2.position.z=(torreblanca2.position.z)+80;
+  patitas3.position.x=(peonblanco1.position.x)-20;
+  patitas3.position.z=(peonblanco1.position.z)+10;
+  patitas4.position.x=(peonblanco2.position.x)-20;
+  patitas4.position.z=(peonblanco2.position.z)+20;
+  patitas5.position.x=(peonblanco3.position.x)-20;
+  patitas5.position.z=(peonblanco3.position.z)+30;
+  patitas6.position.x=(peonblanco4.position.x)-20;
+  patitas6.position.z=(peonblanco4.position.z)+40;
+  patitas7.position.x=(peonblanco5.position.x)-20;
+  patitas7.position.z=(peonblanco5.position.z)+50;
+  patitas8.position.x=(peonblanco6.position.x)-20;
+  patitas8.position.z=(peonblanco6.position.z)+60;
+  patitas9.position.x=(peonblanco7.position.x)-20;
+  patitas9.position.z=(peonblanco7.position.z)+70;
+  patitas10.position.x=(peonblanco8.position.x)-20;
+  patitas10.position.z=(peonblanco8.position.z)+80;
+	
+	
+	
+	
+  patitasn1.position.x=(torrenegra1.position.x)-80;
+  patitasn1.position.z=(torrenegra1.position.z)+10;
   patitasn2.position.x=(torrenegra2.position.x)-80;
   patitasn2.position.z=(torrenegra2.position.z)+80;
+  patitasn3.position.x=(peonnegro1.position.x)-70;
+  patitasn3.position.z=(peonnegro1.position.z)+10;
 
   requestAnimationFrame(loop);
   escena.sense();
