@@ -44,6 +44,43 @@ Environment.prototype.act = function(){
   }
 }
 
+function Pieza(){
+THREE.Object3D.call(this);
+piernaIzq=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieIzq=new THREE.CylinderGeometry(1,.6,4,32);
+piernaDer=new THREE.CylinderGeometry(1.5,1,6.5,32);
+pieDer=new THREE.CylinderGeometry(1,.6,4,32);
+pieIzq.translate(-3.5,-1,0);
+pieDer.translate(-3.5,-1,0);
+pieIzq.rotateZ(Math.PI/2);
+pieDer.rotateZ(Math.PI/2);
+var PiernaizqMalla=new THREE.Mesh(piernaIzq);
+var PieizqMalla=new THREE.Mesh(pieIzq);
+	
+var PiernaderMalla=new THREE.Mesh(piernaDer);
+var PiederMalla=new THREE.Mesh(pieDer);
+
+var Piernal=new THREE.Geometry();
+Piernal.merge(PiernaizqMalla.geometry, PiernaizqMalla.matrix);
+Piernal.merge(PieizqMalla.geometry, PieizqMalla.matrix);
+this.Plcompleta=new THREE.Mesh(Piernal);
+	
+var Piernar=new THREE.Geometry();
+Piernar.merge(PiernaderMalla.geometry, PiernaderMalla.matrix);
+Piernar.merge(PiederMalla.geometry, PiederMalla.matrix);
+this.Prcompleta=new THREE.Mesh(Piernar,new THREE.MeshNormalMaterial());
+	
+this.Plcompleta.position.y=-1.7;
+this.Plcompleta.position.z=-3.5;
+this.Prcompleta.position.y=-1.7;
+this.Prcompleta.position.z=3.5;
+	
+this.add(this.Plcompleta,this.Prcompleta);
+}
+
+var pieza;
+Pieza.prototype=new THREE.Object3D;
+
 ///////////////////////////////////////////Variables////////////////////////////////////////////////////////////////////////////////////
 var camara,escena,renderizador;
 var malla,malla2,malla3,grupo,grupo2,grupo3,grupomorado;
@@ -415,6 +452,10 @@ BloqueAzul.prototype.act = function(environment){
 				torreblanca1.position.x=bloquerojo.position.x;torreblanca1.position.z=bloquerojo.position.z;
 				bloqueverde.position.x=bloquerojo.position.x;bloqueverde.position.z=bloquerojo.position.z;
 			}
+		      ////////////////////////////////Pruebas de patitas//////////////////////////
+			pieza=new Pieza();
+			escena.add(pieza);
+			    
 		    }//fin prototype act
 		  }//fin if torreblanca1
 	          /////////////////////////////////Torre blanca 2//////////////////////////////////////////////////////////////////
